@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+:root {
+  --background: #00070f;
+  --foreground: #dbdbdb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-inter: var(--font-inter);
+  --font-anybody: var(--font-anybody);
+  --color-border: #ffffff1a;
+  --color-text: #e6e6ea;
+  --color-muted: #8d8d8d;
+  --color-accent: #42bddd;
+  --color-secondary: #ffffff1a;
+  --color-tertiary: #000710;
+  --color-accent-foreground: #2EC5ED;
+  --color-primary-foreground: #1DDFC8;
+  --color-primary: #010D14;
+  --color-sec-text: #F0F0F0;
+  --color-sec-border: #54708F80;
+  --color-new-tertiary: #FFFFFF21;
+  --radius-xxl: 40px;
+  --color-secondary-foreground: #0FEDBE;
+  --color-muted-foreground: #8c8d8f;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+}
+
+section {
+  @apply py-[9.375rem] max-lg:py-16 max-lg:pb-0;
+
+}
+@layer utilities {
+  .bg-gradient-custom {
+    background-image: linear-gradient(to right, #4facfe, #00f2fe);
+  }
+
+  /* .text-gradient-custom {
+    @apply bg-gradient-custom text-transparent bg-clip-text;
+  } */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+}
+
+.container {
+  perspective: 800px; /* Adds depth */
+}
+
+.box {
+  width: 85px;
+  height: 85px;
+  background: linear-gradient(45deg, #f06, #4a90e2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  transform-style: preserve-3d; /* Ensures child elements are transformed in 3D */
+  animation: rotate3D 4s linear infinite;
+}
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+* {
+  scrollbar-width: thin;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: #2dc5ec;
+}
+.tinted {
+  background: -webkit-linear-gradient(
+    45deg,
+    #ffffff 0%,
+    #2dc5ec 0%,
+    #1be1c5 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ProgressRoot {
+  position: relative;
+  overflow: hidden;
+  background: #42bddd2e;
+  border-radius: 99999px;
+  width: 300px;
+  height: 24px;
+  transform: translateZ(0);
+}
+
+.title {
+  @apply max-lg:text-4xl text-[3.75rem] max-sm:text-3xl font-extrabold;
+}
+.slick-slider{
+  max-height: 400px;
+}
+.slick-next::before,
+.slick-prev::before {
+  color: #a494f5 !important;
+  font-size: 28px !important;
+}
+
+.slider-arrow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.slick-arrow.slick-next:before {
+  content: '';
+}
+
+.slick-arrow.slick-prev:before {
+  content: '';
+}
+
+// @media screen and (min-width: 1024px) {
+//   .utility-cards-wrapper {
+//     grid-template-areas:
+//       'a . .'
+//       'b c d';
+//     @apply grid grid-cols-3 mx-auto;
+//   }
+//   .utility-card:nth-child(1) {
+//     grid-area: a;
+//   }
+//   .utility-card:nth-child(2) {
+//     grid-area: b;
+//   }
+//   .utility-card:nth-child(3) {
+//     grid-area: c;
+//   }
+//   .utility-card:nth-child(4) {
+//     grid-area: d;
+//   }
+// }
+
+@media screen and (min-width: 1024px) {
+  .utility-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .utility-card:nth-child(1) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .utility-card:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .utility-card:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}

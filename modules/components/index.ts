@@ -1,0 +1,7 @@
+export * from './home'
+export * from './how-to-buy'
+export * from './roadmap'
+export * from './ai-fund'
+export * from './btc-fund'
+export * from './mining-fund'
+export * from './tech-fund'

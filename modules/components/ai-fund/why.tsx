@@ -1,0 +1,123 @@
+import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
+import React from "react";
+import Checkmark from "@/assets/checkmark.svg";
+import Cube from "@/assets/otherpages/cube.svg";
+import Blur from '@/assets/otherpages/why-blur.svg'
+
+export function Why() {
+  return (
+    <section>
+      <div className="max-w-[1529px] mx-auto flex flex-col gap-8 relative px-14 max-lg:px-5">
+        <FadeInOnScroll>
+          <h3 className="font-bold font-anybody text-[6.375rem] max-lg:text-5xl max-sm:text-3xl uppercase max-w-[867px] text-white lg:leading-[90px]">
+            Why Invest <br className="max-lg:hidden" /> in the AI
+            <br className="max-lg:hidden" /> Fund
+          </h3>
+        </FadeInOnScroll>
+        <div className="flex items-center gap-[30px] relative max-lg:flex-col">
+          <FadeInOnScroll className="lg:max-w-[400px] w-full">
+            <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8  border-b border-b-black/5 min-h-[220px]">
+              <div className="flex items-center gap-4">
+                <Checkmark className="size-4 text-[#0FEDBE]" />
+                <p className="tinted text-lg font-semibold font-anybody">
+                  Automated Smart Contract Execution
+                </p>
+              </div>
+              <p className="text-sm color-sec-text mt-5">
+                Capital is deployed through secure, self-executing smart
+                contracts, eliminating human bias and ensuring full
+                transparency.
+              </p>
+            </div>
+          </FadeInOnScroll>
+          <div className="flex gap-[30px] relative w-full max-lg:flex-col">
+            <div className="flex flex-col gap-7">
+              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 min-h-[220px]">
+                  <div className="flex items-center gap-4">
+                    <Checkmark className="size-4 text-[#0FEDBE]" />
+                    <p className="tinted text-lg font-semibold font-anybody">
+                      AI-Optimized Portfolio Management
+                    </p>
+                  </div>
+                  <p className="text-sm color-sec-text mt-5">
+                    Your investments are automatically rebalanced using
+                    real-time AI models that track market trends, liquidity, and
+                    developer activity.
+                  </p>
+                </div>
+              </FadeInOnScroll>
+              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 lg:max-w-[400px] border-b border-b-black/5 relative min-h-[220px]">
+                  <div className="flex items-center gap-4">
+                    <Checkmark className="size-4 text-[#0FEDBE]" />
+                    <p className="tinted text-lg font-semibold font-anybody">
+                      Dynamic Risk Management
+                    </p>
+                  </div>
+                  <p className="text-sm color-sec-text mt-5">
+                    AI-driven market pulse tracking and real-time asset
+                    reallocation optimize for long-term growth while mitigating
+                    risks.
+                  </p>
+                </div>
+              </FadeInOnScroll>
+            </div>
+            <div className="flex flex-col gap-7 lg:absolute left-[44%] -top-[54%]">
+              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 min-h-[220px]">
+                  <div className="flex items-center gap-4">
+                    <Checkmark className="size-4 text-[#0FEDBE]" />
+                    <p className="tinted text-lg font-semibold font-anybody">
+                      Early Access to AI-Powered Crypto Projects
+                    </p>
+                  </div>
+                  <p className="text-sm color-sec-text mt-5">
+                    Get exposure to high-growth AI-driven DeFi, machine
+                    learning, and autonomous smart contract platforms.
+                  </p>
+                </div>
+              </FadeInOnScroll>
+              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 relative min-h-[220px]">
+                  <div className="flex items-center gap-4">
+                    <Checkmark className="size-4 text-[#0FEDBE]" />
+                    <p className="tinted text-lg font-semibold font-anybody">
+                      Data-Driven Investment Decisions
+                    </p>
+                  </div>
+                  <p className="text-sm color-sec-text mt-5">
+                    Our proprietary AI algorithms scan thousands of blockchain
+                    projects, analyzing tokenomics, adoption metrics, and
+                    on-chain data to find the best opportunities.
+                  </p>
+                </div>
+              </FadeInOnScroll>
+            </div>
+          </div>
+        </div>
+
+        <div className="size-12 absolute top-[45%] left-[20%] -z-50 max-lg:hidden">
+          <FadeInOnScroll>
+            <Cube />
+          </FadeInOnScroll>
+        </div>
+        <div className="size-8 absolute top-[1%] right-[15%] -z-50">
+          <FadeInOnScroll>
+            <Cube />
+          </FadeInOnScroll>
+        </div>
+        <div className="size-8 absolute top-[12%] left-[15%] -z-0">
+          <FadeInOnScroll>
+            <Cube />
+          </FadeInOnScroll>
+        </div>
+        <div className="absolute -z-10 w-[65%] -top-20 left-[15%]">
+          <FadeInOnScroll>
+            <Blur />
+          </FadeInOnScroll>
+        </div>
+      </div>
+    </section>
+  );
+}
