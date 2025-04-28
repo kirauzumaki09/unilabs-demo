@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "@/modules/app/footer";
 import { SmoothScroll } from "@/modules/app/lenis";
 import Script from "next/script";
+import FooterTwo from "@/modules/app/footer-2";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -59,7 +60,8 @@ export default function RootLayout({
           </div>
 
           {children}
-          <Footer />
+          {/* <Footer /> */}
+          <FooterTwo />
           <div className="bg-gradient-to-t from-black to-transparent w-full h-[115px] fixed -bottom-2 z-[1000]"/>
         </SmoothScroll>
       </body>
