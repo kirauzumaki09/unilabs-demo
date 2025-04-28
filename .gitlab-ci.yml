@@ -5,7 +5,7 @@ dev-deployment:
     - bash ~/gitlab/NextJS/nextjs-projectdeploy-yarn-v1.sh
   environment:
     name: Development
-    url: https://unilabs-ui-ui.dedicateddevelopers.us/
+    url: https://unilabs-ui.dedicateddevelopers.us/
   tags:
     - node-nextjs
   only:
