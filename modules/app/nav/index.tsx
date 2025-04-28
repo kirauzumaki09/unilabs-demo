@@ -1,18 +1,22 @@
 "use client";
 
-import Link from "next/link";
-import React, { useCallback, useEffect, useState } from "react";
 import Logo from "@/assets/logo.svg";
 import { cn } from "@/modules/utils";
+import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
 // import Dot from "@/assets/dot.svg";
 import Bag from "@/assets/bag.svg";
-import { usePathname } from "next/navigation";
-import Button from "../button";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import CloseIcon from "@/assets/close.svg";
 import MenuIcon from "@/assets/menu-04.svg";
+import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+
 import { FadeIn } from "../fade-in";
+import Button from "../button";
+import SignInIcon from "@/ui/icons/SignInIcon";
+
+
 
 export function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +37,7 @@ export function Nav() {
   return (
     <div
       className={cn(
-        "flex items-center justify-between border-b border-b-transparent w-full fixed top-0 z-[1000] h-20",
+        "flex items-center justify-between border-b border-b-transparent w-full fixed top-0 z-[1000] h-[116px] bg-[#00070F] backdrop-blur-[74px]",
         {
           "border-b-[#2DC5EC] backdrop-blur-lg": isScrolled,
         }
@@ -64,8 +68,8 @@ export function Nav() {
             </Link>
           </FadeIn>
         </div>
-        
-        <div className="flex-1 flex justify-center">
+
+        <div className="flex-1 flex justify-end">
           <ul className="flex items-center justify-center gap-8 max-lg:hidden">
             {navLinks.map((nav, index) => {
               const isActive = pathname === nav.path;
@@ -85,8 +89,14 @@ export function Nav() {
           </ul>
         </div>
 
-        <div className="w-[200px] flex justify-end">
+        <div className="flex justify-end ml-5">
           <div className="flex items-center justify-between gap-5 max-lg:hidden">
+            <FadeIn>
+              <Button className="z-40 bg-[rgba(255,255,255,0.2)]  max-lg:h-10 w-fit h-12 text-white">
+                <SignInIcon />
+                Sign In
+              </Button>
+            </FadeIn>
             <FadeIn>
               <Button
                 onClick={() => {
