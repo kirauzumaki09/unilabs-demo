@@ -86,7 +86,7 @@ export function BuyPage() {
             <Blur1 className="absolute -z-10 -top-40 left-1/2" />
           </div>
           <FadeInOnScroll>
-            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody font-semibold">
+            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody text-[23px] leading-[1.6] font-anybody font-semibold">
               STEP 01
             </span>
           </FadeInOnScroll>
