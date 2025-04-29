@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Funds() {
   return (
     <section>
-      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5 -mt-25">
+      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5 -mt-5">
         <SlideInOnScroll>
           <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
             Introducing Our
