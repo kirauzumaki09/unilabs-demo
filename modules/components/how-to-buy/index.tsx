@@ -86,12 +86,12 @@ export function BuyPage() {
             <Blur1 className="absolute -z-10 -top-40 left-1/2" />
           </div>
           <FadeInOnScroll>
-            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody text-[23px] leading-[1.6] font-anybody font-semibold">
+            <span className="py-4 px-8 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody text-[23px] leading-[1.5] font-anybody font-semibold">
               STEP 01
             </span>
           </FadeInOnScroll>
 
-          <div className="py-11 w-full px-10 backdrop-blur-[49px] bg-secondary z-40 rounded-[40px] border-t border-t-[#54708F] max-w-[624px] text-center relative">
+          <div className="py-11 w-full px-10 backdrop-blur-[49px] bg-secondary z-40 rounded-[40px] border-t border-t-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
               <p className="tinted text-3xl max-md:text-2xl font-anybody font-semibold">
                 Wallet Setup
