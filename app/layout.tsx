@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Anybody } from "next/font/google";
+import { Inter, Anybody,Figtree } from "next/font/google";
 import "./globals.scss";
 import { Nav } from "@/modules/app/nav";
 import "slick-carousel/slick/slick.css";
@@ -11,6 +11,10 @@ import FooterTwo from "@/modules/app/footer-2";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
@@ -44,7 +48,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${anybody.variable} ${inter.variable} antialiased relative min-h-screen`}
+        className={` ${anybody.variable} ${inter.variable} ${figtree.variable} antialiased relative min-h-screen`}
       >
         <noscript>
           <iframe

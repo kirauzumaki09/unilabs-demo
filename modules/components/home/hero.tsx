@@ -72,29 +72,24 @@ export function Hero() {
       //   "https://buy.unilabs.finance/api/totalSold"
       // );
       // console.log({ totalSoldResponse });
-
       // const totalSoldResponse = await fetch(
       //   "https://buy.unilabs.finance/api/totalSold"
       // );
       // const totalSoldData: TotalSoldResponse = await totalSoldResponse.json();
-
       // const usdtRaisedResponse = await fetch(
       //   "https://buy.unilabs.finance/api/usdtRaised"
       // );
       // const usdtRaisedData: UsdtRaisedResponse =
       //   await usdtRaisedResponse.json();
-
       // const currentPriceResponse = await fetch(
       //   "https://buy.unilabs.finance/api/currentPrice"
       // );
       // const currentPriceData: CurrentPriceResponse =
       //   await currentPriceResponse.json();
-
       // const nextPriceResponse = await fetch(
       //   "https://buy.unilabs.finance/api/nextPrice"
       // );
       // const nextPriceData: NextPriceResponse = await nextPriceResponse.json();
-
       // console.log({
       //   totalSoldResponse,
       //   usdtRaisedResponse,
@@ -107,7 +102,6 @@ export function Hero() {
       //   currentPriceData,
       //   nextPriceData,
       // });
-
       // setStats({
       //   totalSold: totalSoldData.totalSold,
       //   usdtRaised: usdtRaisedData.usdtRaised,
@@ -161,26 +155,27 @@ export function Hero() {
   }, [selectedToken]);
 
   const titleStyles =
-    "font-anybody uppercase text-white font-extrabold text-[3.75rem] max-lg:text-3xl max-w-[80%] max-lg:max-w-full text-center leading-[140%] leading-0";
+    "font-anybody uppercase text-white font-extrabold text-[50px] max-lg:text-3xl max-w-[80%] max-lg:max-w-full text-center leading-[140%] leading-0";
 
   return (
-    <div className="relative min-h-screen w-full mt-14 flex flex-col gap-10 max-lg:px-4">
+    <div className="relative min-h-screen h-full w-full mt-14  flex flex-col gap-10 max-lg:px-4">
       {/* Background Image */}
-      <div className="absolute w-full h-screen -z-10 flex items-center justify-center">
+      <div className="absolute w-full h-full -z-10 flex items-center justify-center">
         <Image
           src={"/webp/hero-bg.webp"}
           alt="hero-bg"
           width={2000}
           height={2000}
           objectFit="cover"
+          className="w-full h-full object-cover object-center"
         />
       </div>
-      <div className="absolute h-screen w-full bg-gradient-to-b from-[#000000] to-[#000000] opacity-50 z-20" />
+      <div className="absolute w-full  h-full  bg-gradient-to-b from-[#000000] to-[#000000] opacity-50 z-20" />
       <div className="absolute inset-0 -z-10">
         <HeroVector />
       </div>
 
-      <div className="flex flex-col items-center z-50">
+      <div className="flex flex-col pt-[32px] items-center z-50">
         <div className="flex flex-col items-center max-lg:px-4">
           <TitleAnim delay={0}>
             <h1 className={titleStyles}>
@@ -188,14 +183,14 @@ export function Hero() {
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody uppercase font-extrabold text-[9.375rem] max-lg:text-6xl max-md:text-5xl tinted leading-32 -my-2.5">
+            <h1 className="font-anybody uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-32 -my-2.5">
               AI-Backed
             </h1>
           </TitleAnim>
           <br />
           <TitleAnim delay={0.4}>
             <h1
-              className={`${titleStyles} -mt-8 text-[2.5rem] max-lg:text-3xl leading-[51px]`}
+              className={`${titleStyles} -mt-8 text-[2.5rem] max-w-[800px] leading-[1]`}
             >
               DeFi Asset Manager With Over $30M AUM
             </h1>
@@ -203,26 +198,26 @@ export function Hero() {
         </div>
         <div className="flex justify-between gap-10 mt-16 max-lg:mt-8 max-lg:flex-col lg:px-3">
           <FadeIn delay={0}>
-            <p className="max-w-[278px] max-lg:max-w-full text-center">
+            <p className="max-w-[318px] max-lg:max-w-full ">
               Unlock cutting-edge crypto opportunities with Unilabs—where
               Enterprise AI meets DeFi innovation. Our system tracks thousands
               of emerging projects, helping you invest early and confidently.
             </p>
           </FadeIn>
           <FadeIn delay={0.4}>
-            <p className="max-w-[278px] max-lg:max-w-full lg:hidden text-center">
+            <p className="max-w-[318px] max-lg:max-w-full lg:hidden ">
               Experience next-level transparency, significant returns, and
               unparalleled access to ventures once reserved for institutional
               players.
             </p>
           </FadeIn>
           <FadeIn delay={0.2} className="flex items-center justify-center">
-            <div className="border-[3px] border-[#00EAFF] rounded-[17px] bg-gradient-to-r from-[#01050C] to-[#3A6E76]/85 backdrop-blur-[90px] lg:px-8 px-4 py-8 md:max-w-[480px] w-full">
+            <div className="border-[1px] border-[#FFFFFF1A] rounded-[17px] bg-[#00060F7A] backdrop-blur-[90px] lg:px-8 px-4 py-8 md:max-w-[562px] w-full">
               <div className="flex flex-col">
-                <p className="font-bold text-[2rem] max-md:text-2xl text-center">
+                <p className="font-bold text-[2rem] max-md:text-2xl text-center text-white font-anybody font-medium text-[32px]">
                   Buy Now
                 </p>
-                <p className="font-bold tinted text-2xl text-center">
+                <p className=" text-center gradText text-[22px] font-semibold">
                   Before Price Rises
                 </p>
 
@@ -241,16 +236,16 @@ export function Hero() {
                   </span>
                 </Progress.Root>
               </div>
-              <div className="mt-8 text-center">
+              <div className="mt-8 text-[18px] text-center font-normal">
                 <p>USDT RAISED: $0</p>
-                <p className="tinted font-bold mt-2">Tokens Sold: 0</p>
+                <p className="gradText font-semibold text-[18px] mt-2">Tokens Sold: 0</p>
               </div>
-              <div className="flex flex-col mt-10 gap-[14px]">
-                <div className="rounded-3xl h-16 text-text flex items-center px-5 border-[2px] border-[#04EEE2] w-full justify-between">
-                  <p className="font-bold max-md:text-xs">
+              <div className="flex flex-col mt-6 gap-[14px]">
+                <div className="rounded-[11px] bg-[#FFFFFF1A] py-[20px] text-text flex backdrop-blur-[90px] items-center px-5 border-[2px] border-[#04EEE2] w-full justify-between">
+                  <p className=" text-[18px] font-figtree font-semibold max-md:text-xs">
                     1 $UNI = ${UNIL_PRICE}
                   </p>
-                  <p className="font-bold text-[#00FFC8] max-md:text-xs">
+                  <p className="font-bold text-[#00FFC8] text-[18px] font-semibold  font-figtree  max-md:text-xs">
                     Next Price: $0.0051
                   </p>
                 </div>
@@ -268,7 +263,7 @@ export function Hero() {
                       className={cn(
                         "rounded-[11px] cursor-pointer gap-2.5 border text-text justify-center transition duration-300 ease-in-out h-12 backdrop-blur-[60px] flex items-center px-[35px] w-full",
                         selectedToken === id
-                          ? "border-secondary-foreground bg-gradient-to-r from-[#00CAFF] to-[#00FFB7] text-black"
+                          ? "bg-gradient-to-r from-[#42BDDD] via-[#42BDDD] to-[#0FEDBE] text-black"
                           : "border-transparent bg-[#42BDDD2E] hover:border-border hover:bg-[#00FF99]/30"
                       )}
                     >
@@ -282,7 +277,7 @@ export function Hero() {
                     <p className="text-center text-[#04EEE2]">
                       {selectedToken} You Pay:
                     </p>
-                    <div className="w-full focus-within:ring-1 focus-within:ring-[#04EEE2] flex items-center px-3 focus-within:ring-offset-2 rounded-xl border-[2px] mt-2.5 h-12">
+                    <div className="w-full  flex items-center px-3 rounded-[11px] border-[2px]  border-[#2D4A57] mt-2.5 h-12">
                       <input
                         type="number"
                         value={amount}
@@ -303,7 +298,7 @@ export function Hero() {
                     <p className="text-center text-[#04EEE2]">
                       $UNIL You Will Receive:
                     </p>
-                    <div className="w-full focus-within:ring-1 focus-within:ring-[#04EEE2] flex items-center px-3 focus-within:ring-offset-2 rounded-xl border-[2px] mt-2.5 h-12">
+                    <div className="w-full  border-[#2D4A57]  flex items-center px-3  rounded-[11px] border-[2px] mt-2.5 h-12">
                       <input
                         type="number"
                         readOnly

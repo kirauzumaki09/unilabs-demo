@@ -14,6 +14,7 @@
     "@studio-freight/react-lenis": "^0.0.47",
     "@svgr/webpack": "^8.1.0",
     "axios": "^1.8.4",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.5.0",
     "lenis": "^1.2.3",
