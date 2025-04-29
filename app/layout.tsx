@@ -41,6 +41,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-MXZKNSZZ');
           `}
         </Script>
+        <meta name="robots" content="noindex, nofollow" />
       </head>
       <body
         className={`${anybody.variable} ${inter.variable} antialiased relative min-h-screen`}
