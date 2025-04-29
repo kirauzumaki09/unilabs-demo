@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Funds() {
   return (
     <section>
-      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5">
+      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5 -mt-5">
         <SlideInOnScroll>
           <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
             Introducing Our
@@ -45,12 +45,12 @@ export default function Funds() {
                   {fund.label}
                 </p>
                 <p className="text-lg max-sm:text-sm">{fund.description}</p>
-                <Link
+                {/* <Link
                   href={fund.path}
                   className="hover:underline text-accent-foreground hover:opacity-90 transition duration-300 ease-in-out"
                 >
                   Learn more
-                </Link>
+                </Link> */}
               </div>
             ))}
           </div>
@@ -69,14 +69,14 @@ const fundsData = [
       "Dive into the rapidly evolving world of Artificial Intelligence. This fund targets projects revolutionizing everything from machine learning platforms to AI-driven dApps, ensuring you’re aligned with innovations shaping tomorrow.",
   },
   {
-    label: "BTC FUND",
+    label: "COMMODITY FUND",
     path: "/commodity-fund",
     icon: <Commodity />,
     description:
       "Explore the bridge between traditional commodities and blockchain. By tokenizing valuable resources and investing in real-world assets, this fund offers a balanced approach—hedging against crypto volatility while benefiting from the speed and liquidity of digital markets.",
   },
   {
-    label: "RWA FUND",
+    label: "TECH FUND",
     path: "/tech-fund",
     icon: <TechFund />,
     description:

@@ -34,7 +34,7 @@ const AccordionItem = React.forwardRef<
     <AccordionPrimitive.Item
       ref={ref}
       className={cn(
-        "rounded-xl border border-transparent px-4 !bg-secondary data-[state=open]:border-border duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90",
+        "rounded-[30px] !bg-[#FFFFFF1A] data-[state=open]:border-border  duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90",
         className
       )}
       {...itemProps}
@@ -70,7 +70,7 @@ const AccordionTrigger = React.forwardRef<
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(
-          "flex flex-1 sm:items-center justify-between text-base max-sm:text-sm !font-inter py-4 border-b border-b-transparent data-[state=open]:border-b-border data-[state=open]:text-[#1CE0C8] transition-all [&[data-state=open]>svg]:rotate-180 [&[data-state=open]>svg]:text-[#1CE0C8]",
+          "flex flex-1 sm:items-center justify-between text-[24px] font-semibold max-sm:text-sm !font-inter  py-[38px] px-[45px]  border-b border-b-transparent data-[state=open]:border-b-border data-[state=open]:text-[#1CE0C8] transition-all [&[data-state=open]>svg]:rotate-180 [&[data-state=open]>svg]:text-[#1CE0C8]",
           className
         )}
         {...triggerProps}
@@ -107,7 +107,7 @@ const AccordionContent = React.forwardRef<
     <AccordionPrimitive.Content
       ref={ref}
       className={cn(
-        "overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down  text-pry-text ",
+        "overflow-hidden font-normal data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down  text-pry-text ",
         className
       )}
       {...contentProps}

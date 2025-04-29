@@ -56,19 +56,19 @@ export default function CoreFeatures() {
         <div className="absolute inset-0">
           <Vector />
         </div>
-        <div className="z-50 pt-16 flex items-center justify-center flex-col">
-          <div className="flex items-center gap-4 px-5 flex-wrap justify-center">
+        <div className="z-50 pt-16 flex items-center justify-center flex-col ">
+          <div className="flex items-center gap-4 px-5 flex-wrap justify-center mb-[100px]">
             <FadeIn>
-              <Title text="Core" sub className="max-lg:text-3xl" />
+              <Title text="Core" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
             </FadeIn>
             <FadeIn>
-              <Title text="unilabs" sub tinted className="max-lg:text-3xl" />
+              <Title text="unilabs" sub tinted className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
             </FadeIn>
             <FadeIn>
-              <Title text="features" sub className="max-lg:text-3xl" />
+              <Title text="features" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
             </FadeIn>
           </div>
-          <div className="flex flex-col gap-16 w-full items-center justify-center px-20 max-lg:px-5 max-lg:mt-10">
+          <div className="flex flex-col max-w-[1530px] mx-auto gap-16 w-full items-center justify-center px-10 max-lg:px-5 max-lg:mt-10 pb-[100px] coreFeatureCardWrap">
             {featuresData.map((feature, index) => (
               <FadeIn
                 key={feature.title}
@@ -77,7 +77,7 @@ export default function CoreFeatures() {
               >
                 <div
                   className={cn(
-                    "bg-white/5 backdrop-blur-3xl lg:w-[70%] w-full max-md:flex-col rounded-[40px] py-16 flex items-center px-10 max-md:px-5 border-t border-t-sec-border gap-20",
+                    "bg-white/5 backdrop-blur-[25px]  lg:w-full w-full max-md:flex-col rounded-[40px] py-16 flex items-center px-10 max-md:px-5 border-t border-t-sec-border gap-20",
                     {
                       "flex-row-reverse": index % 2,
                     }
@@ -85,10 +85,10 @@ export default function CoreFeatures() {
                 >
                   <div className="w-[35%] max-md:w-full">{feature.icon}</div>
                   <div className="flex-1 max-md:text-center max-md:w-full">
-                    <p className="tinted font-semibold text-[26px] max-md:text-2xl">
+                    <p className="tinted font-semibold text-[36px] max-md:text-2xl mb-[20px] coreFeatureTitle">
                       {feature.title}
                     </p>
-                    <p>{feature.description}</p>
+                    <p className="font-normal text-[18px] text-inter leading-[1.8] text-[#F0F0F0]">{feature.description}</p>
                   </div>
                 </div>
               </FadeIn>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Anybody } from "next/font/google";
+import { Inter, Anybody,Figtree } from "next/font/google";
 import "./globals.scss";
 import { Nav } from "@/modules/app/nav";
 import "slick-carousel/slick/slick.css";
@@ -7,9 +7,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { Footer } from "@/modules/app/footer";
 import { SmoothScroll } from "@/modules/app/lenis";
 import Script from "next/script";
+import FooterTwo from "@/modules/app/footer-2";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
@@ -44,7 +49,7 @@ export default function RootLayout({
         <meta name="robots" content="noindex, nofollow" />
       </head>
       <body
-        className={`${anybody.variable} ${inter.variable} antialiased relative min-h-screen`}
+        className={` ${anybody.variable} ${inter.variable} ${figtree.variable} antialiased relative min-h-screen`}
       >
         <noscript>
           <iframe
@@ -61,6 +66,7 @@ export default function RootLayout({
 
           {children}
           <Footer />
+          {/* <FooterTwo /> */}
           <div className="bg-gradient-to-t from-black to-transparent w-full h-[115px] fixed -bottom-2 z-[1000]"/>
         </SmoothScroll>
       </body>
