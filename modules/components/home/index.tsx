@@ -8,6 +8,7 @@ import { Tiers } from "./tiers";
 import { Tokenomics } from "./tokenomics";
 import { Roadmap } from "./roadmap";
 import { FAQ } from "../../app/faq/faq";
+import CommunityReviews from "./community";
 
 export function HomePage() {
   return (
@@ -18,6 +19,7 @@ export function HomePage() {
       <Application />
       <Funds />
       <Tiers />
+      <CommunityReviews/>
       <Tokenomics />
       <Roadmap />
       <FAQ data={faqData} />
