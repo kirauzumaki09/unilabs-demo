@@ -15,7 +15,7 @@ export function Tokenomics() {
           <Title
             text="Tokenomics"
             tinted
-            className="max-lg:text-6xl max-sm:text-4xl"
+            className="max-lg:text-[80px] max-sm:text-4xl"
           />
         </SlideInOnScroll>
         <FadeInOnScroll
