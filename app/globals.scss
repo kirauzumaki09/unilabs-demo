@@ -17,14 +17,14 @@
   --color-accent: #42bddd;
   --color-secondary: #ffffff1a;
   --color-tertiary: #000710;
-  --color-accent-foreground: #2EC5ED;
-  --color-primary-foreground: #1DDFC8;
-  --color-primary: #010D14;
-  --color-sec-text: #F0F0F0;
-  --color-sec-border: #54708F80;
-  --color-new-tertiary: #FFFFFF21;
+  --color-accent-foreground: #2ec5ed;
+  --color-primary-foreground: #1ddfc8;
+  --color-primary: #010d14;
+  --color-sec-text: #f0f0f0;
+  --color-sec-border: #54708f80;
+  --color-new-tertiary: #ffffff21;
   --radius-xxl: 40px;
-  --color-secondary-foreground: #0FEDBE;
+  --color-secondary-foreground: #0fedbe;
   --color-muted-foreground: #8c8d8f;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-accordion-down: accordion-down 0.2s ease-out;
@@ -46,10 +46,12 @@
     }
   }
 }
+body {
+  overflow-x: hidden;
+}
 
 section {
   @apply py-[9.375rem] max-lg:py-16 max-lg:pb-0;
-
 }
 @layer utilities {
   .bg-gradient-custom {
@@ -123,7 +125,7 @@ body {
 .title {
   @apply max-lg:text-4xl text-[3.75rem] max-sm:text-3xl font-extrabold;
 }
-.slick-slider{
+.slick-slider {
   max-height: 400px;
 }
 .slick-next::before,
@@ -138,11 +140,11 @@ body {
   width: 100%;
 }
 .slick-arrow.slick-next:before {
-  content: '';
+  content: "";
 }
 
 .slick-arrow.slick-prev:before {
-  content: '';
+  content: "";
 }
 
 // @media screen and (min-width: 1024px) {
@@ -200,4 +202,76 @@ text-fill-color: transparent;
 
 
 
+}
+.coreFeatureCardWrap {
+  position: relative;
+  &::before {
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+    z-index: -1;
+    width: 480px;
+    height: 467px;
+    background: rgb(15, 235, 187, 0.45);
+    filter: blur(229.167px);
+    content: "";
+  }
+  &::after {
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+    z-index: -1;
+    width: 480px;
+    height: 467px;
+    background: rgb(32, 187, 228, 0.85);
+    filter: blur(305px);
+    content: "";
+  }
+}
+.coreFeatureTitle {
+  text-transform: capitalize;
+  background: linear-gradient(91.37deg, #2dc5ec 30.64%, #1be1c5 98.4%), #0fedbe;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.roadmapFilterOne {
+  &::before {
+    position: absolute;
+    content: "";
+    height: 467px;
+    width: 60%;
+    background: rgb(15, 237, 190, 0.75);
+    filter: blur(250px);
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+}
+.roadmapFilterTwo {
+  &::before {
+    position: absolute;
+    content: "";
+    height: 467px;
+    width: 40%;
+    background: rgb(15, 237, 190, 0.75);
+    filter: blur(250px);
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+  }
+}
+.roadmapFilterThree {
+  &::before {
+    position: absolute;
+    content: "";
+    height: 467px;
+    width: 40%;
+    background: rgb(32, 187, 228,0.85);
+    filter: blur(250px);
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+  }
 }
