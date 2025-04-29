@@ -60,7 +60,7 @@ export function RoadmapPage() {
             src="/webp/3d_abstract_space_background_with_wireframe_landscape_1_1x.webp"
             alt="Background effect"
             fill
-            className="object-cover absolute inset-0"
+            className="absolute inset-0"
             priority
           />
         </FadeIn>
@@ -71,27 +71,27 @@ export function RoadmapPage() {
         <FadeIn delay={0.6} className="w-full">
           <Vector className="absolute inset-0 -z-30" />
         </FadeIn>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 mb-[40px]">
           <TitleAnim delay={0.2}>
-            <Title text="Unilabs" sub tinted className="max-md:text-3xl" />
+            <Title text="Unilabs" sub tinted className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <Title text="Roadmap" sub className="max-md:text-3xl" />
+            <Title text="Roadmap" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
           </TitleAnim>
         </div>
 
         <div
           ref={containerRef}
-          className="relative w-full flex items-center justify-center flex-col overflow-hidden"
+          className="relative w-full flex items-center justify-center flex-col "
         >
-          <div className="absolute left-[25%] w-[60%] -top-20">
-            <RoadmapBlur2 />
+          <div className="absolute left-[25%] w-[50%] -top-0 roadmapFilterOne ">
+            {/* <RoadmapBlur2 /> */}
           </div>
-          <div className="absolute left-0 -bottom-[5%] w-[40%]">
-            <RoadmapBlur1 />
+          <div className="absolute left-0 -bottom-[-10%] w-[40%] roadmapFilterTwo ">
+            {/* <RoadmapBlur1 /> */}
           </div>
-          <div className="absolute -right-40 -bottom-[5%] w-[40%]">
-            <RoadmapBlur3 />
+          <div className="absolute -right-0 -bottom-[-10%] w-[40%] roadmapFilterThree">
+            {/* <RoadmapBlur3 /> */}
           </div>
           <div
             style={{ top: itemRefs.current[0]?.current?.offsetTop ?? 0 }}
@@ -168,7 +168,7 @@ const RoadmapItem = React.forwardRef<
           })}
         >
           <div className={cn("font-anybody max-w-[260px] ", {})}>
-            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody font-semibold">
+            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-[23px] text-primary rounded-xl font-anybody font-semibold">
               {roadmap.label}
             </span>
             <div className="mt-5">
@@ -378,7 +378,7 @@ function RoadmapSVG({
 
 const roadmapData = [
   {
-    label: "step 01",
+    label: "Phase 01",
     title: "Genesis",
     date: "Nov 2024 - Mar 2025",
     sub: "Laying the Foundation for Innovation",
@@ -406,7 +406,7 @@ const roadmapData = [
     ],
   },
   {
-    label: "step 02",
+    label: "Phase 02",
     title: "Ascent",
     date: "Apr 2025 - Jul 2025",
     sub: "Scaling the Ecosystem",
@@ -434,7 +434,7 @@ const roadmapData = [
     ],
   },
   {
-    label: "step 03",
+    label: "Phase 03",
     title: "Apex",
     date: "Aug 2025 - Nov 2025",
     sub: "Driving Innovation and Adoption",
