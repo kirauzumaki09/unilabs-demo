@@ -10,6 +10,9 @@ import { SlideInOnScroll } from "@/modules/app/slide-in-on-scroll";
 import { Title } from "@/modules/app/title";
 import { AccordionContent } from "@radix-ui/react-accordion";
 import React from "react";
+import Blur1 from "@/assets/footer-blur.svg";
+import Blur2 from "@/assets/footer-blur2.svg";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/tabs/tab";
 
 type FAQSectionProps = {
   data: {
@@ -35,38 +38,128 @@ export function FAQ({ data }: FAQSectionProps) {
           className="sm:!leading-[60px] max-lg:text-6xl max-sm:text-4xl"
         />
       </SlideInOnScroll>
-      <div className="flex items-center justify-center w-full flex-col gap-2 mt-[50px] z-[1000]">
-        <div className="w-full max-w-[800px] flex flex-col gap-2">
-          {data.map((faq, index) => (
-            <FadeInOnScroll key={faq.title} delay={index * 0.4}>
-              <Accordion type="single" collapsible>
-                <AccordionItem value={`item-${index}`} className="w-full z-50">
-                  <AccordionTrigger>{faq.title}</AccordionTrigger>
-                  <AccordionContent>
-                    <div className="py-3">
-                      <p>{faq.desc}</p>
-                      {faq.list && (
-                        <ul className="mt-3">
-                          {faq.list.map((item, i) => (
-                            <li key={i}>
-                              <p className="font-semibold text-[#1CE0C8] pb-3">
-                                {item.pre}{" "}
-                                <span className="!text-[#DBDBDB] font-normal">
-                                  {item.text}
-                                </span>
-                              </p>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </FadeInOnScroll>
-          ))}
-        </div>
+      <div className="flex items-center justify-center w-full flex-col gap-2 mt-[50px] z-[1000] max-w-[1236px] mx-auto">
+        <Tabs defaultValue="general" className="w-full justify-center flex flex-col">
+          <TabsList className="mx-auto">
+            <TabsTrigger value="general"><p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">General</p></TabsTrigger>
+            <TabsTrigger value="presale"><p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">Presale</p></TabsTrigger>
+            <TabsTrigger value="support"><p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">Support</p></TabsTrigger>
+          </TabsList>
+          <TabsContent value="general">
+            <div className="w-full  flex flex-col gap-2">
+              {data.map((faq, index) => (
+                <FadeInOnScroll key={faq.title} delay={index * 0.4}>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem
+                      value={`item-${index}`}
+                      className="w-full z-50"
+                    >
+                      <AccordionTrigger>{faq.title}</AccordionTrigger>
+                      <AccordionContent>
+                        <div className="pt-[35px] pb-[40px] px-[45px] text-[#DBDBDB] font-inter">
+                          <p className="!font-normal text-[18px] ">
+                            {faq.desc}
+                          </p>
+                          {faq.list && (
+                            <ul className="mt-3">
+                              {faq.list.map((item, i) => (
+                                <li key={i}>
+                                  <p className="font-semibold text-[#1CE0C8] pb-3">
+                                    {item.pre}{" "}
+                                    <span className="!text-[#DBDBDB] font-normal">
+                                      {item.text}
+                                    </span>
+                                  </p>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </FadeInOnScroll>
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value="presale">
+            <div className="w-full max-w-[1236px] flex flex-col gap-2">
+              {data.map((faq, index) => (
+                <FadeInOnScroll key={faq.title} delay={index * 0.4}>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem
+                      value={`item-${index}`}
+                      className="w-full z-50"
+                    >
+                      <AccordionTrigger>{faq.title}</AccordionTrigger>
+                      <AccordionContent>
+                        <div className="pt-[35px] pb-[40px] px-[45px] text-[#DBDBDB] font-inter">
+                          <p className="!font-normal text-[18px] ">
+                            {faq.desc}
+                          </p>
+                          {faq.list && (
+                            <ul className="mt-3">
+                              {faq.list.map((item, i) => (
+                                <li key={i}>
+                                  <p className="font-semibold text-[#1CE0C8] pb-3">
+                                    {item.pre}{" "}
+                                    <span className="!text-[#DBDBDB] font-normal">
+                                      {item.text}
+                                    </span>
+                                  </p>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </FadeInOnScroll>
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value="support">
+            <div className="w-full max-w-[1236px] flex flex-col gap-2">
+              {data.map((faq, index) => (
+                <FadeInOnScroll key={faq.title} delay={index * 0.4}>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem
+                      value={`item-${index}`}
+                      className="w-full z-50"
+                    >
+                      <AccordionTrigger>{faq.title}</AccordionTrigger>
+                      <AccordionContent>
+                        <div className="pt-[35px] pb-[40px] px-[45px] text-[#DBDBDB] font-inter">
+                          <p className="!font-normal text-[18px] ">
+                            {faq.desc}
+                          </p>
+                          {faq.list && (
+                            <ul className="mt-3">
+                              {faq.list.map((item, i) => (
+                                <li key={i}>
+                                  <p className="font-semibold text-[#1CE0C8] pb-3">
+                                    {item.pre}{" "}
+                                    <span className="!text-[#DBDBDB] font-normal">
+                                      {item.text}
+                                    </span>
+                                  </p>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </FadeInOnScroll>
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
+      <Blur1 className="absolute right-0 -bottom-[70%]   z-30 pointer-events-none" />
+      <Blur2 className="absolute left-0 -bottom-[70%]  z-30 pointer-events-none" />
     </Section>
   );
 }

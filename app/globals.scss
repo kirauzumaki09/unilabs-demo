@@ -275,3 +275,9 @@ text-fill-color: transparent;
     transform: translateX(-50%);
   }
 }
+
+[data-state="active"]{
+  &.innerShadow {
+    box-shadow: inset 0px 4px 19px #0FEDBE;
+  }
+}

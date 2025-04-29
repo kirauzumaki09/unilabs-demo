@@ -7,8 +7,7 @@ import Logo from "@/assets/logo.svg";
 import Link from "next/link";
 import Vector from "@/assets/footer-vector.svg";
 import UNILABS from "@/assets/Unilabs.svg";
-import Blur1 from "@/assets/footer-blur.svg";
-import Blur2 from "@/assets/footer-blur2.svg";
+
 import { SlideInOnScroll } from "../slide-in-on-scroll";
 import { FadeInOnScroll } from "../fadein-scroll";
 import X from "@/assets/x.svg";
@@ -144,8 +143,7 @@ export function Footer() {
       </div>
 
       {/* Left & Right Blurs */}
-      <Blur1 className="absolute right-0 top-1/2 -translate-y-1/2 z-30 pointer-events-none" />
-      <Blur2 className="absolute left-0 top-1/2 -translate-y-1/2 z-30 pointer-events-none" />
+
     </Section>
   );
 }

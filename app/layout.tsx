@@ -64,8 +64,8 @@ export default function RootLayout({
           </div>
 
           {children}
-          {/* <Footer /> */}
-          <FooterTwo />
+          <Footer />
+          {/* <FooterTwo /> */}
           <div className="bg-gradient-to-t from-black to-transparent w-full h-[115px] fixed -bottom-2 z-[1000]"/>
         </SmoothScroll>
       </body>
