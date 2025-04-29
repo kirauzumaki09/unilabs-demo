@@ -276,6 +276,35 @@ text-fill-color: transparent;
   }
 }
 
+
+.upperHeadingYoutube{
+  position: relative;
+  &::before{
+right: 20%;
+top: 5%;
+position: absolute;
+width: 380px;
+height: 250px;
+background: rgba(15, 237, 190, 0.8);
+opacity: 0.75;
+filter: blur(229.167px);
+pointer-events: none;
+z-index: -1;
+content: "";
+  }
+  button{
+    cursor: pointer;
+background: #061624;
+border: 1px solid #282F38;
+&:hover{
+  opacity: 0.5;
+}
+  }
+}
+.globearrwoLeftMidlle{
+  left: -40px !important;
+}
+
 [data-state="active"]{
   &.innerShadow {
     box-shadow: inset 0px 4px 19px #0FEDBE;
