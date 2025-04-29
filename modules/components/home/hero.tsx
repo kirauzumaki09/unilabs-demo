@@ -180,8 +180,8 @@ export function Hero() {
         <HeroVector />
       </div>
 
-      <div className="flex flex-col items-center z-50">
-        <div className="flex flex-col items-center max-lg:px-4">
+      <div className="flex flex-col items-center z-50 ">
+        <div className="flex flex-col items-center max-lg:px-4 !max-w-[890px] mx-auto">
           <TitleAnim delay={0}>
             <h1 className={titleStyles}>
               The World&apos;s first <br />
@@ -195,7 +195,7 @@ export function Hero() {
           <br />
           <TitleAnim delay={0.4}>
             <h1
-              className={`${titleStyles} -mt-8 text-[2.5rem] max-lg:text-3xl leading-[51px]`}
+              className={`${titleStyles} -mt-8 text-[2.5rem] max-lg:text-3xl leading-[51px] `}
             >
               DeFi Asset Manager With Over $30M AUM
             </h1>
@@ -203,14 +203,14 @@ export function Hero() {
         </div>
         <div className="flex justify-between gap-10 mt-16 max-lg:mt-8 max-lg:flex-col lg:px-3">
           <FadeIn delay={0}>
-            <p className="max-w-[278px] max-lg:max-w-full text-center">
+            <p className="max-w-[278px] max-lg:max-w-full text-left">
               Unlock cutting-edge crypto opportunities with Unilabs—where
               Enterprise AI meets DeFi innovation. Our system tracks thousands
               of emerging projects, helping you invest early and confidently.
             </p>
           </FadeIn>
           <FadeIn delay={0.4}>
-            <p className="max-w-[278px] max-lg:max-w-full lg:hidden text-center">
+            <p className="max-w-[278px] max-lg:max-w-full lg:hidden !text-left">
               Experience next-level transparency, significant returns, and
               unparalleled access to ventures once reserved for institutional
               players.
@@ -334,7 +334,7 @@ export function Hero() {
             </div>
           </FadeIn>
           <FadeIn delay={0.4}>
-            <p className="max-w-[278px] max-lg:max-w-full max-lg:hidden text-center">
+            <p className="max-w-[278px] max-lg:max-w-full max-lg:hidden text-left">
               Experience next-level transparency, significant returns, and
               unparalleled access to ventures once reserved for institutional
               players.

@@ -124,7 +124,7 @@ export function Tiers() {
 
   return (
     <section suppressHydrationWarning>
-      <div className="max-w-[1529px] mx-auto flex flex-col w-full px-14 max-lg:px-5">
+      <div className="max-w-[1529px] mx-auto flex flex-col w-full px-14 max-lg:px-5 tiers">
         <div className="flex justify-between w-full items-start max-lg:flex-col">
           <SlideInOnScroll>
             <h4 className="uppercase font-extrabold font-anybody text-[4.5625rem] max-lg:text-5xl max-sm:text-4xl sm:leading-[90px] text-left text-white max-sm:mb-8">
