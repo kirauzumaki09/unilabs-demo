@@ -78,7 +78,7 @@ export function Nav() {
                   <li className="p-2 flex items-center justify-center">
                     <Link
                       href={nav.path}
-                      className={cn({ "text-[#0FEDBE]": isActive })}
+                      className={cn({ "text-[#0FEDBE] text-[16px]": isActive })}
                     >
                       {nav.name}
                     </Link>

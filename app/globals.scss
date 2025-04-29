@@ -9,6 +9,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter);
+  --font-figree: var(--font-figtree);
   --font-anybody: var(--font-anybody);
   --color-border: #ffffff1a;
   --color-text: #e6e6ea;
@@ -184,4 +185,19 @@ body {
     grid-column: 3;
     grid-row: 1;
   }
+}
+
+.gradText{
+
+letter-spacing: -0.03em;
+text-transform: capitalize;
+
+background: linear-gradient(91.37deg, #2DC5EC 30.64%, #1BE1C5 98.4%), #FFFFFF;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
 }
