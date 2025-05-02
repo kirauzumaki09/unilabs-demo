@@ -32,7 +32,7 @@ export default function Funds() {
           </FadeInOnScroll>
         </div>
         <FadeInOnScroll>
-          <div className="mt-12 grid grid-cols-4 max-[1163px]:grid-cols-2 max-md:grid-cols-1 gap-[30px] max-lg:justify-items-center">
+          <div className="mt-12 grid grid-cols-4 max-xl:grid-cols-2 max-md:grid-cols-1 gap-[30px] max-lg:justify-items-center">
             {fundsData.map((fund) => (
               <div
                 key={fund.label}

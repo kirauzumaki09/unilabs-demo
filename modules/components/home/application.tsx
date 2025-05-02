@@ -9,7 +9,7 @@ export function Application() {
   return (
     <div className="appRangeBG section">
 
-    <section className="min-h-screen pb-[0px] !pb-[0px]">
+    <div className=" pb-[0px] !pb-[0px]">
       <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5">
         <div className="mb-[60px]">
           <SlideInOnScroll>
@@ -65,7 +65,7 @@ export function Application() {
           </FadeInOnScroll>
         </div>
       </div>
-    </section>
+    </div>
     </div>
   );
 }
