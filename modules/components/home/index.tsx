@@ -9,6 +9,7 @@ import { Tokenomics } from "./tokenomics";
 import { Roadmap } from "./roadmap";
 import { FAQ } from "../../app/faq/faq";
 import CommunityReviews from "./community";
+import FundUpdates from "./fund-updates";
 
 export function HomePage() {
   return (
@@ -22,6 +23,7 @@ export function HomePage() {
       <CommunityReviews/>
       <Tokenomics />
       <Roadmap />
+      <FundUpdates/>
       <FAQ data={faqData} />
     </>
   );
