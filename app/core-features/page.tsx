@@ -62,7 +62,7 @@ export default function CoreFeatures() {
               <Title text="Core" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
             </FadeIn>
             <FadeIn>
-              <Title text="unilabs" sub gradText className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
+              <Title text="unilabs" sub tinted className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
             </FadeIn>
             <FadeIn>
               <Title text="features" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />

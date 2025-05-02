@@ -73,7 +73,7 @@ export function RoadmapPage() {
         </FadeIn>
         <div className="flex items-center gap-4 mb-[40px]">
           <TitleAnim delay={0.2}>
-            <Title text="Unilabs" sub gradText className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
+            <Title text="Unilabs" sub tinted className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
           </TitleAnim>
           <TitleAnim delay={0.2}>
             <Title text="Roadmap" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
