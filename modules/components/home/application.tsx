@@ -7,25 +7,27 @@ import React from "react";
 
 export function Application() {
   return (
+    <div className="appRangeBG section">
+
     <section className="min-h-screen pb-[0px] !pb-[0px]">
-      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5">
-        <>
+      <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5">
+        <div className="mb-[60px]">
           <SlideInOnScroll>
-            <h3 className="text-[9.375rem] max-lg:text-6xl max-sm:text-4xl font-extrabold font-anybody uppercase tinted lg:leading-[120px]">
+            <h3 className="text-[80px] max-lg:text-6xl max-sm:text-4xl text-center mr-50  font-extrabold font-anybody uppercase gradText leading-[1]">
               The UNILABS
             </h3>
           </SlideInOnScroll>
           <SlideInOnScroll delay={0.2}>
-            <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-6xl max-sm:text-3xl text-right max-lg:text-left text-white">
+            <h4 className="uppercase font-extrabold font-anybody   text-center text-[50px] max-lg:text-[40px] max-sm:text-3xl  max-lg:text-left text-white leading-[1]">
               Application Range
             </h4>
           </SlideInOnScroll>
           <SlideInOnScroll delay={0.4}>
-            <h4 className="uppercase font-extrabold font-anybody text-7xl text-center max-lg:text-6xl max-sm:text-3xl max-lg:text-left text-white releative z-10">
+            <h4 className="uppercase font-extrabold font-anybody text-center text-[50px] mr-50 max-lg:text-[40px] max-sm:text-3xl max-lg:text-left text-white releative z-10 leading-[1]">
               Our Core Offerings
             </h4>
           </SlideInOnScroll>
-        </>
+        </div>
         <div className="flex items-center justify-around max-lg:flex-col max-lg:mt-12 max-lg:gap-16 gap-8  relative z-20">
           <FadeInOnScroll>
             <p className="text-5xl font-anybody text-right max-w-[422px] max-lg:max-w-full max-lg:text-3xl text-white max-lg:text-center mb-4">
@@ -64,5 +66,6 @@ export function Application() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

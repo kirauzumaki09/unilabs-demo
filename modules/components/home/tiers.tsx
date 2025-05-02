@@ -123,28 +123,30 @@ export function Tiers() {
   };
 
   return (
-    <section suppressHydrationWarning>
-      <div className="max-w-[1529px] mx-auto flex flex-col w-full px-14 max-lg:px-5 tiersSliderWrap">
+  
+
+    <div suppressHydrationWarning className="tiersBG section">
+      <div className="container mx-auto flex flex-col w-full px-14 max-lg:px-5 tiersSliderWrap">
         <div className="flex justify-between w-full items-start max-lg:flex-col">
           <SlideInOnScroll>
-            <h4 className="uppercase font-extrabold font-anybody text-[4.5625rem] max-lg:text-5xl max-sm:text-4xl sm:leading-[90px] text-left text-white max-sm:mb-8">
+            <h2 className="uppercase font-extrabold font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-sm:mb-8">
               $UNIL - The <br /> Core of the <br /> Unilabs <br />
               <SlideInOnScroll>
-                <span className="tinted">Ecosystem</span>
+                <span className="gradText">Ecosystem</span>
               </SlideInOnScroll>
-            </h4>
+            </h2>
           </SlideInOnScroll>
 
           <div className="w-1/2 max-lg:w-full">
             <FadeInOnScroll>
-              <h5 className="font-medium text-muted text-[2rem] max-lg:text-lg">
+              <h5 className="font-medium text-white text-[24px] max-lg:text-lg">
                 To accommodate diverse investor profiles and strategies, Unilabs
                 presents four distinct fund options—each leveraging top-tier
                 expertise and AI-driven insights.
               </h5>
             </FadeInOnScroll>
             <SlideInOnScroll delay={0.2}>
-              <p className="text-lg font-extralight mt-10">
+              <p className="text-[18px] font-extralight mt-8 text-[#DBDBDB]">
                 By holding $UNIL and advancing through these tiers, you
                 don&apos;t just invest—you actively shape the future of our
                 AI-powered DeFi ecosystem while earning consistent returns along
@@ -157,7 +159,7 @@ export function Tiers() {
         {/* Slider Section */}
         <div className="lg:mt-[122px] mt-8 flex flex-row gap-8">
           <div className="md:min-w-[35%] mb-6 md:mb-0">
-            <p className="tinted !text-[36px] md:text-4xl sm:text-3xl font-semibold font-anybody">
+            <p className="gradText !text-[28px] max-w-[400px] md:text-4xl sm:text-3xl font-semibold font-anybody">
               30% Fee Redistribution & Tiered Rewards
             </p>
             <p className="mt-5 text-lg font-normal w-[85%] max-md:w-full">
@@ -175,7 +177,7 @@ export function Tiers() {
                     <div key={tier.tier} className="px-3">
                       <div className="w-[300px] bg-secondary h-[350px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-8">
                         <div className="relative w-full min-w-[250px] h-[72px] flex items-center justify-center">
-                          <span className="tinted text-2xl font-bold flex items-center justify-center w-full h-[60px] rounded-full bg-[#202832] z-30 absolute top-0">
+                          <span className="gradText text-2xl font-bold flex items-center justify-center w-full h-[60px] rounded-full bg-[#202832] z-30 absolute top-0">
                             {tier.tier}
                           </span>
                           <Rectangle className="absolute inset-0 z-0" />
@@ -193,7 +195,8 @@ export function Tiers() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    
   );
 }
 

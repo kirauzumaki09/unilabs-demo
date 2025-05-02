@@ -35,7 +35,7 @@ export function How() {
                 key={data.title}
                 className="bg-white/10 relative overflow-hidden backdrop-blur-[50px] rounded-[50px] max-w-[550px] w-full p-11 border-b border-b-black/5 border-t border-t-sec-border min-h-[380px]"
               >
-                <p className="tinted text-lg font-semibold font-anybody pb-8 w-[55%]">
+                <p className="gradText text-lg font-semibold font-anybody pb-8 w-[55%]">
                   {data.title}
                 </p>
                 {data.sub && <p className="pb-5">{data.sub}</p>}

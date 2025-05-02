@@ -45,7 +45,7 @@ export function Hero() {
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody uppercase font-extrabold text-[9.375rem] max-lg:text-6xl max-md:text-4xl tinted leading-32 -my-2.5">
+            <h1 className="font-anybody uppercase font-extrabold text-[9.375rem] max-lg:text-6xl max-md:text-4xl gradText leading-32 -my-2.5">
               AI-Backed
             </h1>
           </TitleAnim>
@@ -82,13 +82,13 @@ export function Hero() {
                 <div className="mt-5 flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-5">
                   <span className="flex flex-col gap-1">
                     <p className="text-base">Token Sold</p>
-                    <p className="tinted text-[1.375rem] font-semibold">
+                    <p className="gradText text-[1.375rem] font-semibold">
                       15762004260
                     </p>
                   </span>
                   <span className="flex flex-col gap-1">
                     <p className="text-base">Current Token Price</p>
-                    <p className="tinted text-[1.375rem] font-semibold">$0.9</p>
+                    <p className="gradText text-[1.375rem] font-semibold">$0.9</p>
                   </span>
                 </div>
               </div>

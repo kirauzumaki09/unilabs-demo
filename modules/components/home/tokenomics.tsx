@@ -9,13 +9,13 @@ import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 
 export function Tokenomics() {
   return (
-    <section className="relative w-full">
-      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5 items-center justify-center relative">
+    <div className="relative section tokenomicsBg">
+      <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 items-center justify-center relative">
         <SlideInOnScroll>
           <Title
             text="Tokenomics"
             tinted
-            className="max-lg:text-[80px] max-sm:text-4xl"
+            className="!text-[80px] max-sm:text-4xl"
           />
         </SlideInOnScroll>
         <FadeInOnScroll
@@ -23,7 +23,7 @@ export function Tokenomics() {
           className="flex items-center justify-center w-full"
         >
           {/* Wrapper to ensure proper positioning */}
-          <div className="relative">
+          <div className="relative z-[99]">
             <Image
               src={"/webp/tok.webp"}
               alt="tokenomics"
@@ -106,10 +106,9 @@ export function Tokenomics() {
 
     
       </div>
-      <Blur1 className="absolute top-0 z-30 " />
-      <Blur2 className="absolute right-0 top-1" />
-      {/* <div className="h-[80%] bg-gradient-to-t from-[#00070F] to-transparent absolute w-full top-[65%] z-20" /> */}
-    </section>
+
+
+    </div>
   );
 }
 

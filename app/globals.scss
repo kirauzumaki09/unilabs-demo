@@ -51,8 +51,8 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  @apply py-[9.375rem] max-lg:py-16 max-lg:pb-0;
+.section {
+  @apply py-[120px] max-lg:py-[80px] max-lg:pb-0;
 }
 @layer utilities {
   .bg-gradient-custom {
@@ -127,12 +127,15 @@ body {
   @apply max-lg:text-4xl text-[3.75rem] max-sm:text-3xl font-extrabold;
 }
 .slick-slider {
-  max-height: 400px;
+
 }
 .slick-next::before,
 .slick-prev::before {
   color: #a494f5 !important;
   font-size: 28px !important;
+}
+.reviewSlider{
+
 }
 
 .slider-arrow {
@@ -306,8 +309,55 @@ border: 1px solid #282F38;
   left: -40px !important;
 }
 
-[data-state="active"]{
-  &.innerShadow {
+[data-state="active"].innerShadow 
+{
     box-shadow: inset 0px 4px 19px #0FEDBE;
+  
+}
+
+.earlyBg{
+  background: url('../assets/earlyBg.png') no-repeat; 
+  background-size: cover;
+}
+
+.appRangeBG{
+  background: url('../assets/appRangeBG.png') no-repeat; 
+  background-size: cover;
+}
+.tiersBG{
+  background: url('../assets/tiersBG.png') no-repeat; 
+  background-size: cover;
+}
+.reviewBg{
+  background: url('../assets/reviewBg.png') no-repeat; 
+  background-size: cover;
+}
+.tokenomicsBg{
+  background: url('../assets/tokenomicsBg.png') no-repeat; 
+  background-size: cover;
+}
+.roadmapBg{
+  background: url('../assets/roadmapBg.png') no-repeat; 
+  background-size: cover;
+}
+.faqBG{
+  background: url('../assets/faqBG.png') no-repeat; 
+  background-size: cover;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+
+
+    position: absolute;
+    width: 480px;
+    height: 467px;
+    left: 30%;
+    top: 50%;
+    
+    background: #0FEDBE;
+    opacity: 0.75;
+    filter: blur(339.165px);
+    
   }
 }

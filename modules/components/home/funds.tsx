@@ -10,8 +10,8 @@ import Link from "next/link";
 
 export default function Funds() {
   return (
-    <section>
-      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5 -mt-5">
+    <div className="section">
+      <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 -mt-5">
         <SlideInOnScroll>
           <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
             Introducing Our
@@ -36,27 +36,27 @@ export default function Funds() {
             {fundsData.map((fund) => (
               <div
                 key={fund.label}
-                className="bg-secondary backdrop-blur-3xl rounded-[30px] px-[38px] py-[55px] max-w-[630px] flex flex-col gap-[30px]"
+                className="bg-secondary backdrop-blur-3xl rounded-[30px] px-[38px] py-[55px] max-w-[630px] flex flex-col gap-[20px]"
               >
                 <div className="size-[100px] max-sm:size-[60px]">
                   {fund.icon}
                 </div>
-                <p className="font-anybody font-semibold tinted text-4xl max-sm:text-3xl">
+                <p className="font-anybody font-semibold gradText text-[36px] max-sm:text-3xl">
                   {fund.label}
                 </p>
-                <p className="text-lg max-sm:text-sm">{fund.description}</p>
-                {/* <Link
+                <p className="text-[18px] leading-[2] font-normal max-sm:text-sm">{fund.description}</p>
+                <Link
                   href={fund.path}
                   className="hover:underline text-accent-foreground hover:opacity-90 transition duration-300 ease-in-out"
                 >
                   Learn more
-                </Link> */}
+                </Link> 
               </div>
             ))}
           </div>
         </FadeInOnScroll>
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -64,27 +64,31 @@ const fundsData = [
   {
     label: "AI FUND",
     icon: <AIFund />,
-    path: "/ai-fund",
+    // path: "/ai-fund",
+    path: "/",
     description:
       "Dive into the rapidly evolving world of Artificial Intelligence. This fund targets projects revolutionizing everything from machine learning platforms to AI-driven dApps, ensuring you’re aligned with innovations shaping tomorrow.",
   },
   {
-    label: "COMMODITY FUND",
-    path: "/commodity-fund",
+    label: "BTC FUND",
+    // path: "/commodity-fund",
+    path: "/",
     icon: <Commodity />,
     description:
       "Explore the bridge between traditional commodities and blockchain. By tokenizing valuable resources and investing in real-world assets, this fund offers a balanced approach—hedging against crypto volatility while benefiting from the speed and liquidity of digital markets.",
   },
   {
-    label: "TECH FUND",
-    path: "/tech-fund",
+    label: "RWA FUND",
+    // path: "/tech-fund",
+    path: "/",
     icon: <TechFund />,
     description:
       "Seize the most transformative web3, DeFi, and blockchain technologies. From layer-1 protocols to decentralized finance solutions, the Tech Fund positions you to capture the upward potential of groundbreaking tech as it reshapes global finance.",
   },
   {
     label: "MINING FUND",
-    path: "/mining-fund",
+    // path: "/mining-fund",
+    path: "/",
     icon: <Mining />,
     description:
       "HGround your portfolio in a time-tested revenue source: cryptocurrency mining. Utilizing robust facilities and efficient mining hardware, this fund ensures reliable yields that help stabilize returns across market cycles.",

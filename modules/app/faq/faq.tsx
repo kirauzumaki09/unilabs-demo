@@ -23,24 +23,24 @@ type FAQSectionProps = {
 };
 export function FAQ({ data }: FAQSectionProps) {
   return (
-    <Section>
+    <div className="section faqBG">
       <SlideInOnScroll>
         <Title
           text="Frequently"
           sub
-          className="max-lg:text-6xl max-sm:text-[40px]"
+          className=" !text-[80px] max-sm:text-[40px]"
         />
       </SlideInOnScroll>
       <SlideInOnScroll delay={0.2}>
         <Title
           text="Asked Questions"
           sub
-          className="sm:!leading-[60px] max-lg:text-6xl max-sm:text-4xl"
+          className="sm:!leading-[1] !text-[80px] max-lg:text-6xl max-sm:text-4xl"
         />
       </SlideInOnScroll>
-      <div className="flex items-center justify-center w-full flex-col gap-2 mt-[50px] z-[1000] max-w-[1236px] mx-auto">
+      <div className="flex items-center justify-center w-full flex-col gap-2 mt-[50px] z-[1000] max-w-[1236px] mx-auto ">
         <Tabs defaultValue="general" className="w-full justify-center flex flex-col">
-          <TabsList className="mx-auto">
+          <TabsList className="mx-auto mb-5">
             <TabsTrigger value="general"><p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">General</p></TabsTrigger>
             <TabsTrigger value="presale"><p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">Presale</p></TabsTrigger>
             <TabsTrigger value="support"><p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">Support</p></TabsTrigger>
@@ -158,8 +158,7 @@ export function FAQ({ data }: FAQSectionProps) {
           </TabsContent>
         </Tabs>
       </div>
-      <Blur1 className="absolute right-0 -bottom-[70%]   z-30 pointer-events-none" />
-      <Blur2 className="absolute left-0 -bottom-[70%]  z-30 pointer-events-none" />
-    </Section>
+
+    </div>
   );
 }

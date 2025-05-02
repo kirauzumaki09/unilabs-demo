@@ -84,7 +84,7 @@ export function Hero() {
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody uppercase font-extrabold text-[6.25rem] max-lg:text-5xl max-md:text-4xl tinted leading-32 -my-2.5">
+            <h1 className="font-anybody uppercase font-extrabold text-[6.25rem] max-lg:text-5xl max-md:text-4xl gradText leading-32 -my-2.5">
               Pow Assets
             </h1>
           </TitleAnim>

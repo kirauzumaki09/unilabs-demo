@@ -7,10 +7,12 @@ import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 
 export function HowItWorks() {
   return (
-    <section className="flex w-full relative max-sm:pb-40">
-      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5">
+    <div className="section">
+
+    <div className="flex w-full relative max-sm:pb-40">
+      <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 relative z-10">
         <FadeInOnScroll>
-          <h3 className="font-bold font-anybody text-[6.375rem] max-lg:text-5xl max-sm:text-4xl uppercase max-w-[867px] text-white leading-[90px]">
+          <h3 className="font-bold font-anybody text-[80px] max-lg:text-5xl max-sm:text-4xl uppercase max-w-[867px] text-white leading-[1]">
             how it <br className="max-lg:hidden" /> works
           </h3>
         </FadeInOnScroll>
@@ -25,7 +27,7 @@ export function HowItWorks() {
                 <p className="text-[1.75rem] text-white  max-lg:text-lg">
                   {step.label}
                 </p>
-                <h5 className="tinted text-4xl max-lg:text-3xl font-bold font-anybody">
+                <h5 className="gradText text-4xl max-lg:text-3xl font-bold font-anybody">
                   {step.title}
                 </h5>
                 <p className="max-lg:text-sm">{step.description}</p>
@@ -42,7 +44,8 @@ export function HowItWorks() {
       <div className="absolute right-0 max-[1162px]:hidden">
         <Vector />
       </div>
-    </section>
+    </div>
+    </div>
   );
 }
 

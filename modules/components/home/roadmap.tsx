@@ -35,12 +35,12 @@ const RoadmapItem = React.forwardRef<
           (ref as React.MutableRefObject<HTMLDivElement | null>).current = node;
         inViewRef(node);
       }}
-      className="flex lg:mb-20 mb-10 gap-24 max-lg:flex-col max-lg:gap-10"
+      className="flex lg:mb-20 mb-10 gap-[325px] max-lg:flex-col max-lg:gap-10"
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
     >
-      <div className="text-right font-anybody text-5xl max-lg:text-4xl mr-6 w-80 max-lg:w-full max-lg:text-left">
+      <div className="text-right font-anybody text-[40px] max-lg:text-4xl mr-6 w-90 max-lg:w-full max-lg:text-left">
         <p className="text-white">{roadmap.label}</p>
         <p>{roadmap.title}</p>
       </div>
@@ -97,14 +97,14 @@ export function Roadmap() {
   }, [activeIndex, controls, svgHeight]);
 
   return (
-    <Section sectionClasName="relative">
+    <div className="relative section roadmapBg">
       <SlideInOnScroll>
         <Title text="Roadmap" className="max-lg:text-6xl max-sm:text-5xl" />
       </SlideInOnScroll>
       <div className="mt-20 flex items-center justify-center">
         <div className="relative flex" ref={containerRef}>
           {/* SVG Line */}
-          <div className="absolute left-[46%] -translate-x-1/2 top-0 h-full max-lg:hidden">
+          <div className="absolute left-[48%] -translate-x-1/2 top-0 h-full max-lg:hidden">
             {svgHeight > 0 && (
               <RoadmapSVG
                 progressControls={controls}
@@ -136,11 +136,8 @@ export function Roadmap() {
           </div>
         </div>
       </div>
-      <div className="absolute left-0 w-full h-full flex items-center justify-center">
-        <Blur1 className="" />
-        <Blur2 />
-      </div>
-    </Section>
+    
+    </div>
   );
 }
 

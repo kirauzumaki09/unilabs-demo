@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -12,17 +12,39 @@ interface Review {
 }
 
 const LeftArrrow: React.FC = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19 12H5M5 12L12 5M5 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  );
-  const RightArrrow: React.FC = () => (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-  );
-  
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M19 12H5M5 12L12 5M5 12L12 19"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+const RightArrrow: React.FC = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M5 12H19M19 12L12 5M19 12L12 19"
+      stroke="white"
+      strokeWidth="2"
+      strokeLinecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
 
 const reviews: Review[] = [
   {
@@ -59,7 +81,7 @@ const CommunityReviews: React.FC = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
@@ -71,28 +93,14 @@ const CommunityReviews: React.FC = () => {
   };
 
   return (
-    <div className="py-12 upperHeadingYoutube">
-      <div className="max-w-[1529px] mx-auto px-4 flex-row flex w-full justify-between mb-[40px] ">
-        <h2 className="text-3xl font-extrabold uppercase  text-white mb-6 font-anybody text-[50px] md:text-[38px] sm:text-[26px]">
+    <div className="section reviewBg">
+  
+        <h2 className="text-[80px] text-center font-extrabold uppercase  text-white mb-[50px] font-anybody ">
           Community Reviews
         </h2>
-        <div className="flex cneter gap-4">
-        <button
-          onClick={() => sliderRef.current?.slickPrev()}
-          className=" bg-black bg-opacity-50 p-2 rounded-full z-10 hover:bg-opacity-75 w-[75px] height-[75px] flex items-center justify-center"
-        >
-         <LeftArrrow/>
-        </button>
-        <button
-          onClick={() => sliderRef.current?.slickNext()}
-          className=" bg-black bg-opacity-50 p-2 rounded-full z-10 hover:bg-opacity-75 w-[75px] height-[75px] flex items-center justify-center"
-        >
-        <RightArrrow/>
-        </button>
-        </div>
-      </div>
+
       <div className="relative">
-        <Slider ref={sliderRef} {...settings}>
+        <Slider ref={sliderRef} {...settings} className="reviewSlider">
           {reviews.map((review) => (
             <div key={review.id} className="px-2">
               <a href={review.url} target="_blank" rel="noopener noreferrer">
@@ -112,10 +120,23 @@ const CommunityReviews: React.FC = () => {
             </div>
           ))}
         </Slider>
+        <div className="flex relative z-10 gap-4 justify-center mt-[60px]">
+          <button
+            onClick={() => sliderRef.current?.slickPrev()}
+            className="size-[76px] border border-[#282F38] bg-[#061624] !cursor-pointer  p-2 rounded-full z-10 hover:opacity-75  flex items-center justify-center"
+          >
+            <LeftArrrow />
+          </button>
+          <button
+            onClick={() => sliderRef.current?.slickNext()}
+            className="size-[76px] border border-[#282F38] bg-[#061624] !cursor-pointer  p-2 rounded-full z-10 hover:opacity-75  flex items-center justify-center"
+          >
+            <RightArrrow />
+          </button>
+        </div>
       </div>
     </div>
   );
 };
 
 export default CommunityReviews;
-

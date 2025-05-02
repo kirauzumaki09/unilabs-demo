@@ -19,7 +19,7 @@ export function Why() {
             <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8  border-b border-b-black/5 min-h-[220px]">
               <div className="flex items-center gap-4">
                 <Checkmark className="size-4 text-[#0FEDBE]" />
-                <p className="tinted text-lg font-semibold font-anybody">
+                <p className="gradText text-lg font-semibold font-anybody">
                   Automated Smart Contract Execution
                 </p>
               </div>
@@ -36,7 +36,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       AI-Optimized Portfolio Management
                     </p>
                   </div>
@@ -51,7 +51,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 lg:max-w-[400px] border-b border-b-black/5 relative min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       Dynamic Risk Management
                     </p>
                   </div>
@@ -68,7 +68,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       Early Access to AI-Powered Crypto Projects
                     </p>
                   </div>
@@ -82,7 +82,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 relative min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       Data-Driven Investment Decisions
                     </p>
                   </div>

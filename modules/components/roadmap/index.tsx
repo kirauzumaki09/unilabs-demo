@@ -73,7 +73,7 @@ export function RoadmapPage() {
         </FadeIn>
         <div className="flex items-center gap-4 mb-[40px]">
           <TitleAnim delay={0.2}>
-            <Title text="Unilabs" sub tinted className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
+            <Title text="Unilabs" sub gradText className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
           </TitleAnim>
           <TitleAnim delay={0.2}>
             <Title text="Roadmap" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
@@ -176,7 +176,7 @@ const RoadmapItem = React.forwardRef<
                 <p className="text-3xl leading-[28px]">{roadmap.title}</p>
                 <p className="text-xs">({roadmap.date})</p>
               </span>
-              <p className="text-lg tinted font-semibold">{roadmap.sub}</p>
+              <p className="text-lg gradText font-semibold">{roadmap.sub}</p>
             </div>
           </div>
         </div>

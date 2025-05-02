@@ -20,7 +20,7 @@ export function Why() {
             <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8  border-b border-b-black/5 min-h-[220px]">
               <div className="flex items-center gap-4">
                 <Checkmark className="size-4 text-[#0FEDBE]" />
-                <p className="tinted text-lg font-semibold font-anybody">
+                <p className="gradText text-lg font-semibold font-anybody">
                   Optimized Liquidity and Market Adaptability
                 </p>
               </div>
@@ -36,7 +36,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5  min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       Yield Generation on Bitcoin Holdings
                     </p>
                   </div>
@@ -51,7 +51,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 lg:max-w-[400px] border-b border-b-black/5 relative  min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       Risk-Managed Approach
                     </p>
                   </div>
@@ -67,7 +67,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5  min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       Beyond Spot Bitcoin Holdings
                     </p>
                   </div>
@@ -82,7 +82,7 @@ export function Why() {
                 <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 relative min-h-[220px]">
                   <div className="flex items-center gap-4">
                     <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="tinted text-lg font-semibold font-anybody">
+                    <p className="gradText text-lg font-semibold font-anybody">
                       Diversified Bitcoin-Based Asset Basket
                     </p>
                   </div>
