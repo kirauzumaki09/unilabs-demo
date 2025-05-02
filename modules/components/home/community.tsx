@@ -41,7 +41,7 @@ const RightArrrow: React.FC = () => (
       stroke="white"
       strokeWidth="2"
       strokeLinecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
