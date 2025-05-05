@@ -41,7 +41,7 @@ export default function Funds() {
                 <div className="size-[100px] max-sm:size-[60px]">
                   {fund.icon}
                 </div>
-                <p className="font-anybody font-semibold gradText text-[36px] max-sm:text-3xl">
+                <p className="font-anybody uppercase font-semibold gradText text-[36px] max-sm:text-3xl">
                   {fund.label}
                 </p>
                 <p className="text-[18px] leading-[2] font-normal max-sm:text-sm">{fund.description}</p>

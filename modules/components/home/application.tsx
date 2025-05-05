@@ -13,7 +13,7 @@ export function Application() {
       <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5">
         <div className="mb-[60px]">
           <SlideInOnScroll>
-            <h3 className="text-[80px] max-lg:text-6xl max-sm:text-4xl text-center mr-50  font-extrabold font-anybody uppercase gradText leading-[1]">
+            <h3 className="text-[80px] !uppercase text-center mr-50  font-extrabold font-anybody uppercase gradText leading-[1]">
               The UNILABS
             </h3>
           </SlideInOnScroll>
@@ -35,8 +35,8 @@ export function Application() {
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll delay={0.2}>
-            <div className="flex items-center justify-center px-4">
-              <p className="text-lg text-left max-w-[422px] lg:hidden max-lg:max-w-[75%] max-sm:max-w-full max-lg:text-center">
+            <div className="flex items-center justify-center">
+              <p className="text-lg text-left max-w-[383px] lg:hidden  max-lg:text-center">
                 Rely on our AI tool to find the crypto world&apos;s hidden gems
                 and consistently rebalance your portfolio. Rather than
                 guesswork, you get a data-driven approach that adapts to
@@ -55,7 +55,7 @@ export function Application() {
             />
           </FadeInOnScroll>
           <FadeInOnScroll delay={0.2}>
-            <p className="text-lg text-left max-w-[422px] hidden lg:block px-4">
+            <p className="text-lg text-left max-w-[388px] hidden lg:block px-4">
               Rely on our AI tool to find the crypto world&apos;s hidden gems
               and consistently rebalance your portfolio. Rather than guesswork,
               you get a data-driven approach that adapts to real-time market

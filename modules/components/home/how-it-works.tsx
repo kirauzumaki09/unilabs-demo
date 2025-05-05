@@ -22,8 +22,8 @@ export function HowItWorks() {
                 delay={index * 0.3}
                 className="utility-card"
               >
-                <div key={step.title} className={cn()}>
-                  <p className="text-[1.75rem] text-white  max-lg:text-lg">
+                <div key={step.title} className={cn("max-w-[420px]")}>
+                  <p className="text-[30px] text-white  max-lg:text-lg">
                     {step.label}
                   </p>
                   <h5 className="gradText text-4xl max-lg:text-3xl font-bold font-anybody">

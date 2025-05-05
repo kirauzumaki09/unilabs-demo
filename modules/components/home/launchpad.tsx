@@ -12,7 +12,7 @@ export function Launchpad() {
 
       <div className="relative">
         <SlideInOnScroll>
-          <p className="title tracking-normal lg:leading-[70px] uppercase font-anybody">
+          <p className=" tracking-normal text-[50px] font-extrabold leading-[1] uppercase font-anybody">
             Get In Early On The Hottest <br className="max-lg:hidden"/> Opportunities In Crypto - <br />
             <span className="gradText">The UNILABS Launchpad</span>
           </p>

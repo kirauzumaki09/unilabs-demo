@@ -146,7 +146,7 @@ export function Tiers() {
               </h5>
             </FadeInOnScroll>
             <SlideInOnScroll delay={0.2}>
-              <p className="text-[18px] font-extralight mt-8 text-[#DBDBDB]">
+              <p className="text-[18px] font-extralight mt-8 !text-[#DBDBDB]">
                 By holding $UNIL and advancing through these tiers, you
                 don&apos;t just invest—you actively shape the future of our
                 AI-powered DeFi ecosystem while earning consistent returns along
@@ -158,7 +158,7 @@ export function Tiers() {
 
         {/* Slider Section */}
         <div className="lg:mt-[122px] mt-8 flex flex-row gap-8">
-          <div className="md:min-w-[35%] mb-6 md:mb-0">
+          <div className="min-w-[457px] mb-6 md:mb-0">
             <p className="gradText !text-[28px] max-w-[400px] md:text-4xl sm:text-3xl font-semibold font-anybody">
               30% Fee Redistribution & Tiered Rewards
             </p>
@@ -175,17 +175,17 @@ export function Tiers() {
                 <Slider {...settings} className="w-full relative">
                   {tiersData.map((tier) => (
                     <div key={tier.tier} className="px-3">
-                      <div className="w-[300px] bg-secondary h-[350px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-8">
-                        <div className="relative w-full min-w-[250px] h-[72px] flex items-center justify-center">
+                      <div className="w-[360px] bg-secondary h-[300px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
+                        <div className="relative w-full min-w-[250px] h-[74px] flex items-center justify-center">
                           <span className="gradText text-2xl font-bold flex items-center justify-center w-full h-[60px] rounded-full bg-[#202832] z-30 absolute top-0">
                             {tier.tier}
                           </span>
                           <Rectangle className="absolute inset-0 z-0" />
                         </div>
 
-                        <p className="text-[14px] font-inter font-normal text-[#ffffff] uppercase text-center">{tier.label}</p>
+                        <p className="text-[14px] font-inter font-extralight text-[#ffffff] uppercase text-center">{tier.label}</p>
                        
-                        <p className="text-[18px] font-inter font-normal text-[#ffffff] text-center">{tier.why}</p>
+                        <p className="text-[18px] font-inter font-normal text-[#DBDBDB] text-center">{tier.why}</p>
                       </div>
                     </div>
                   ))}

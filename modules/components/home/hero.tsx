@@ -179,19 +179,19 @@ export function Hero() {
         <div className="flex flex-col pt-[32px] items-center z-50">
           <div className="flex flex-col items-center max-lg:px-4">
             <TitleAnim delay={0}>
-              <h1 className={titleStyles}>
+              <h1 className={`${titleStyles} !leading-[1]`}>
                 The World&apos;s first <br />
               </h1>
             </TitleAnim>
             <TitleAnim delay={0.2}>
-              <h1 className="font-anybody uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-32 -my-2.5">
+              <h1 className="font-anybody  uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-32 -my-2.5">
                 AI-Backed
               </h1>
             </TitleAnim>
             <br />
             <TitleAnim delay={0.4}>
               <h1
-                className={`${titleStyles} -mt-8 text-[2.5rem] max-w-[800px] leading-[1]`}
+                className={`${titleStyles} -mt-8 text-[2.5rem] max-w-[800px] !leading-[1]`}
               >
                 DeFi Asset Manager With Over $30M AUM
               </h1>
@@ -199,7 +199,7 @@ export function Hero() {
           </div>
           <div className="flex justify-between gap-10 mt-16 max-lg:mt-8 max-lg:flex-col lg:px-3">
             <FadeIn delay={0}>
-              <p className="max-w-[318px] max-lg:max-w-full ">
+              <p className="max-w-[310px] max-lg:max-w-full ">
                 Unlock cutting-edge crypto opportunities with Unilabs—where
                 Enterprise AI meets DeFi innovation. Our system tracks thousands
                 of emerging projects, helping you invest early and confidently.
