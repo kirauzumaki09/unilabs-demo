@@ -60,7 +60,7 @@ const FundUpdates = () => {
               {/* </figure> */}
               <div className="w-auto h-fit flex flex-col justify-center funCardRight">
                 <p className="text-[18px] text-[#2DC4EC]  mb-2">{u.date}</p>
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-[24px] font-semibold text-white mb-2">
                   {u.title}
                 </h3>
                 <p className="text-[#DBDBDB]-400 text-[18px] mt-2 leading-8">

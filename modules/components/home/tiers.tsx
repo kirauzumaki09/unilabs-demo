@@ -139,14 +139,14 @@ export function Tiers() {
 
           <div className="w-1/2 max-lg:w-full">
             <FadeInOnScroll>
-              <h5 className="font-medium text-white text-[24px] max-lg:text-lg">
+              <h5 className="font-medium capitalize text-white text-[24px] max-lg:text-lg">
                 To accommodate diverse investor profiles and strategies, Unilabs
                 presents four distinct fund options—each leveraging top-tier
                 expertise and AI-driven insights.
               </h5>
             </FadeInOnScroll>
             <SlideInOnScroll delay={0.2}>
-              <p className="text-[18px] font-extralight mt-8 !text-[#DBDBDB]">
+              <p className="text-[18px] capitalize font-extralight mt-8 !text-[#DBDBDB]">
                 By holding $UNIL and advancing through these tiers, you
                 don&apos;t just invest—you actively shape the future of our
                 AI-powered DeFi ecosystem while earning consistent returns along
@@ -159,10 +159,10 @@ export function Tiers() {
         {/* Slider Section */}
         <div className="lg:mt-[122px] mt-8 flex flex-row gap-8">
           <div className="min-w-[457px] mb-6 md:mb-0">
-            <p className="gradText !text-[28px] max-w-[400px] md:text-4xl sm:text-3xl font-semibold font-anybody">
+            <p className="gradText capitalize !text-[28px] max-w-[400px] md:text-4xl sm:text-3xl font-semibold font-anybody">
               30% Fee Redistribution & Tiered Rewards
             </p>
-            <p className="mt-5 text-lg font-normal w-[85%] max-md:w-full">
+            <p className="mt-5 capitalize text-lg font-normal w-[85%] max-md:w-full">
               To reward our community, 30% of total fees generated on the
               platform are redistributed to $UNIL holders via a five-tier
               system. The higher your presale entry, the greater your share of

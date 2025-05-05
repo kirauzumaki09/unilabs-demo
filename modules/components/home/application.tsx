@@ -18,12 +18,12 @@ export function Application() {
             </h3>
           </SlideInOnScroll>
           <SlideInOnScroll delay={0.2}>
-            <h4 className="uppercase font-extrabold font-anybody   text-center text-[50px] max-lg:text-[40px] max-sm:text-3xl  max-lg:text-left text-white leading-[1]">
+            <h4 className="!uppercase font-extrabold font-anybody   text-center text-[50px] max-lg:text-[40px] max-sm:text-3xl  max-lg:text-left text-white leading-[1]">
               Application Range
             </h4>
           </SlideInOnScroll>
           <SlideInOnScroll delay={0.4}>
-            <h4 className="uppercase font-extrabold font-anybody text-center text-[50px] mr-50 max-lg:text-[40px] max-sm:text-3xl max-lg:text-left text-white releative z-10 leading-[1]">
+            <h4 className="!uppercase font-extrabold font-anybody text-center text-[50px] mr-50 max-lg:text-[40px] max-sm:text-3xl max-lg:text-left text-white releative z-10 leading-[1]">
               Our Core Offerings
             </h4>
           </SlideInOnScroll>
