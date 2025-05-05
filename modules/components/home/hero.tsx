@@ -172,7 +172,7 @@ export function Hero() {
           />
         </div>
         <div className="absolute w-full  h-full  bg-gradient-to-b from-[#000000] to-[#000000] opacity-50 z-20" />
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 top-[-20%] -z-10">
           <HeroVector />
         </div>
 
@@ -341,7 +341,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="mt-auto flex justify-center items-center flex-col gap-8 max-sm:gap-5 z-50 py-[70px]">
+      <div className="mt-auto flex justify-center items-center flex-col gap-8 max-sm:gap-5 z-50 py-[70px] bg-[#020E1B]">
         <p className="text-[2rem] font-medium text-white font-anybody">
           Powered By
         </p>
@@ -371,7 +371,7 @@ function MarqueeComponent() {
   const duplicatedLogos = [...logosWithPlus, ...logosWithPlus];
 
   return (
-    <Marquee speed={50} gradient={false} className="-ml-[65px]">
+    <Marquee speed={50} gradient={false} className="-ml-[65px] ">
       <div className="flex w-full min-w-[200vw] justify-evenly">
         {duplicatedLogos.map((item, index) => (
           <span key={`logo-${index}`} className="flex items-center gap-8">
