@@ -60,9 +60,9 @@ export default function RootLayout({
           />
         </noscript>
         <SmoothScroll>
-          <div className=" items-center flex justify-center">
+          
             <Nav />
-          </div>
+
 
           {children}
           <Footer />
