@@ -30,7 +30,7 @@ export function Footer() {
       {/* Content Wrapper */}
       <div className="relative z-10 flex items-center justify-between w-full flex-col">
   
-        <FadeInOnScroll className="flex items-center justify-between w-full pb-5 border-b border-b-accent">
+        <FadeInOnScroll className="flex items-center justify-between w-full pb-[30px] border-b !border-b-[rgba(255,255,255,0.1)]">
           <div className="flex gap-[32px] items-center">
 
           <div className="relative flex items-center ">
