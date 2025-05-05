@@ -99,7 +99,7 @@ export function Roadmap() {
   return (
     <div className="relative section roadmapBg">
       <SlideInOnScroll>
-        <Title text="Roadmap" className="max-lg:text-6xl max-sm:text-5xl" />
+        <Title text="Roadmap" className="!text-[80px] !uppercase" />
       </SlideInOnScroll>
       <div className="mt-20 flex items-center justify-center">
         <div className="relative flex" ref={containerRef}>
