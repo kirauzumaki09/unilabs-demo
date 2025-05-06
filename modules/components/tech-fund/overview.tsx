@@ -65,7 +65,7 @@ export function Overview() {
               >
                 <div className="flex items-center gap-4 max-sm:gap-2">
                   <Checkmark className="size-4 text-[#0FEDBE]" />
-                  <p className="tinted text-lg max-sm:text-sm font-semibold font-anybody">
+                  <p className="gradText text-lg max-sm:text-sm font-semibold font-anybody">
                     {data.title}
                   </p>
                 </div>

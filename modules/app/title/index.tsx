@@ -18,7 +18,7 @@ export function Title({
       className={cn(
         "font-extrabold text-center font-anybody uppercase  leading-[120px]",
         className,
-        tinted ? "tinted" : "text-white",
+        tinted ? "gradText" : "text-white",
         sub ? "text-[4.5625rem]" : "text-[9.375rem]"
       )}
     >

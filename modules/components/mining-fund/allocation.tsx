@@ -36,7 +36,7 @@ export function Allocation() {
             {allocationData.map((data, index) => (
               <FadeInOnScroll key={data.label} delay={index * 0.2}>
                 <div className="bg-white/10 relative overflow-hidden gap-4 backdrop-blur-[50px] rounded-[50px] max-w-[550px] w-full p-11 border-b border-b-black/5 border-t border-t-sec-border min-h-[380px] flex items-center justify-center flex-col max-h-[350px]">
-                  <p className="tinted text-lg font-semibold font-anybody pb-4 w-[95%] text-center">
+                  <p className="gradText text-lg font-semibold font-anybody pb-4 w-[95%] text-center">
                     {data.label}
                   </p>
                   <div className="flex items-center justify-center w-full">

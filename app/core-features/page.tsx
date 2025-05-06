@@ -85,7 +85,7 @@ export default function CoreFeatures() {
                 >
                   <div className="w-[35%] max-md:w-full">{feature.icon}</div>
                   <div className="flex-1 max-md:text-center max-md:w-full">
-                    <p className="tinted font-semibold text-[36px] max-md:text-2xl mb-[20px] coreFeatureTitle">
+                    <p className="gradText font-semibold text-[36px] max-md:text-2xl mb-[20px] coreFeatureTitle">
                       {feature.title}
                     </p>
                     <p className="font-normal text-[18px] text-inter leading-[1.8] text-[#F0F0F0]">{feature.description}</p>

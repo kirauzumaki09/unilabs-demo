@@ -46,6 +46,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-MXZKNSZZ');
           `}
         </Script>
+        <meta name="robots" content="noindex, nofollow" />
       </head>
       <body
         className={` ${anybody.variable} ${inter.variable} ${figtree.variable} antialiased relative min-h-screen`}
@@ -59,13 +60,13 @@ export default function RootLayout({
           />
         </noscript>
         <SmoothScroll>
-          <div className=" items-center flex justify-center">
+          
             <Nav />
-          </div>
+
 
           {children}
-          {/* <Footer /> */}
-          <FooterTwo />
+          <Footer />
+          {/* <FooterTwo /> */}
           <div className="bg-gradient-to-t from-black to-transparent w-full h-[115px] fixed -bottom-2 z-[1000]"/>
         </SmoothScroll>
       </body>

@@ -2,7 +2,7 @@
 <g filter="url(#filter0_d_75_2)">
 <rect opacity="0.05" x="66" y="154" width="430" height="491" rx="60" fill="white"/>
 <rect opacity="0.05" x="48" y="93" width="466" height="533" rx="60" fill="white"/>
-<foreignObject x="-43" y="-51" width="648" height="723"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(30px);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="60" x="20" y="12" width="522" height="597" rx="63" stroke="white" stroke-opacity="0.05" stroke-width="6"/>
+<foreignObject x="-43" y="-51" width="648" height="723"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(30px);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="60" x="20" y="12" width="522" height="597" rx="63" stroke="white" stroke-opacity="0.05" strokeWidth="6"/>
 <mask id="mask0_75_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="23" y="15" width="516" height="591">
 <rect x="23" y="15" width="516" height="591" rx="60" fill="#26292C"/>
 </mask>

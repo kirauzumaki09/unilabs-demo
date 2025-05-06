@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex justify-center min-h-screen pb-20 gap-16 mt-14 font-[family-name:var(--font-inter)]">
+    <div className="flex justify-center min-h-screen  gap-16 mt-14 font-[family-name:var(--font-inter)]">
       <motion.div
         animate={{
           opacity: 1,
@@ -20,7 +20,7 @@ export default function Home() {
           duration: 3,
           bounce: 0.5,
         }}
-        className="relative w-full min-h-screen mx-auto flex flex-col pb-8"
+        className="relative w-full min-h-screen mx-auto flex flex-col"
       >
         <HomePage />
       </motion.div>

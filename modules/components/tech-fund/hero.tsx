@@ -73,7 +73,7 @@ export function Hero() {
             <h1 className={`${titleStyles} text-6xl`}>to Real-World</h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody uppercase font-extrabold text-[7.5rem] max-lg:text-5xl max-md:text-4xl tinted leading-32 -my-2.5">
+            <h1 className="font-anybody uppercase font-extrabold text-[7.5rem] max-lg:text-5xl max-md:text-4xl gradText leading-32 -my-2.5">
               Assets
             </h1>
           </TitleAnim>

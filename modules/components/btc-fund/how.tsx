@@ -40,7 +40,7 @@ export function How() {
                     : "max-w-[550px] min-h-[380px]"
                 } w-full p-11 border-b border-b-black/5 border-t border-t-sec-border`}
               >
-                <p className="tinted text-lg font-semibold font-anybody pb-8 w-[55%] max-lg:w-full">
+                <p className="gradText text-lg font-semibold font-anybody pb-8 w-[55%] max-lg:w-full">
                   {data.title}
                 </p>
                 {data.sub && <p className="pb-5">{data.sub}</p>}

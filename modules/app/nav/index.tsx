@@ -43,7 +43,7 @@ export function Nav() {
         }
       )}
     >
-      <div className="flex items-center w-full p-5 max-w-[1529px] mx-auto relative">
+      <div className="flex items-center w-full p-5 container mx-auto relative">
         <div className="w-[200px] flex items-center">
           <FadeIn>
             <Link href={"/"} className="relative w-[75px] h-[75px] block">
@@ -69,7 +69,7 @@ export function Nav() {
           </FadeIn>
         </div>
 
-        <div className="flex-1 flex justify-end">
+        <div className="flex-1 flex justify-center">
           <ul className="flex items-center justify-center gap-8 max-lg:hidden">
             {navLinks.map((nav, index) => {
               const isActive = pathname === nav.path;
@@ -78,7 +78,7 @@ export function Nav() {
                   <li className="p-2 flex items-center justify-center">
                     <Link
                       href={nav.path}
-                      className={cn({ "text-[#0FEDBE] text-[16px]": isActive })}
+                      className={cn("text-white font-medium text-[16px]",{ "text-[#0FEDBE] text-[16px]": isActive })}
                     >
                       {nav.name}
                     </Link>
@@ -91,12 +91,7 @@ export function Nav() {
 
         <div className="flex justify-end ml-5">
           <div className="flex items-center justify-between gap-5 max-lg:hidden">
-            <FadeIn>
-              <Button className="z-40 bg-[rgba(255,255,255,0.2)]  max-lg:h-10 w-fit h-12 text-white">
-                <SignInIcon />
-                Sign In
-              </Button>
-            </FadeIn>
+       
             <FadeIn>
               <Button
                 onClick={() => {
@@ -187,14 +182,22 @@ export function Nav() {
 const navLinks = [
   {
     name: "How to Buy",
-    path: "/how-to-buy",
+    path: "#",
+    // path: "/how-to-buy",
   },
   {
     name: "Core Features",
-    path: "/core-features",
+    // path: "/core-features",
+    path: "#",
+  },
+  {
+    name: "Fund Updates",
+    // path: "/core-features",
+    path: "#",
   },
   {
     name: "Unilabs Roadmap",
-    path: "/roadmap",
+    // path: "/roadmap",
+    path: "#",
   },
 ];

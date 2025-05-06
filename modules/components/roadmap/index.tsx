@@ -176,7 +176,7 @@ const RoadmapItem = React.forwardRef<
                 <p className="text-3xl leading-[28px]">{roadmap.title}</p>
                 <p className="text-xs">({roadmap.date})</p>
               </span>
-              <p className="text-lg tinted font-semibold">{roadmap.sub}</p>
+              <p className="text-lg gradText font-semibold">{roadmap.sub}</p>
             </div>
           </div>
         </div>

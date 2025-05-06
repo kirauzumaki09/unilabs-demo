@@ -9,13 +9,13 @@ import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 
 export function Tokenomics() {
   return (
-    <section className="relative w-full">
-      <div className="max-w-[1529px] mx-auto flex-col flex w-full px-14 max-lg:px-5 items-center justify-center relative">
+    <div className="relative section tokenomicsBg">
+      <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 items-center justify-center relative">
         <SlideInOnScroll>
           <Title
             text="Tokenomics"
             tinted
-            className="max-lg:text-6xl max-sm:text-4xl"
+            className="!text-[80px] max-sm:text-4xl !uppercase"
           />
         </SlideInOnScroll>
         <FadeInOnScroll
@@ -23,7 +23,7 @@ export function Tokenomics() {
           className="flex items-center justify-center w-full"
         >
           {/* Wrapper to ensure proper positioning */}
-          <div className="relative">
+          <div className="relative z-[99]">
             <Image
               src={"/webp/tok.webp"}
               alt="tokenomics"
@@ -38,52 +38,40 @@ export function Tokenomics() {
               </div>
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
-                  TEAM & <br /> ADVISORS
+                PRESALE
                 </p>
-                <p className="text-sm md:text-xl font-bold mt-1">15%</p>
+                <p className="text-sm md:text-xl font-bold mt-1">20%</p>
               </div>
             </div>
-            <div className="absolute top-[38%] max-md:-right-3 -right-8 max-[1150px]:right-0 z-40 flex items-center gap-3">
+            <div className="absolute top-[45%] max-md:-right-3 -right-8 max-[1150px]:right-0 z-40 flex items-center gap-3">
               <div className="w-64 max-md:w-20 max-[1150px]:w-28 max-sm:w-12">
                 <Marker />
               </div>
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light max-sm:text-[10px]">
-                  LIQUIDITY & <br /> EXCHANGE
+                RESERVE
                 </p>
                 <p className="text-sm md:text-xl font-bold mt-1 max-sm:mt-0">
-                  10%
+                05%
                 </p>
               </div>
             </div>
-            <div className="absolute top-[58%] max-md:-right-3 -right-8 max-[1150px]:right-0 z-40 flex items-center gap-3">
-              <div className="w-64 max-md:w-20 max-[1150px]:w-28 max-sm:w-12">
-                <Marker/>
-              </div>
-              <div>
-                <p className="text-xs md:text-sm text-[#DBDBDB] text-light max-sm:text-[10px]">
-                  MARKETING & <br /> COMMUNITY
-                </p>
-                <p className="text-sm md:text-xl font-bold mt-1 max-sm:mt-0">
-                  10%
-                </p>
-              </div>
-            </div>
+          
             <div className="absolute max-md:bottom-[14%] bottom-[18%] max-md:right-0 right-20 z-40 flex items-center gap-3">
               <div className="w-64 max-md:w-20 max-[1150px]:w-28 max-sm:w-12">
                 <Marker />
               </div>
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
-                  RESERVE
+                MARKETING & <br /> COMMUNITY
                 </p>
-                <p className="text-sm md:text-xl font-bold mt-1">05%</p>
+                <p className="text-sm md:text-xl font-bold mt-1">10%</p>
               </div>
             </div>
-            <div className="absolute top-[18%] max-md:left-0 left-4 z-40 flex items-center gap-3">
+            <div className="absolute top-[18%] max-md:left-3 -left-8 max-[1150px]:left-0 left-4 z-40 flex items-center gap-3">
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
-                  ECOSYSTEM & <br /> DEVELOPMENT
+                ECOSYSTEM & <br /> DEVELOPMENT
                 </p>
                 <p className="text-sm md:text-xl font-bold mt-1">20%</p>
               </div>
@@ -91,10 +79,21 @@ export function Tokenomics() {
                 <Marker className="rotate-180 max-sm:-ml-14" />
               </div>
             </div>
+            <div className="absolute top-[48%] max-md:left-0 left-4 z-40 flex items-center gap-3 globearrwoLeftMidlle">
+              <div>
+                <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
+                TEAM & <br /> ADVISORS
+                </p>
+                <p className="text-sm md:text-xl font-bold mt-1">15%</p>
+              </div>
+              <div className="w-64 max-md:w-20 max-[1050px]:w-28">
+                <Marker className="rotate-180 max-sm:-ml-14" />
+              </div>
+            </div>
             <div className="absolute max-md:bottom-[14%] bottom-[23%] max-md:leftt-0 left-4 z-40 flex items-center gap-3">
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
-                  PRESALE
+                LIQUIDITY & <br /> EXCHANGE
                 </p>
                 <p className="text-sm md:text-xl font-bold mt-1">40%</p>
               </div>
@@ -105,11 +104,11 @@ export function Tokenomics() {
           </div>
         </FadeInOnScroll>
 
-        <Blur1 className="absolute top-0 z-30 " />
-        <Blur2 className="absolute right-0 top-1" />
+    
       </div>
-      {/* <div className="h-[80%] bg-gradient-to-t from-[#00070F] to-transparent absolute w-full top-[65%] z-20" /> */}
-    </section>
+
+
+    </div>
   );
 }
 

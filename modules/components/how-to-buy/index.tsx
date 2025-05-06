@@ -49,7 +49,7 @@ export function BuyPage() {
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody uppercase font-extrabold text-[5rem] max-lg:text-6xl max-md:text-5xl tinted leading-tight">
+            <h1 className="font-anybody uppercase font-extrabold text-[5rem] max-lg:text-6xl max-md:text-5xl gradText leading-tight">
               ETH, BNB, USDT
             </h1>
           </TitleAnim>
@@ -93,7 +93,7 @@ export function BuyPage() {
 
           <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="tinted text-4xl max-md:text-2xl font-anybody font-semibold">
+              <p className="gradText text-3xl max-md:text-2xl font-anybody font-semibold">
                 Wallet Setup
               </p>
             </SlideInOnScroll>
@@ -147,8 +147,8 @@ export function BuyPage() {
 
           <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="tinted text-4xl max-md:text-2xl font-anybody font-semibold">
-              Purchase Process
+              <p className="gradText text-3xl max-md:text-2xl font-anybody font-semibold">
+                Purchase Process
               </p>
             </SlideInOnScroll>
             <FadeInOnScroll>
@@ -177,8 +177,8 @@ export function BuyPage() {
 
           <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="tinted text-4xl max-md:text-2xl font-anybody font-semibold">
-              Token Reception
+              <p className="gradText text-3xl max-md:text-2xl font-anybody font-semibold">
+                Token Reception
               </p>
             </SlideInOnScroll>
             <FadeInOnScroll>

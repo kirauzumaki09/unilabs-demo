@@ -33,9 +33,9 @@ export function Banner({ title, paragraph, sub }: BannerProps) {
             </div>
           </div>
           <div>
-            <p className="tinted text-xl font-semibold font-anybody">{title}</p>
+            <p className="gradText text-xl font-semibold font-anybody">{title}</p>
             <p className="text-sm pt-4 pb-3">{paragraph}</p>
-            <p className="text-base font-semibold tinted font-anybody">{sub}</p>
+            <p className="text-base font-semibold gradText font-anybody">{sub}</p>
             <Button className="h-12 mt-5">
               <CTAIcon /> Invest Now
             </Button>
