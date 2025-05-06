@@ -38,7 +38,7 @@ const FundUpdates = () => {
   return (
     <section className="section fundUpadteBg py-16 px-4">
       <div className="container mx-auto flex flex-col w-full px-14 max-lg:px-5 tiersSliderWrap">
-        <h2 className="text-[80px] text-center font-extrabold uppercase text-white mb-12">
+        <h2 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px]text-center font-extrabold uppercase text-white mb-12">
           Fund Updates
         </h2>
 

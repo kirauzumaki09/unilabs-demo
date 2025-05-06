@@ -11,7 +11,7 @@ export function HowItWorks() {
       <div className="flex w-full relative max-sm:pb-40">
         <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 relative z-10">
           <FadeInOnScroll>
-            <h3 className="font-bold font-anybody text-[80px] max-lg:text-5xl max-sm:text-4xl uppercase max-w-[867px] text-white leading-[1]">
+            <h3 className="font-bold font-anybody text-[80px]  max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] uppercase max-w-[867px] text-white leading-[1]">
               how it <br className="max-lg:hidden" /> works
             </h3>
           </FadeInOnScroll>

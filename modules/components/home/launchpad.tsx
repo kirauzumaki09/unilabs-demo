@@ -31,7 +31,7 @@ export function Launchpad() {
 
           <div className="w-1/2 pl-11 max-lg:w-full max-lg:pl-0">
             <FadeInOnScroll>
-              <p className="text-white text-[24px] font-medium max-lg:text-xl">
+              <p className="text-white text-[24px] font-normal max-lg:text-xl">
                 At Unilabs, we believe in a future where every investor can
                 seize the potential of high-growth crypto innovations. Our
                 AI-powered Launchpad uses real-time market data and machine

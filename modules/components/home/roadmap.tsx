@@ -99,7 +99,7 @@ export function Roadmap() {
   return (
     <div className="relative section roadmapBg">
       <SlideInOnScroll>
-        <Title text="Roadmap" className="!text-[80px] !uppercase" />
+        <Title text="Roadmap" className="!text-[80px] max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px] !uppercase" />
       </SlideInOnScroll>
       <div className="mt-20 flex items-center justify-center">
         <div className="relative flex" ref={containerRef}>
@@ -213,8 +213,9 @@ export function RoadmapSVG({
           key={index}
           cx="50"
           cy={yPos}
-          r="15"
+          r="25"
           fill={index <= activeIndex ? "#0FEDBE" : "#1B1D20"}
+          className={index <= activeIndex ? "circleGlow" : ""}
         />
       ))}
 

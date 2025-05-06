@@ -177,7 +177,7 @@ export function Tiers() {
                     <div key={tier.tier} className="px-3">
                       <div className="w-[360px] bg-secondary h-[300px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
                         <div className="relative w-full min-w-[250px] h-[74px] flex items-center justify-center">
-                          <span className="gradText text-2xl font-bold flex items-center justify-center w-full h-[60px] rounded-full bg-[#202832] z-30 absolute top-0">
+                          <span className="gradText text-2xl font-bold flex items-center justify-center w-full h-full rounded-full bg-[#202832] z-30 absolute top-0">
                             {tier.tier}
                           </span>
                           <Rectangle className="absolute inset-0 z-0" />
