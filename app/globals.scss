@@ -459,6 +459,12 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.lineclamp2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .activeBtn {
   background: linear-gradient(90.42deg, #2dc5ec -1.08%, #1be1c5 82.64%);
   color: #00070f;
