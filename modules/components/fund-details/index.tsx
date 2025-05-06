@@ -1,8 +1,7 @@
+import { StaticImageData } from "next/image";
 import React from "react";
 import BannerSection from "./banner";
-import DetailsContent from "./details-content";
 import DetailsCard from "./details-card";
-import { StaticImageData } from "next/image";
 
 interface FundDetailsPageProps {
   title: string;
@@ -20,10 +19,10 @@ const FundDetailsPage = ({ children, date, title ,image}: FundDetailsPageProps) 
           <div className="flex flex-wrap ml-[-12px] mr-[-12px]">
             <div className="w-[60%] max-lg:w-full pl-[12px] pr-[12px]">
               <div className="w-full max-w-[869px]">
-                <span className="text-[18px] font-medium text-[#2DC4EC] block mb-[24px]">
+                <span className="text-[18px] font-medium text-[#2DC4EC] block mb-[24px] max-lg:mb-[16px] max-md:text-[16px]">
                   {date}
                 </span>
-                <h1 className="text-[50px] max-lg:text-[40px] max-md:text-[32px] font-anybody font-semibold leading-[1.2] mb-[25px]">
+                <h1 className="text-[50px] max-lg:text-[40px] max-md:text-[32px] font-anybody font-semibold leading-[1.2] mb-[25px] max-lg:mb-[16px]">
                   {title}
                 </h1>
                 <DetailsCard>{children}</DetailsCard>

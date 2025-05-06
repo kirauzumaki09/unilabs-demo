@@ -193,7 +193,7 @@ const navLinks = [
   {
     name: "Fund Updates",
     // path: "/core-features",
-    path: "#",
+    path: "fund-updates",
   },
   {
     name: "Unilabs Roadmap",
