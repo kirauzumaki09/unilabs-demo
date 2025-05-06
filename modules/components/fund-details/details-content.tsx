@@ -1,6 +1,9 @@
 import { title } from 'process'
 import React from 'react'
 import DetailsCard from './details-card'
+import Image from 'next/image'
+import assets from '@/assets'
+import Link from 'next/link'
 
 const DetailsContent = () => {
 
@@ -30,7 +33,20 @@ const DetailsContent = () => {
                         </div>
                     </div>
                     <div className='w-[40%] pl-[12px] pr-[12px]'>
-                        
+                        <h3 className='text-[24px] font-bold leading-[1.2] mb-[36px]'>Recent Update</h3>
+
+                        <div className='flex flex-wrap'>
+                            <div className='w-[162px] h-[162px] overflow-hidden rounded-[14px]'>
+                                <Link href='#' className='w-full h-full inline-block'>
+                                    <Image className='w-full h-full object-cover' src={assets.FundUpdate1} width={162} height={162} alt='recent-update-image'/>
+                                </Link>
+                                
+                            </div>
+                            <div className='max-w-[calc(100%-162px)] pl-[32px] w-full'>
+                                <span>1 May, 2025</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
