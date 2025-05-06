@@ -1,25 +1,24 @@
-import { FundUpdate1, FundUpdate2, FundUpdate3, FundUpdate4 } from "@/assets";
+import assets from "@/assets";
 import Image from "next/image";
-import React from "react";
 
 const updates = [
   {
     id: 1,
-    img: FundUpdate1,
+    img: assets.FundUpdate1,
     date: "30 Apr, 2025",
     title: "Fund Update 1",
     desc: "Today, we are excited to share the very first steps in building our next‐gen AI‑powered debt asset manager. Our presale platform is already live…",
   },
   {
     id: 2,
-    img: FundUpdate2,
+    img: assets.FundUpdate2,
     date: "1 May, 2025",
     title: "Fund Update 2",
     desc: "Our team is thrilled to share today’s progress on building the foundation of our AI‑powered debt asset management system. Every move we make is geared toward…",
   },
   {
     id: 3,
-    img: FundUpdate3,
+    img: assets.FundUpdate3,
 
     date: "2 May, 2025",
     title: "Fund Update 3",
@@ -27,7 +26,7 @@ const updates = [
   },
   {
     id: 4,
-    img: FundUpdate4,
+    img: assets.FundUpdate4,
 
     date: "3 May, 2025",
     title: "Fund Update 4",
