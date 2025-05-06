@@ -14,7 +14,7 @@ export const fundList = [
     date: "May 2,2025",
     description:
       "Our team is excited to share today’s progress on building the foundation of our AI-powered DeFi asset management system. Every move we make is geared toward creating a platform that adapts, self-optimizes, and consistently delivers value without needing manual control. Here’s where we stand today.",
-    image: assets.fundUpdate2,
+    image: assets.fund_Update2,
     link: "/fund-update-2",
   },
   {

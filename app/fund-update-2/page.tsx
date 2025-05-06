@@ -6,7 +6,7 @@ const FundUpdate1 = () => {
     <div className="flex justify-center min-h-screen gap-16 font-[family-name:var(--font-inter)]">
       <main className="flex flex-col w-full">
         <FundDetailsPage
-          image={assets.fundUpdate2}
+          image={assets.fund_Update2}
           title="Fund Update 2"
           date="May 2, 2025"
         >
