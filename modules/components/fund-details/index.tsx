@@ -37,36 +37,36 @@ const FundDetailsPage = ({
               </div>
             </div>
 
-            <div className="w-[40%] pl-[12px] pr-[12px]">
+            <div className="w-[40%] max-lg:w-full  pl-[12px] pr-[12px]">
               <h3 className="text-[24px] font-bold leading-[1.2] mb-[36px]">
                 Recent Update
               </h3>
               <div className="flex flex-col gap-[40px]">
-                {fundList
+                {fundList.reverse()
                   .filter((item) => item.title !== title)
                   .map((item, index) => (
-                    <div className="flex flex-wrap" key={index}>
-                      <div className="w-[162px] h-[162px] overflow-hidden rounded-[14px]">
-                        <Link href="#" className="w-full h-full inline-block">
+                    <div className="flex  gap-[32px] max-sm:flex-col" key={index}>
+                      <div className="w-[162px] flex-shrink-0 h-[162px] overflow-hidden rounded-[14px]">
+                        <Link href={item.link} className="w-full h-full inline-block">
                           <Image
                             className="w-full h-full object-cover"
                             src={item.image}
-                            width={162}
-                            height={162}
+                            width={1920}
+                            height={500}
                             alt="recent-update-image"
                           />
                         </Link>
                       </div>
-                      <div className="max-w-[calc(100%-162px)] pl-[32px] w-full">
-                        <p className="text-[18px] font-medium text-[#2DC4EC] leading-[1.2] mb-[16px]">
+                      <div className="">
+                        <p className="text-[18px] max-sm:text[16px] font-medium text-[#2DC4EC] leading-[1.2] mb-[16px] max-sm:mb-2">
                           {item.date}
                         </p>
-                        <h3 className="text-[24px] font-semibold mb-[16px] font-anybody capitalize">
-                          <Link className="inline-block" href="#">
+                        <h3 className="text-[24px] max-sm:text[20px] font-semibold mb-[16px] max-sm:mb-2 font-anybody capitalize">
+                          <Link className="inline-block" href={item.link}>
                             {item.title}
                           </Link>
                         </h3>
-                        <p className="text-[18px] leading-[1.8] capitalize lineclamp2">
+                        <p className="text-[18px] max-sm:text[16px] leading-[1.8] capitalize lineclamp2">
                           {item.description}
                         </p>
                       </div>
