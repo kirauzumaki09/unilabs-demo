@@ -15,7 +15,7 @@ import { SlideInOnScroll } from "@/modules/app/slide-in-on-scroll";
 
 export function BuyPage() {
   return (
-    <div className="w-full flex flex-col gap-8 relative overflow-hidden">
+    <div className="w-full flex flex-col gap-8 relative pb-75">
       {/* Hero Section with Background */}
       <div className="w-full h-screen relative overflow-hidden">
         <FadeIn>
@@ -81,7 +81,7 @@ export function BuyPage() {
         <Blur2 className="absolute  top-0 w-[2000px]" />
 
         {/* Step 1 */}
-        <div className="flex items-center justify-center flex-col gap-[30px] mb-32 relative">
+        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 relative z-10">
           <div className="absolute">
             <Blur1 className="absolute -z-10 -top-40 left-1/2" />
           </div>
@@ -91,40 +91,40 @@ export function BuyPage() {
             </span>
           </FadeInOnScroll>
 
-          <div className="py-11 w-full px-10 backdrop-blur-[49px] bg-secondary z-40 rounded-[40px] border-t border-t-[#54708F] max-w-[1070px] text-center relative">
+          <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="tinted text-3xl max-md:text-2xl font-anybody font-semibold">
+              <p className="tinted text-4xl max-md:text-2xl font-anybody font-semibold">
                 Wallet Setup
               </p>
             </SlideInOnScroll>
             <FadeInOnScroll>
-              <p className="text-sm mt-5 text-sec-text">
+              <p className="text-lg mt-5 text-sec-text">
                 Welcome aboard! Start by getting MetaMask on your desktop
                 browser or a Wallet Connect-compatible wallet like Trust Wallet
                 for your mobile.
               </p>
             </FadeInOnScroll>
             <FadeInOnScroll delay={0.4}>
-              <p className="text-sm mt-8 text-sec-text">
+              <p className="text-lg mt-9 text-sec-text">
                 Desktop users, MetaMask is ideal for a smooth purchase process.
                 Mobile users, Trust Wallet or MetaMask connected through Wallet
                 Connect is your go-to.
               </p>
             </FadeInOnScroll>
             <div className="mt-10 w-full flex items-center justify-center">
-              <div className="w-full flex items-center justify-between gap-4 max-w-md max-md:max-w-full">
+              <div className="w-full flex items-center justify-between gap-4 max-w[716px] max-md:max-w-full">
                 <FadeInOnScroll>
                   <div className="flex flex-col items-center">
-                    <Metamask className="size-[80px]" />
-                    <p className="font-anybody font-semibold mt-2">
+                    <Metamask className="size-[130px]" />
+                    <p className="font-anybody text-xl font-semibold mt-5">
                       Download METAMASK
                     </p>
                   </div>
                 </FadeInOnScroll>
                 <FadeInOnScroll>
                   <div className="flex flex-col items-center">
-                    <Trust className="size-[80px]" />
-                    <p className="font-anybody font-semibold mt-2">
+                    <Trust className="size-[130px]" />
+                    <p className="font-anybody text-xl font-semibold mt-5">
                       Download TRUST
                     </p>
                   </div>
@@ -135,58 +135,55 @@ export function BuyPage() {
         </div>
 
         {/* Step 2 */}
-        <div className="flex items-center justify-center flex-col relative gap-[30px] mb-32">
+        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 relative z-10">
+          <div className="absolute">
+            <Blur1 className="absolute -z-10 -top-40 left-1/2" />
+          </div>
           <FadeInOnScroll>
-            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody font-semibold">
+            <span className="py-4 px-8 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody text-[23px] leading-[1.5] font-anybody font-semibold">
               STEP 02
             </span>
           </FadeInOnScroll>
 
-          <div className="py-11 w-full px-10 backdrop-blur-[49px] bg-secondary z-40 rounded-[40px] border-t border-t-[#54708F] max-w-[624px] text-center relative">
+          <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="tinted text-3xl max-md:text-2xl font-anybody font-semibold">
-                Purchase Process
+              <p className="tinted text-4xl max-md:text-2xl font-anybody font-semibold">
+              Purchase Process
               </p>
             </SlideInOnScroll>
             <FadeInOnScroll>
-              <p className="text-sm mt-5 text-sec-text">
-                Ready to invest? Simply pick your preferred currency on our
-                site, input how many UNIL tokens you&apos;d like, and hit
-                &apos;Buy Now&apos;. A prompt will pop up from your wallet for
-                transaction confirmation, where you&apos;ll also see the gas
-                fees.
+              <p className="text-lg mt-5 text-sec-text">
+              Ready to invest? Simply pick your preferred currency on our site, input how many UNIL tokens you'd like, and hit 'Buy Now'. A prompt will pop up from your wallet for transaction confirmation, where you’ll also see the gas fees.
               </p>
             </FadeInOnScroll>
-            <FadeInOnScroll delay={0.2}>
-              <p className="text-sm mt-8 text-sec-text">
-                Note: Purchasing with USDT/USDC may involve two approvals—one to
-                okay the contract and another for the actual payment.
+            <FadeInOnScroll delay={0.4}>
+              <p className="text-lg mt-9 text-sec-text">
+              Note: Purchasing with USDT/USDC may involve two approvals—one to okay the contract and another for the actual payment.
               </p>
             </FadeInOnScroll>
           </div>
         </div>
 
         {/* Step 3 */}
-        <div className="flex items-center justify-center flex-col relative gap-[30px] mb-32">
+        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 relative z-10">
+          <div className="absolute">
+            <Blur1 className="absolute -z-10 -top-40 left-1/2" />
+          </div>
           <FadeInOnScroll>
-            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody font-semibold">
+            <span className="py-4 px-8 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody text-[23px] leading-[1.5] font-anybody font-semibold">
               STEP 03
             </span>
           </FadeInOnScroll>
 
-          <div className="py-11 w-full px-10 backdrop-blur-[49px] bg-secondary z-40 rounded-[40px] border-t border-t-[#54708F] max-w-[624px] text-center relative">
+          <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="tinted text-3xl max-md:text-2xl font-anybody font-semibold">
-                Token Reception
+              <p className="tinted text-4xl max-md:text-2xl font-anybody font-semibold">
+              Token Reception
               </p>
             </SlideInOnScroll>
-            <FadeInOnScroll delay={0.4}>
-              <p className="text-sm mt-5 text-sec-text">
-                Once our presale wraps up, you can collect your UNIL tokens
-                through our website or wait for an airdrop straight to your
-                wallet. Meanwhile, keep an eye on your investment and the token
-                prices from your dashboard. Just connect your wallet to our
-                website, and voilà—you're there!
+            <FadeInOnScroll>
+              <p className="text-lg mt-5 text-sec-text">
+              Once our presale wraps up, you can collect your UNIL tokens through our website or wait for an airdrop straight to your wallet. Meanwhile, keep an eye on your investment and the token prices from your dashboard. Just connect your wallet to our website, and voilà—you’re there!
               </p>
             </FadeInOnScroll>
           </div>
@@ -196,11 +193,11 @@ export function BuyPage() {
             <Circle className="absolute -top-28" />
           </FadeIn>
           <FadeInOnScroll className="flex items-center justify-center">
-            <Circle className="absolute -bottom-9 z-50" />
+            <Circle className="absolute -bottom-39 z-50" />
           </FadeInOnScroll>
         </div>
         <FadeIn delay={0.8}>
-          <Line className="absolute -top-12 -z-20" />
+          <Line className="absolute -top-25" />
         </FadeIn>
       </div>
     </div>
