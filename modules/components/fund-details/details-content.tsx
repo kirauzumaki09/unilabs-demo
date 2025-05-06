@@ -29,7 +29,9 @@ const DetailsContent = () => {
 
                         </div>
                     </div>
-                    <div className='w-[40%] pl-[12px] pr-[12px]'></div>
+                    <div className='w-[40%] pl-[12px] pr-[12px]'>
+                        
+                    </div>
                 </div>
 
             </div>
