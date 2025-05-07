@@ -1,7 +1,7 @@
 "use client";
 import Section from "@/modules/app/section";
 import { Title } from "@/modules/app/title";
-import { motion, useAnimation, AnimationControls } from "framer-motion";
+import { motion, useAnimation, AnimationControls, useMotionValue, useTransform, animate } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect, useRef, useState } from "react";
 import Checkmark from "@/assets/checkmark.svg";
@@ -142,32 +142,43 @@ export function Roadmap() {
 }
 
 // ✅ SVG Progress Line
+
 export function RoadmapSVG({
-  progressControls,
   activeIndex,
   height,
   itemRefs,
 }: {
-  progressControls: AnimationControls;
   activeIndex: number;
   height: number;
   itemRefs: React.RefObject<React.RefObject<HTMLDivElement>[]>;
 }) {
   const [circlePositions, setCirclePositions] = useState<number[]>([]);
 
-  // Calculate circle positions based on RoadmapItem positions
+  const progressHeight = useMotionValue(0);
+  const adjustedProgressHeight = useTransform(progressHeight, (val) => val - 70);
+  const circleY = useTransform(progressHeight, (val) =>  val); 
+ 
+  useEffect(() => {
+    const newHeight =
+      (activeIndex / (itemRefs.current.length - 1)) * (height - 180);
+    animate(progressHeight, newHeight, {
+      type: "tween",
+      duration: 0.8,
+
+    });
+  }, [activeIndex, height]);
+
   useEffect(() => {
     const positions: number[] = [];
     if (itemRefs.current) {
       itemRefs.current.forEach((itemRef) => {
-        if (itemRef && itemRef.current) {
+        if (itemRef?.current) {
           const itemRect = itemRef.current.getBoundingClientRect();
           const itemCenter = itemRect.top + itemRect.height / 2;
           positions.push(itemCenter);
         }
       });
 
-      // Normalize positions relative to first item
       if (positions.length > 0) {
         const firstPos = positions[0];
         const normalizedPositions = positions.map((pos) => pos - firstPos + 50);
@@ -179,35 +190,43 @@ export function RoadmapSVG({
   return (
     <svg
       width="100"
-      height={height}
+      height={height - 250}
       viewBox={`0 0 100 ${height}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ height: height }}
+      style={{ height }}
     >
-      {/* Background line */}
+      {/* Background Line */}
       <rect
         x="45"
         y="50"
         width="10"
-        height={height - 100}
+        height={height - 250}
         rx="5"
         fill="#1B1D20"
       />
 
-      {/* Animated progress line */}
+      {/* Animated Progress Line */}
       <motion.rect
         x="45"
         y="50"
         width="10"
-        height={0}
         rx="5"
         fill="url(#paint0_linear)"
-        animate={progressControls}
-        initial={{ height: 0 }}
+        style={{ height: adjustedProgressHeight }}
       />
 
-      {/* Circle markers at calculated positions */}
+      {/* Moving Tip Circle */}
+      <motion.circle
+        cx="50"
+        r="25"
+        cy={circleY}
+        fill={activeIndex >0 ? "#0FEDBE" : "transparent"}
+        className={activeIndex >0 ? "circleGlow" : ""}
+        style={{  display: activeIndex > 0 ? "opacity-1" : "opacity-0",transition: "all 0.4s ease-in-out" }}
+      />
+
+      {/* Static Marker Circles */}
       {circlePositions.map((yPos, index) => (
         <circle
           key={index}
