@@ -184,7 +184,7 @@ export function Hero() {
               </h1>
             </TitleAnim>
             <TitleAnim delay={0.2}>
-              <h1 className="font-anybody  uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-32 -my-2.5">
+              <h1 className="font-anybody  uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-[1.7] -my-2.5">
                 AI-Backed
               </h1>
             </TitleAnim>
@@ -341,7 +341,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="mt-auto flex justify-center items-center flex-col gap-8 max-sm:gap-5 z-50 py-[70px] bg-[#020E1B]">
+      <div className="mt-auto flex justify-center items-center flex-col gap-8 max-sm:gap-5 z-50 py-[70px] max-lg:py-10 bg-[#020E1B]">
         <p className="text-[2rem] font-medium text-white font-anybody">
           Powered By
         </p>

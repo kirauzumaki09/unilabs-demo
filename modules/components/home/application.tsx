@@ -11,26 +11,26 @@ export function Application() {
 
     <div className=" pb-[0px] !pb-[0px]">
       <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5">
-        <div className="mb-[60px]">
+        <div className="mb-[60px] max-lg:mb-3">
           <SlideInOnScroll>
-            <h3 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] !uppercase text-center mr-50  font-extrabold font-anybody uppercase gradText leading-[1]">
+            <h2 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-lg:mr-0 max-lg:text-center max-sm:text-[40px] !uppercase text-center mr-50  font-extrabold font-anybody uppercase gradText leading-[1]">
               The UNILABS
-            </h3>
+            </h2>
           </SlideInOnScroll>
           <SlideInOnScroll delay={0.2}>
-            <h4 className="!uppercase font-extrabold font-anybody   text-center text-[50px] max-lg:text-[40px] max-sm:text-3xl  max-lg:text-left text-white leading-[1]">
+            <h2 className="!uppercase font-extrabold font-anybody  max-lg:mr-0 text-center max-lg:text-center  text-[50px] max-lg:text-[40px] max-sm:text-3xl  max-lg:text-left text-white leading-[1]">
               Application Range
-            </h4>
+            </h2>
           </SlideInOnScroll>
           <SlideInOnScroll delay={0.4}>
-            <h4 className="!uppercase font-extrabold font-anybody text-center text-[50px] mr-50 max-lg:text-[40px] max-sm:text-3xl max-lg:text-left text-white releative z-10 leading-[1]">
+            <h2 className="!uppercase font-extrabold font-anybody text-center max-lg:mr-0 max-lg:text-center  text-[50px] mr-50 max-lg:text-[40px] max-sm:text-3xl  text-white releative z-10 leading-[1]">
               Our Core Offerings
-            </h4>
+            </h2>
           </SlideInOnScroll>
         </div>
-        <div className="flex items-center justify-around max-lg:flex-col max-lg:mt-12 max-lg:gap-16 gap-8  relative z-20">
+        <div className="flex items-center justify-around max-lg:flex-col max-lg:mt-12 max-lg:gap-4 gap-8  relative z-20">
           <FadeInOnScroll>
-            <p className="text-5xl font-anybody text-right max-w-[422px] max-lg:max-w-full max-lg:text-3xl text-white max-lg:text-center mb-4">
+            <p className="text-5xl font-anybody text-right max-w-[422px] max-lg:max-w-full max-lg:text-3xl text-white max-lg:text-center mb-4 max:lg:!mb-0">
               AI-Powered Portfolio Management
             </p>
           </FadeInOnScroll>

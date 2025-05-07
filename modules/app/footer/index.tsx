@@ -1,17 +1,16 @@
 "use client";
-import React from "react";
-import Section from "../section";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import Logo from "@/assets/logo.svg";
-import Link from "next/link";
 import Vector from "@/assets/footer-vector.svg";
+import Logo from "@/assets/logo.svg";
 import UNILABS from "@/assets/Unilabs.svg";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import Section from "../section";
 
-import { SlideInOnScroll } from "../slide-in-on-scroll";
-import { FadeInOnScroll } from "../fadein-scroll";
-import X from "@/assets/x.svg";
 import Telegram from "@/assets/telegram.svg";
+import X from "@/assets/x.svg";
+import { FadeInOnScroll } from "../fadein-scroll";
+import { SlideInOnScroll } from "../slide-in-on-scroll";
 
 export function Footer() {
   const socialLinks = [
@@ -26,83 +25,83 @@ export function Footer() {
   ];
 
   return (
-    <Section sectionClasName="relative pb-[220px] pt-[130px]  overflow-hidden footerBG">
+    <Section sectionClasName="relative pb-[220px] pt-[130px] max-lg:pt-[0px] max-md:pt-[60px]  overflow-hidden footerBG">
       {/* Content Wrapper */}
       <div className="relative z-10 flex items-center justify-between w-full flex-col">
-  
-        <FadeInOnScroll className="flex items-center justify-between w-full pb-[30px] border-b !border-b-[rgba(255,255,255,0.1)]">
+        <FadeInOnScroll className="flex items-center max-xl:flex-col justify-between w-full pb-[30px] border-b !border-b-[rgba(255,255,255,0.1)]">
           <div className="flex gap-[32px] items-center">
-
-          <div className="relative flex items-center ">
-            <motion.div
-              animate={{
-                rotate: 360,
-                opacity: [1, 0.7, 1],
-              }}
-              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-            >
-              <Image
-                src={"/webp/earth.webp"}
-                alt="globe"
-                width={134}
-                height={140}
-              />
-            </motion.div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Logo className="w-[96px]" />
+            <div className="relative flex items-center ">
+              <motion.div
+                animate={{
+                  rotate: 360,
+                  opacity: [1, 0.7, 1],
+                }}
+                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              >
+                <Image
+                  src={"/webp/earth.webp"}
+                  alt="globe"
+                  width={134}
+                  height={140}
+                />
+              </motion.div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Logo className="w-[96px]" />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 max-md:hidden">
+              <p className="max-w-[745px]">
+                Digital currencies may be unregulated in your jurisdiction. The
+                value of digital currencies may go down as well as up. Profits
+                may be subject to capital gains or other taxes applicable in
+                your jurisdiction.
+              </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4 max-md:hidden">
-            <p className="max-w-[745px]">
-              Digital currencies may be unregulated in your jurisdiction. The
-              value of digital currencies may go down as well as up. Profits may
-              be subject to capital gains or other taxes applicable in your
-              jurisdiction.
-            </p>
-          </div>
-          </div>
-          <div className="flex flex-col justify-end">
-          <div className="flex items-center max-md:items-start justify-between w-full  pb-8 max-md:flex-col max-md:gap-4">
-          <FadeInOnScroll className="flex items-center justify-end max-md:hidden">
-            <Link
-              href="#"
-              className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out border-r border-r-white pr-[16px]"
-            >
-              Terms and Conditions
-            </Link>
-            <Link
-              href="#"
-              className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out pl-[16px]"
-            >
-              Privacy Policy
-            </Link>
-          </FadeInOnScroll>
-          <div className="flex flex-col gap-4 md:hidden">
-            <p className="text-muted text-sm">Disclaimer:</p>
-            <p className="max-w-[745px]">
-              Digital currencies may be unregulated in your jurisdiction. The
-              value of digital currencies may go down as well as up. Profits may
-              be subject to capital gains or other taxes applicable in your
-              jurisdiction.
-            </p>
-          </div>
-        </div>
-          <div className="flex  gap-4 justify-end items-center ">
-            <p className=" whitespace-nowrap text-[18px] text-white">Follow us on:</p>
-            <div className="flex items-center gap-4">
-              {socialLinks.map((link, index) => (
+          <div className="flex flex-col justify-end max-xl:justify-center">
+            <div className="flex items-center max-md:items-start justify-between w-full  pb-8 max-md:flex-col max-md:gap-4">
+              <FadeInOnScroll className="flex items-center justify-end max-md:hidden">
                 <Link
-                  href={link.path}
-                  key={index}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mr-4 hover:text-accent  hover:scale-105 duration-300 ease-in-out transition"
+                  href="#"
+                  className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out border-r border-r-white pr-[16px]"
                 >
-                  <div className="size-6">{link.icon}</div>
+                  Terms and Conditions
                 </Link>
-              ))}
+                <Link
+                  href="#"
+                  className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out pl-[16px]"
+                >
+                  Privacy Policy
+                </Link>
+              </FadeInOnScroll>
+              <div className="flex flex-col gap-4 md:hidden">
+                <p className="text-muted text-sm">Disclaimer:</p>
+                <p className="max-w-[745px]">
+                  Digital currencies may be unregulated in your jurisdiction.
+                  The value of digital currencies may go down as well as up.
+                  Profits may be subject to capital gains or other taxes
+                  applicable in your jurisdiction.
+                </p>
+              </div>
             </div>
-          </div>
+            <div className="flex  gap-4 justify-end items-center max-xl:justify-center ">
+              <p className=" whitespace-nowrap text-[18px] text-white">
+                Follow us on:
+              </p>
+              <div className="flex items-center gap-4">
+                {socialLinks.map((link, index) => (
+                  <Link
+                    href={link.path}
+                    key={index}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mr-4 hover:text-accent  hover:scale-105 duration-300 ease-in-out transition"
+                  >
+                    <div className="size-6">{link.icon}</div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </FadeInOnScroll>
 

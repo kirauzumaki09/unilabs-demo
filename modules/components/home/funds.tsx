@@ -36,7 +36,7 @@ export default function Funds() {
             {fundsData.map((fund) => (
               <div
                 key={fund.label}
-                className="bg-secondary backdrop-blur-3xl rounded-[30px] px-[38px] py-[55px] max-w-[630px] flex flex-col gap-[20px]"
+                className="bg-secondary backdrop-blur-3xl rounded-[30px] px-[38px] py-[55px] max-w-[630px] flex flex-col gap-[20px] max-lg:px-4 max-lg:py-6"
               >
                 <div className="size-[100px] max-sm:size-[60px]">
                   {fund.icon}

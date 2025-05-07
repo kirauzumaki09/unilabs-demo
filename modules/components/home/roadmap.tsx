@@ -35,19 +35,19 @@ const RoadmapItem = React.forwardRef<
           (ref as React.MutableRefObject<HTMLDivElement | null>).current = node;
         inViewRef(node);
       }}
-      className="flex lg:mb-20 mb-[125px] gap-[325px] max-lg:flex-col max-lg:gap-10"
+      className="flex  mb-[125px] max-lg:mb-[60px] last:mb-0 max-lg:gap-3 gap-[325px] max-lg:flex-col "
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
     >
-      <div className="text-right font-anybody text-[40px] max-lg:text-4xl mr-6 w-90 max-lg:w-full max-lg:text-left">
+      <div className="text-right font-anybody text-[40px] max-lg:text-[30px] mr-6 w-90 max-lg:w-full max-lg:text-left">
         <p className="text-white">{roadmap.label}</p>
         <p>{roadmap.title}</p>
       </div>
       <div className="ml-6 flex flex-col justify-center">
         <ul>
           {roadmap.description.map((item) => (
-            <li key={item} className="mb-[20px] text-xl flex items-center gap-4">
+            <li key={item} className="mb-[20px] max-md:mb-2 text-xl flex items-center gap-4">
               <Checkmark
                 className={cn("size-5", { "text-[#0FEDBE]": inView })}
               />{" "}

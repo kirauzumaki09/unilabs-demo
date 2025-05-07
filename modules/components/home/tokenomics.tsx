@@ -23,18 +23,18 @@ export function Tokenomics() {
           className="flex items-center justify-center w-full"
         >
           {/* Wrapper to ensure proper positioning */}
-          <div className="relative z-[99]">
+          <div className="relative z-[99] flex items-center justify-center">
             <Image
               src={"/webp/tok.webp"}
               alt="tokenomics"
               width={1200}
               height={500}
-              className="z-20"
+              className="z-20  max-lg:w-[700px]"
             />
             {/* Positioning the text inside the image */}
-            <div className="absolute top-[18%] max-md:right-0 right-4 max-[1150px]:right-8 z-40 flex items-center gap-3">
-              <div className="w-64 max-md:w-20 max-[1150px]:w-28">
-                <Marker />
+            <div className="absolute top-[20%]  right-20 max-xl:right-30  z-40 flex items-center gap-3">
+              <div className="w-64 max-md:w-20 max-xl:w-[120px]">
+                <Marker className="max-lg:hidden" />
               </div>
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
@@ -43,9 +43,9 @@ export function Tokenomics() {
                 <p className="text-sm md:text-xl font-bold mt-1">20%</p>
               </div>
             </div>
-            <div className="absolute top-[45%] max-md:-right-3 -right-8 max-[1150px]:right-0 z-40 flex items-center gap-3">
-              <div className="w-64 max-md:w-20 max-[1150px]:w-28 max-sm:w-12">
-                <Marker />
+            <div className="absolute top-[45%]  -right-8 max-xl:right-10 z-40 flex items-center gap-3">
+              <div className="w-64 max-md:w-20 max-xl:w-[120px] max-sm:w-12">
+                <Marker className="max-lg:hidden" />
               </div>
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light max-sm:text-[10px]">
@@ -57,9 +57,9 @@ export function Tokenomics() {
               </div>
             </div>
           
-            <div className="absolute max-md:bottom-[14%] bottom-[18%] max-md:right-0 right-20 z-40 flex items-center gap-3">
-              <div className="w-64 max-md:w-20 max-[1150px]:w-28 max-sm:w-12">
-                <Marker />
+            <div className="absolute max-md:bottom-[14%] bottom-[18%] max-xl:right-30 max-md:right-20 right-20 z-40 flex items-center gap-3">
+              <div className="w-64 max-md:w-20 max-xl:w-[120px] max-sm:w-12">
+                <Marker className="max-lg:hidden" />
               </div>
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
@@ -68,37 +68,37 @@ export function Tokenomics() {
                 <p className="text-sm md:text-xl font-bold mt-1">10%</p>
               </div>
             </div>
-            <div className="absolute top-[18%] max-md:left-3 -left-8 max-[1150px]:left-0 left-4 z-40 flex items-center gap-3">
+            <div className="absolute top-[18%] max-md:left-5 -left-8  max-xl:left-30 left-4 z-40 flex items-center gap-3">
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
                 ECOSYSTEM & <br /> DEVELOPMENT
                 </p>
                 <p className="text-sm md:text-xl font-bold mt-1">20%</p>
               </div>
-              <div className="w-64 max-md:w-20 max-[1150px]:w-28">
-                <Marker className="rotate-180 max-sm:-ml-14" />
+              <div className="w-64 max-md:w-20 max-xl:w-[120px]">
+                <Marker className="rotate-180 max-sm:-ml-14 max-lg:hidden" />
               </div>
             </div>
-            <div className="absolute top-[48%] max-md:left-0 left-4 z-40 flex items-center gap-3 globearrwoLeftMidlle">
+            <div className="absolute top-[48%] max-xl:!left-4 max-md:!left-0 left-4 z-40 flex items-center gap-3 globearrwoLeftMidlle">
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
                 TEAM & <br /> ADVISORS
                 </p>
                 <p className="text-sm md:text-xl font-bold mt-1">15%</p>
               </div>
-              <div className="w-64 max-md:w-20 max-[1050px]:w-28">
-                <Marker className="rotate-180 max-sm:-ml-14" />
+              <div className="w-64 max-md:w-20 max-xl:w-[120px]">
+                <Marker className="rotate-180 max-lg:hidden" />
               </div>
             </div>
-            <div className="absolute max-md:bottom-[14%] bottom-[23%] max-md:leftt-0 left-4 z-40 flex items-center gap-3">
+            <div className="absolute max-md:bottom-[14%] bottom-[23%] max-xl:left-30  max-md:left-5 left-4 z-40 flex items-center gap-3">
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
                 LIQUIDITY & <br /> EXCHANGE
                 </p>
                 <p className="text-sm md:text-xl font-bold mt-1">40%</p>
               </div>
-              <div className="w-64 max-md:w-20 max-[1150px]:w-28 max-sm:w-12">
-                <Marker className="rotate-180" />
+              <div className="w-64 max-md:w-20 max-xl:w-[120px] max-sm:w-12">
+                <Marker className="rotate-180 max-lg:hidden" />
               </div>
             </div>
           </div>
@@ -143,14 +143,14 @@ function Marker({ className }: MarkerProps) {
       <defs>
         <linearGradient
           id="paint0_linear_17_26173"
-          x1="296"
-          y1="0.5"
-          x2="0"
-          y2="0.5"
+          x1="100%"
+          y1="0%"
+          x2="0%"
+          y2="0%"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#121927" />
-          <stop offset="1" stopColor="#596278" />
+         <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
+         <stop offset="100%" stopColor="#7D869D" />
         </linearGradient>
       </defs>
     </svg>

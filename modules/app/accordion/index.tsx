@@ -34,7 +34,7 @@ const AccordionItem = React.forwardRef<
     <AccordionPrimitive.Item
       ref={ref}
       className={cn(
-        "rounded-[30px] !bg-[#FFFFFF1A] data-[state=open]:border-border  duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90",
+        "rounded-[30px] max-md:rounded-[10px] !bg-[#FFFFFF1A] data-[state=open]:border-border  duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90",
         className
       )}
       {...itemProps}
@@ -70,13 +70,13 @@ const AccordionTrigger = React.forwardRef<
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(
-          "flex  !cursor-pointer flex-1 sm:items-center justify-between text-[24px] font-semibold max-sm:text-sm !font-inter  py-[38px] px-[45px]  border-b border-b-transparent data-[state=open]:border-b-border  transition-all [&[data-state=open]>svg]:rotate-180 [&[data-state=open]>svg]:text-[#1CE0C8]",
+          "flex  !cursor-pointer flex-1 sm:items-center justify-between text-[24px] max-md:text-[18px] font-semibold max-sm:text-sm !font-inter  py-[38px] px-[45px] max-md:p-4  border-b border-b-transparent data-[state=open]:border-b-border  transition-all [&[data-state=open]>svg]:rotate-180 [&[data-state=open]>svg]:text-[#1CE0C8]",
           className
         )}
         {...triggerProps}
       >
         {children}
-        <Plus className={cn("h-4 w-4", chevronClass)} />
+        <Plus className={cn("h-4 w-4 max-md:size-3 my-auto", chevronClass)} />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

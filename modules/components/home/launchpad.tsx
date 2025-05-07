@@ -12,10 +12,10 @@ export function Launchpad() {
 
       <div className="relative">
         <SlideInOnScroll>
-          <p className=" tracking-normal text-[50px] font-extrabold leading-[1] !uppercase font-anybody">
+          <h2 className=" tracking-normal text-[50px] max-lg:text-[40px] max-md:text-[30px] font-extrabold leading-[1] !uppercase font-anybody">
             Get In Early On The Hottest <br className="max-lg:hidden"/> Opportunities In Crypto - <br />
             <span className="gradText !uppercase">The UNILABS Launchpad</span>
-          </p>
+          </h2>
         </SlideInOnScroll>
         <div className="flex items-center w-full mt-16 gap-11 max-lg:flex-col">
           <div className="w-1/2 h-full max-lg:w-full flex items-center justify-center">

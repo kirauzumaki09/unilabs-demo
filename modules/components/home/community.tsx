@@ -87,8 +87,8 @@ const CommunityReviews: React.FC = () => {
     centerMode: true,
     centerPadding: "120px",
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
+      { breakpoint: 1024, settings: { slidesToShow: 1,       centerMode: false, } },
+
     ],
   };
 
@@ -120,16 +120,16 @@ const CommunityReviews: React.FC = () => {
             </div>
           ))}
         </Slider>
-        <div className="flex relative z-10 gap-4 justify-center mt-[60px]">
+        <div className="flex relative z-10 gap-4 justify-center mt-[60px] max-lg:mt-6">
           <button
             onClick={() => sliderRef.current?.slickPrev()}
-            className="size-[76px] border border-[#282F38] bg-[#061624] !cursor-pointer  p-2 rounded-full z-10 hover:opacity-75  flex items-center justify-center"
+            className="size-[76px] max-lg:size-[50px] border border-[#282F38] bg-[#061624] !cursor-pointer  p-2 rounded-full z-10 hover:opacity-75  flex items-center justify-center"
           >
             <LeftArrrow />
           </button>
           <button
             onClick={() => sliderRef.current?.slickNext()}
-            className="size-[76px] border border-[#282F38] bg-[#061624] !cursor-pointer  p-2 rounded-full z-10 hover:opacity-75  flex items-center justify-center"
+            className="size-[76px] max-lg:size-[50px] border border-[#282F38] bg-[#061624] !cursor-pointer  p-2 rounded-full z-10 hover:opacity-75  flex items-center justify-center"
           >
             <RightArrrow />
           </button>

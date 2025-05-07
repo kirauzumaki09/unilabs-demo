@@ -11,9 +11,9 @@ export function HowItWorks() {
       <div className="flex w-full relative max-sm:pb-40">
         <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 relative z-10">
           <FadeInOnScroll>
-            <h3 className="font-bold font-anybody text-[80px]  max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] uppercase max-w-[867px] text-white leading-[1]">
+            <h2 className="font-bold font-anybody text-[80px]  max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] max-lg:mb-3 max-lg:text-center uppercase max-w-[867px] text-white leading-[1]">
               how it <br className="max-lg:hidden" /> works
-            </h3>
+            </h2>
           </FadeInOnScroll>
           <div className="w-full relative utility-cards-wrapper lg:-mt-36 max-lg:flex flex-col gap-10">
             {steps.map((step, index) => (
@@ -22,14 +22,14 @@ export function HowItWorks() {
                 delay={index * 0.3}
                 className="utility-card"
               >
-                <div key={step.title} className={cn("max-w-[420px]")}>
+                <div key={step.title} className={cn("max-w-[420px] max-lg:max-w-full")}>
                   <p className="text-[30px] text-white  max-lg:text-lg">
                     {step.label}
                   </p>
-                  <h5 className="gradText text-4xl max-lg:text-3xl font-bold font-anybody">
+                  <h3 className="gradText text-4xl max-lg:text-3xl font-bold font-anybody">
                     {step.title}
-                  </h5>
-                  <p className="max-lg:text-sm">{step.description}</p>
+                  </h3>
+                  <p className="max-lg:text-[16px]">{step.description}</p>
                 </div>
               </FadeInOnScroll>
             ))}

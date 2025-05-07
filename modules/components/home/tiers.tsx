@@ -86,7 +86,7 @@ export function Tiers() {
     dots: false,
     infinite: true,
     speed: 500,
-    arrows: true,
+    arrows: false,
     autoplay: false,
     draggable: true,
     variableWidth: true,
@@ -129,13 +129,21 @@ export function Tiers() {
       <div className="container mx-auto flex flex-col w-full px-14 max-lg:px-5 tiersSliderWrap">
         <div className="flex justify-between w-full items-start max-lg:flex-col">
           <SlideInOnScroll>
-            <h2 className="uppercase font-extrabold font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-sm:mb-8">
+            <h2 className="uppercase font-extrabold max-md:hidden font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-lg:mb-4">
               $UNIL - The <br /> Core of the <br /> Unilabs <br />
               <SlideInOnScroll>
                 <span className="gradText">Ecosystem</span>
               </SlideInOnScroll>
             </h2>
-          </SlideInOnScroll>
+            </SlideInOnScroll>
+          
+            <h2 className=" hidden max-lg:block uppercase font-extrabold font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-lg:mb-4">
+              $UNIL - The  Core of the  Unilabs 
+            
+                <span className="gradText"> Ecosystem</span>
+          
+            </h2>
+        
 
           <div className="w-1/2 max-lg:w-full">
             <FadeInOnScroll>
@@ -157,7 +165,7 @@ export function Tiers() {
         </div>
 
         {/* Slider Section */}
-        <div className="lg:mt-[122px] mt-8 flex flex-row gap-8">
+        <div className="lg:mt-[122px] mt-8 flex flex-row gap-8 max-lg:flex-col">
           <div className="min-w-[457px] mb-6 md:mb-0">
             <p className="gradText capitalize !text-[28px] max-w-[400px] md:text-4xl sm:text-3xl font-semibold font-anybody">
               30% Fee Redistribution & Tiered Rewards
@@ -175,12 +183,12 @@ export function Tiers() {
                 <Slider {...settings} className="w-full relative">
                   {tiersData.map((tier) => (
                     <div key={tier.tier} className="px-3">
-                      <div className="w-[360px] bg-secondary h-[300px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
-                        <div className="relative w-full min-w-[250px] h-[74px] flex items-center justify-center">
+                      <div className="w-[360px] bg-secondary h-[300px] max-lg:h-[250px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
+                        <div className="relative w-full min-w-[250px] h-[74px] max-lg:justify-center max-lg:h-[50px] flex items-center justify-center">
                           <span className="gradText text-2xl font-bold flex items-center justify-center w-full h-full rounded-full bg-[#202832] z-30 absolute top-0">
                             {tier.tier}
                           </span>
-                          <Rectangle className="absolute inset-0 z-0" />
+                          <Rectangle className="absolute inset-0 z-0 max-lg:h-[50px] max-lg:left-1/2 max-lg:-translate-x-1/2 " />
                         </div>
 
                         <p className="text-[14px] font-inter font-extralight text-[#ffffff] uppercase text-center">{tier.label}</p>

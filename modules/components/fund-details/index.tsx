@@ -47,7 +47,7 @@ const FundDetailsPage = ({
                   .map((item, index) => (
                     <div className="flex  gap-[32px] max-sm:flex-col" key={index}>
                       <div className="w-[162px] flex-shrink-0 h-[162px] overflow-hidden rounded-[14px]">
-                        <Link href={item.link} className="w-full h-full inline-block">
+                        <Link href={item.link} className="w-full linkImage h-full inline-block">
                           <Image
                             className="w-full h-full object-cover"
                             src={item.image}
@@ -62,7 +62,7 @@ const FundDetailsPage = ({
                           {item.date}
                         </p>
                         <h3 className="text-[24px] max-sm:text[20px] font-semibold mb-[16px] max-sm:mb-2 font-anybody capitalize">
-                          <Link className="inline-block" href={item.link}>
+                          <Link className="inline-block hover:text-[#2DC4EC]" href={item.link}  >
                             {item.title}
                           </Link>
                         </h3>

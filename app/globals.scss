@@ -62,6 +62,9 @@ body {
     @apply bg-gradient-custom text-transparent bg-clip-text;
   } */
 }
+a,button{
+  transition: all 0.4s ease-in-out;
+}
 
 body {
   background: var(--background);
@@ -73,7 +76,16 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-
+.linkImage{
+  cursor: pointer;
+  transition: all ease 0.4s;
+  &:hover {
+   img{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.1);
+   }
+  }
+}
 .box {
   width: 85px;
   height: 85px;

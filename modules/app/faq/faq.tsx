@@ -29,14 +29,14 @@ export function FAQ({ data }: FAQSectionProps) {
           <Title
             text="Frequently"
             sub
-            className=" !text-[80px] max-sm:text-[40px]"
+            className=" !text-[80px]  max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px]"
           />
         </SlideInOnScroll>
         <SlideInOnScroll delay={0.2}>
           <Title
             text="Asked Questions"
             sub
-            className="sm:!leading-[1] !text-[80px] max-lg:text-6xl max-sm:text-4xl"
+            className="!leading-[1] !text-[80px] max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px]"
           />
         </SlideInOnScroll>
         <div className="flex items-center justify-center w-full flex-col gap-2 mt-[50px] z-[1000] max-w-[1236px] mx-auto ">
@@ -46,17 +46,17 @@ export function FAQ({ data }: FAQSectionProps) {
           >
             <TabsList className="mx-auto mb-5">
               <TabsTrigger value="general">
-                <p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">
+                <p className="gradText  leading-[1] text-[24px] max-lg:text-[18px] max-md:text-[16px] font-anybody font-bold">
                   General
                 </p>
               </TabsTrigger>
               <TabsTrigger value="presale">
-                <p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">
+                <p className="gradText  leading-[1] text-[24px] max-lg:text-[18px] max-md:text-[16px] font-anybody font-bold">
                   Presale
                 </p>
               </TabsTrigger>
               <TabsTrigger value="support">
-                <p className="gradText  leading-[1] fz-[24px] font-anybody font-bold">
+                <p className="gradText  leading-[1] text-[24px] max-lg:text-[18px] max-md:text-[16px] font-anybody font-bold">
                   Support
                 </p>
               </TabsTrigger>
@@ -72,8 +72,8 @@ export function FAQ({ data }: FAQSectionProps) {
                       >
                         <AccordionTrigger>{faq.title}</AccordionTrigger>
                         <AccordionContent>
-                          <div className="pt-[35px] pb-[40px] px-[45px] text-[#DBDBDB] font-inter">
-                            <p className="!font-normal text-[18px] ">
+                        <div className="pt-[35px] pb-[40px] px-[45px] max-md:!p-3 text-[#DBDBDB] font-inter">
+                        <p className="!font-normal text-[18px] max-md:text-[16px]">
                               {faq.desc}
                             </p>
                             {faq.list && (
@@ -98,7 +98,43 @@ export function FAQ({ data }: FAQSectionProps) {
                 ))}
               </div>
             </TabsContent>
-            <TabsContent value="presale"></TabsContent>
+            <TabsContent value="presale">
+            <div className="w-full max-w-[1236px] flex flex-col gap-2">
+                {data.map((faq, index) => (
+                  <FadeInOnScroll key={faq.title} delay={index * 0.4}>
+                    <Accordion type="single" collapsible>
+                      <AccordionItem
+                        value={`item-${index}`}
+                        className="w-full z-50"
+                      >
+                        <AccordionTrigger>{faq.title}</AccordionTrigger>
+                        <AccordionContent>
+                        <div className="pt-[35px] pb-[40px] px-[45px] max-md:!p-3 text-[#DBDBDB] font-inter">
+                        <p className="!font-normal text-[18px] max-md:text-[16px]">
+                              {faq.desc}
+                            </p>
+                            {faq.list && (
+                              <ul className="mt-3">
+                                {faq.list.map((item, i) => (
+                                  <li key={i}>
+                                    <p className="font-semibold text-[#1CE0C8] pb-3">
+                                      {item.pre}{" "}
+                                      <span className="!text-[#DBDBDB] font-normal">
+                                        {item.text}
+                                      </span>
+                                    </p>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                  </FadeInOnScroll>
+                ))}
+              </div>
+            </TabsContent>
             <TabsContent value="support">
               <div className="w-full max-w-[1236px] flex flex-col gap-2">
                 {data.map((faq, index) => (
@@ -110,8 +146,8 @@ export function FAQ({ data }: FAQSectionProps) {
                       >
                         <AccordionTrigger>{faq.title}</AccordionTrigger>
                         <AccordionContent>
-                          <div className="pt-[35px] pb-[40px] px-[45px] text-[#DBDBDB] font-inter">
-                            <p className="!font-normal text-[18px] ">
+                          <div className="pt-[35px] pb-[40px] px-[45px] max-md:!p-3 text-[#DBDBDB] font-inter">
+                            <p className="!font-normal text-[18px] max-md:text-[16px]">
                               {faq.desc}
                             </p>
                             {faq.list && (
