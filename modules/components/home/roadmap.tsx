@@ -151,6 +151,7 @@ export function RoadmapSVG({
   activeIndex: number;
   height: number;
   itemRefs: React.RefObject<React.RefObject<HTMLDivElement>[]>;
+  progressControls: AnimationControls;
 }) {
   const [circlePositions, setCirclePositions] = useState<number[]>([]);
 
@@ -181,7 +182,7 @@ export function RoadmapSVG({
 
       if (positions.length > 0) {
         const firstPos = positions[0];
-        const normalizedPositions = positions.map((pos) => pos - firstPos + 50);
+        const normalizedPositions = positions.map((pos) => pos - firstPos + 50 );
         setCirclePositions(normalizedPositions);
       }
     }
@@ -220,10 +221,10 @@ export function RoadmapSVG({
       <motion.circle
         cx="50"
         r="25"
-        cy={circleY}
+        cy= {circleY}
         fill={activeIndex >0 ? "#0FEDBE" : "transparent"}
         className={activeIndex >0 ? "circleGlow" : ""}
-        style={{  display: activeIndex > 0 ? "opacity-1" : "opacity-0",transition: "all 0.4s ease-in-out" }}
+ 
       />
 
       {/* Static Marker Circles */}

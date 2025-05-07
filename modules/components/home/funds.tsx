@@ -13,21 +13,19 @@ export default function Funds() {
     <div className="section">
       <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 -mt-5">
         <SlideInOnScroll>
-          <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
+          <h2 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
             Introducing Our
-          </h4>
+          </h2>
         </SlideInOnScroll>
         <SlideInOnScroll delay={0.2}>
-          <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
+          <h2 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white mb-4">
             Specialized Funds
-          </h4>
+          </h2>
         </SlideInOnScroll>
         <div className="flex items-center justify-center">
-          <FadeInOnScroll className="flex items-center justify-center">
-            <p className="text-lg w-[45%] max-md:w-full lg:text-center text-muted">
-              To accommodate diverse investor profiles and strategies, Unilabs
-              presents four distinct fund options—each leveraging top-tier
-              expertise and AI-driven insights
+          <FadeInOnScroll className="flex items-center justify-center max-w-[820px]">
+            <p className="text-lg  max-md:max-w-full lg:text-center text-white">
+            To accommodate diverse investor profiles and strategies, Unilabs presents four distinct fund options—each leveraging top-tier expertise and AI-driven insights
             </p>
           </FadeInOnScroll>
         </div>
