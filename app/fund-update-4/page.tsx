@@ -10,7 +10,7 @@ const FundUpdate1 = () => {
           title="Fund Update 4"
           date="May 6, 2025"
         >
-          <h2>Hello Unilabs Community,</h2>
+          <p>Hello Unilabs Community,</p>
 
           <p>
             Today marked an exciting leap for our team at Unilabs. We officially
