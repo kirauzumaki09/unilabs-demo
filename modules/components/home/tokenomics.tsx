@@ -32,7 +32,7 @@ export function Tokenomics() {
               className="z-20  max-lg:w-[700px]"
             />
             {/* Positioning the text inside the image */}
-            <div className="absolute top-[20%]  right-20 max-xl:right-30  z-40 flex items-center gap-3">
+            <div className="absolute top-[20%]  right-20 max-xl:right-30 max-sm:right-0  z-40 flex items-center gap-3">
               <div className="w-64 max-md:w-20 max-xl:w-[120px]">
                 <Marker className="max-lg:hidden" />
               </div>
@@ -43,7 +43,7 @@ export function Tokenomics() {
                 <p className="text-sm md:text-xl font-bold mt-1">20%</p>
               </div>
             </div>
-            <div className="absolute top-[45%]  -right-8 max-xl:right-10 z-40 flex items-center gap-3">
+            <div className="absolute top-[45%]  -right-8 max-xl:right-10 max-sm:right-0 z-40 flex items-center gap-3">
               <div className="w-64 max-md:w-20 max-xl:w-[120px] max-sm:w-12">
                 <Marker className="max-lg:hidden" />
               </div>
@@ -57,7 +57,7 @@ export function Tokenomics() {
               </div>
             </div>
           
-            <div className="absolute max-md:bottom-[14%] bottom-[18%] max-xl:right-30 max-md:right-20 right-20 z-40 flex items-center gap-3">
+            <div className="absolute max-md:bottom-[14%] bottom-[18%] max-xl:right-30 max-md:right-20 right-20  max-sm:right-0 z-40 flex items-center gap-3">
               <div className="w-64 max-md:w-20 max-xl:w-[120px] max-sm:w-12">
                 <Marker className="max-lg:hidden" />
               </div>
@@ -68,7 +68,7 @@ export function Tokenomics() {
                 <p className="text-sm md:text-xl font-bold mt-1">10%</p>
               </div>
             </div>
-            <div className="absolute top-[18%] max-md:left-5 -left-8  max-xl:left-30 left-4 z-40 flex items-center gap-3">
+            <div className="absolute top-[18%] max-md:left-5 -left-8  max-xl:left-30 left-4 z-40 max-sm:left-0 flex items-center gap-3">
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
                 ECOSYSTEM & <br /> DEVELOPMENT
@@ -90,7 +90,7 @@ export function Tokenomics() {
                 <Marker className="rotate-180 max-lg:hidden" />
               </div>
             </div>
-            <div className="absolute max-md:bottom-[14%] bottom-[23%] max-xl:left-30  max-md:left-5 left-4 z-40 flex items-center gap-3">
+            <div className="absolute max-md:bottom-[14%] bottom-[23%] max-xl:left-30  max-md:left-5 max-sm:left-0 left-4 z-40 flex items-center gap-3">
               <div>
                 <p className="text-xs md:text-sm text-[#DBDBDB] text-light">
                 LIQUIDITY & <br /> EXCHANGE
