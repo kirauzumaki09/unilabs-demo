@@ -34,8 +34,8 @@ export const fundList = [
     link: "/fund-update-4",
   },
   {
-    title: "Fund Update 4",
-    date: "May 6,2025",
+    title: "Fund Update 5",
+    date: "May 7,2025",
     description: `Today, our team made important progress on one of the most vital parts of the Unilabs ecosystem: the Treasury Management Protocol.This protocol will serve as the brain of our operations—allocating
             funds, handling withdrawals, managing risk, and optimizing yields
             across all investment portfolios.`,
