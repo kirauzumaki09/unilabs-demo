@@ -1,3 +1,4 @@
+"use client";
 import assets from "@/assets";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";

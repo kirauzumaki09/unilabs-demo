@@ -29,14 +29,14 @@ export function FAQ({ data }: FAQSectionProps) {
           <Title
             text="Frequently"
             sub
-            className=" !text-[80px]  max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px]"
+            className=" !text-[80px] !leading-[1]  max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px]"
           />
         </SlideInOnScroll>
         <SlideInOnScroll delay={0.2}>
           <Title
             text="Asked Questions"
             sub
-            className="!leading-[1] !text-[80px] max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px]"
+            className=" !text-[80px] max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px] !leading-[1]"
           />
         </SlideInOnScroll>
         <div className="flex items-center justify-center w-full flex-col gap-2 mt-[50px] z-[1000] max-w-[1236px] mx-auto ">

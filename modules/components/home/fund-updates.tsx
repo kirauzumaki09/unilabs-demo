@@ -1,15 +1,13 @@
-"use client"
-import assets from "@/assets";
+"use client";
+
+import Button from "@/modules/app/button";
 import Image from "next/image";
 import Link from "next/link";
-import { fundList } from "../fund-main/fundlist.mock";
-import Button from "@/modules/app/button";
 import { useRouter } from "next/navigation";
-
-
+import { fundList } from "../fund-main/fundlist.mock";
 
 const FundUpdates = () => {
-const router=useRouter();
+  const router = useRouter();
 
   return (
     <section className="section fundUpadteBg py-16 px-4">
@@ -61,8 +59,8 @@ const router=useRouter();
 
         <div className="flex justify-center mt-12">
           <Button
-        className="hover:opacity-60"
-onClick={() => router.push("/fund-updates")}
+            className="hover:opacity-60"
+            onClick={() => router.push("/fund-updates")}
           >
             View More
           </Button>
