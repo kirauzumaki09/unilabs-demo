@@ -37,7 +37,7 @@ export function Nav() {
   return (
     <div
       className={cn(
-        "flex items-center justify-between border-b border-b-transparent w-full fixed top-0 z-[1000] h-[116px] ",
+        "flex items-center justify-between border-b transition-all duration-400 ease-in-out border-b-transparent w-full 0 fixed top-0 z-[1000] h-[116px] ",
         {
           "border-b-[#2DC5EC] backdrop-blur-lg": isScrolled,
         }
