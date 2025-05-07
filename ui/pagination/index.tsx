@@ -49,7 +49,7 @@ const PaginationLink = ({
   <Button
     aria-current={isActive ? "page" : undefined}
     className={cn("w-[52px] h-[52px] cursor-pointer ",
-     isActive? "activeBtn":"bg-[#0E141B]",
+     isActive? "activeBtn":"bg-[#0E141B] hover:bg-[#1CE0C8]]",
       className
     )}
     {...props}
