@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Inter, Anybody,Figtree } from "next/font/google";
 import "./globals.scss";
@@ -8,6 +9,8 @@ import { Footer } from "@/modules/app/footer";
 import { SmoothScroll } from "@/modules/app/lenis";
 import Script from "next/script";
 import FooterTwo from "@/modules/app/footer-2";
+import { usePathname, useRouter } from "next/navigation";
+import AppWrapper from "@/modules/components/AppWrapper";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,6 +37,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -62,11 +68,13 @@ export default function RootLayout({
         <SmoothScroll>
           
             <Nav />
-
+<AppWrapper>
 
           {children}
-          <Footer />
-          {/* <FooterTwo /> */}
+</AppWrapper>
+
+
+      
           <div className="bg-gradient-to-t from-black to-transparent w-full h-[115px] fixed -bottom-2 z-[1000]"/>
         </SmoothScroll>
       </body>

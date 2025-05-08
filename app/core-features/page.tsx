@@ -18,15 +18,6 @@ export default function CoreFeatures() {
   return (
     <div className="flex justify-center min-h-screen gap-16 font-[family-name:var(--font-inter)]">
       <main className="flex flex-col gap-[32px] w-full relative overflow-hidden">
-        <FadeIn>
-          <Image
-            src={"/webp/photorealistic_galaxy_background_1_1x.webp"}
-            alt="Background effect"
-            fill
-            className="object-cover"
-            priority
-          />
-        </FadeIn>
         <div className="size-20 absolute z-30 top-[20%] left-[5%]">
           <FadeIn delay={0.2}>
             <ScalePulse>
@@ -56,19 +47,39 @@ export default function CoreFeatures() {
         <div className="absolute inset-0">
           <Vector />
         </div>
-        <div className="z-50 pt-16 flex items-center justify-center flex-col ">
-          <div className="flex items-center gap-4 px-5 flex-wrap justify-center mb-[100px]">
-            <FadeIn>
-              <Title text="Core" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
-            </FadeIn>
-            <FadeIn>
-              <Title text="unilabs" sub tinted className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
-            </FadeIn>
-            <FadeIn>
-              <Title text="features" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
-            </FadeIn>
+        <div className="z-50  flex items-center justify-center flex-col ">
+          <div className="pt-[180px] core_featureBG w-full min-h-[1000px]">
+
+          <div className="container">
+            <div className=" mb-[120px] max-lg:mb-[80px] max-md:mb-[60px] max-sm:mb-[40px] flex items-center gap-x-5 flex-wrap justify-center ">
+              <FadeIn>
+                <Title
+                  text="Core"
+                  sub
+                  className="!text-[110px] max-lg:!text-[75px] max-md:!text-[60px] max-sm:!text[50px] !uppercase !leading-[1]"
+                />
+              </FadeIn>
+              <FadeIn>
+                <Title
+                  text="unilabs"
+                  sub
+                  tinted
+                  className="!text-[110px] max-lg:!text-[75px] max-md:!text-[60px] max-sm:!text[50px] !uppercase !leading-[1]"
+                />
+              </FadeIn>
+              <FadeIn>
+                <Title
+                  text="features"
+                  sub
+                  className="!text-[110px] max-lg:!text-[75px] max-md:!text-[60px] max-sm:!text[50px] !uppercase !leading-[1]"
+                />
+              </FadeIn>
+            </div>
           </div>
-          <div className="flex flex-col max-w-[1530px] mx-auto gap-16 w-full items-center justify-center px-10 max-lg:px-5 max-lg:mt-10 pb-[100px] coreFeatureCardWrap">
+          </div>
+          <div className="-mt-[600px] pb-[140px]">
+
+          <div className="flex flex-col container mx-auto gap-16 max-md:gap-6 w-full items-center coreFeatureCardWrap">
             {featuresData.map((feature, index) => (
               <FadeIn
                 key={feature.title}
@@ -77,7 +88,7 @@ export default function CoreFeatures() {
               >
                 <div
                   className={cn(
-                    "bg-white/5 backdrop-blur-[25px]  lg:w-full w-full max-md:flex-col rounded-[40px] py-16 flex items-center px-10 max-md:px-5 border-t border-t-sec-border gap-20",
+                    "bg-white/5 backdrop-blur-[25px] max-lg:gap-[20px] max-md:gap-2 lg:w-full w-full max-md:flex-col rounded-[40px] py-16 flex items-center px-10 max-md:px-5 max-md:py-5 max-md:rounded-[12px] border-t border-t-sec-border gap-20",
                     {
                       "flex-row-reverse": index % 2,
                     }
@@ -88,11 +99,14 @@ export default function CoreFeatures() {
                     <p className="gradText font-semibold text-[36px] max-md:text-2xl mb-[20px] coreFeatureTitle">
                       {feature.title}
                     </p>
-                    <p className="font-normal text-[18px] text-inter leading-[1.8] text-[#F0F0F0]">{feature.description}</p>
+                    <p className="font-normal text-[18px] max-md:text-[16px] text-inter leading-[1.8] text-[#F0F0F0]">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
               </FadeIn>
             ))}
+          </div>
           </div>
         </div>
       </main>
