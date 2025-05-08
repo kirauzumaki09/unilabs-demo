@@ -77,7 +77,7 @@ export default function CoreFeatures() {
             </div>
           </div>
           </div>
-          <div className="-mt-[600px] pb-[140px]">
+          <div className="-mt-[600px] pb-[140px] max-lg:pb-[100px] max-md:pb-[60px] max-sm:pb-[40px]">
 
           <div className="flex flex-col container mx-auto gap-16 max-md:gap-6 w-full items-center coreFeatureCardWrap">
             {featuresData.map((feature, index) => (

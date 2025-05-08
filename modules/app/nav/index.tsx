@@ -187,12 +187,12 @@ const navLinks = [
   },
   {
     name: "Core Features",
-    // path: "/core-features",
-    path: "#",
+    path: "/core-features",
+
   },
   {
     name: "Fund Updates",
-    // path: "/core-features",
+
     path: "/fund-updates",
   },
   {
