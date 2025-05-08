@@ -12,11 +12,11 @@ import { cn } from "@/modules/utils";
 
 export function Overview() {
   return (
-    <div className="max-sm:-mt-80 z-50 pb-[170px]">
-      <div className="max-w-[1529px] mx-auto flex flex-col items-center justify-center relative px-14 max-lg:px-5">
+    <div className="max-sm:-mt-80 z-50 pb-[170px] pt-[31px]">
+      <div className="container mx-auto flex flex-col items-center justify-center relative px-14 max-lg:px-5">
         <Title text="AI Fund Overview" sub className="text-[80px]" />
 
-        <div className="absolute w-[100%] left-[-14%] top-[34%] -z-10">
+        <div className="absolute w-[100%] left-[-15%] top-[34%] -z-10">
           <OverviewVector className='w-full' />
         </div>
         <div className="absolute w-[55%] top-[35%] left-0 -z-20">

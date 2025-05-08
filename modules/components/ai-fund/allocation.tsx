@@ -10,21 +10,16 @@ import React from "react";
 
 export function Allocation() {
   return (
-    <section className="relative">
-      <div className="max-w-[1529px] mx-auto flex flex-col gap-8 relative px-14 max-lg:px-5">
+    <section className="relative pb-[170px]">
+      <div className="container mx-auto flex flex-col relative max-lg:px-5">
         <SlideInOnScroll>
-          <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
-            Fund allocation
-          </h4>
-        </SlideInOnScroll>
-        <SlideInOnScroll delay={0.2}>
-          <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white -mt-3 leading-[90px]">
-            Strategy
+          <h4 className="uppercase max-w-[766px] mx-auto font-extrabold font-anybody mb-[20px] text-[80px] leading-[1.1] lg:text-center text-white">
+            Fund allocation Strategy
           </h4>
         </SlideInOnScroll>
         <div className="flex items-center justify-center">
           <FadeInOnScroll className="flex items-center justify-center">
-            <p className="text-lg w-full max-md:w-full lg:text-center text-sec-text -mt-12">
+            <p className="text-lg w-full max-md:w-full lg:text-center mb-[60px] text-sec-text">
               The AI Fund is diversified across multiple AI-integrated
               blockchain sectors:
             </p>
@@ -34,14 +29,14 @@ export function Allocation() {
           <div className="grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-[30px]">
             {allocationData.map((data, index) => (
               <FadeInOnScroll key={data.label} delay={index * 0.2}>
-                <div className="bg-white/10 relative overflow-hidden gap-7 backdrop-blur-[50px] rounded-[50px] max-w-[550px] w-full p-11 border-b border-b-black/5 border-t border-t-sec-border min-h-[380px] flex items-center justify-center flex-col">
-                  <p className="gradText text-lg font-semibold font-anybody pb-8 w-[75%] text-center">
+                <div className="allocation-card">
+                  <p className="allocation-head">
                     {data.label}
                   </p>
-                  <div className="flex items-center justify-center w-full">
-                    <div className="size-20">{data.icon}</div>
+                  <div className="allocation-icon">
+                    {data.icon}
                   </div>
-                  <p className="text-center text-[#F8F8F8]">{data.desc}</p>
+                  <p>{data.desc}</p>
                 </div>
               </FadeInOnScroll>
             ))}

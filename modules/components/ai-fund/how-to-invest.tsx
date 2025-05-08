@@ -11,19 +11,14 @@ import { cn } from "@/modules/utils";
 
 export function HowToInvest() {
   return (
-    <section className="relative">
-      <div className="max-w-[1529px] mx-auto flex flex-col gap-8 relative px-14 max-lg:px-5 z-50">
+    <section className="relative pb-[170px]">
+      <div className="container mx-auto flex flex-col relative z-50">
         <SlideInOnScroll>
-          <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
-            How to Invest in
+          <h4 className="uppercase font-extrabold mx-auto font-anybody text-[80px] max-w-[774px] mb-[68px] leading-[1.2] lg:text-center text-white">
+            How to Invest in the AI Fund
           </h4>
         </SlideInOnScroll>
-        <SlideInOnScroll delay={0.2}>
-          <h4 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
-            the AI Fund
-          </h4>
-        </SlideInOnScroll>
-        <div className="w-[80%] relative mt-16 max-lg:flex-col gap-8 max-lg:flex max-lg:justify-cente max-lg:w-full max-lg:items-center">
+        <div className="w-[75%] relative mt-[116px] mb-[102px] max-lg:flex-col gap-8 max-lg:flex max-lg:justify-cente max-lg:w-full max-lg:items-center">
           {investData.map((data, index) => (
             <div
               key={data.label}
@@ -58,13 +53,13 @@ export function HowToInvest() {
               </SlideInOnScroll>
             </div>
           ))}
-          <div className="absolute -top-20 h-[115%] left-[62.5%] max-lg:hidden">
+          <div className="absolute -top-37 h-[123%] left-[62.8%] max-lg:hidden pointer-events-none">
             <Vector1 />
           </div>
-          <div className="absolute w-full right-0 top-[30%] max-lg:w-[45%]">
+          <div className="absolute w-full right-0 top-[30%] max-lg:w-[45%] pointer-events-none">
             <Blur2 />
           </div>
-          <div className="absolute w-full left-32 -top-32 max-lg:w-[65%]">
+          <div className="absolute w-full left-32 -top-32 max-lg:w-[65%] pointer-events-none">
             <Blur />
           </div>
         </div>
