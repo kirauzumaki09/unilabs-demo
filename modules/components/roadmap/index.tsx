@@ -54,7 +54,7 @@ export function RoadmapPage() {
   }, [activeIndex, controls, svgHeight]);
 
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full  min-h-screen relative">
       <div className="w-full h-screen absolute overflow-hidden">
         <FadeIn delay={0}>
           <Image
@@ -79,7 +79,9 @@ export function RoadmapPage() {
         <Vector className="absolute inset-0 -z-30" />
       </FadeIn>
       {/* Hero Content */}
-      <div className="flex flex-col items-center max-lg:px-4 z-40 relative pt-32 max-md:pt-28 container mx-auto overflow-hidden">
+      <div className="section">
+
+      <div className="flex flex-col  items-center max-lg:px-4 z-40 relative pt-32 max-md:pt-28 container mx-auto overflow-hidden">
         <div className="flex items-center gap-4 mb-[40px] max-md:flex-wrap max-md:gap-1 max-md:mb-[20px] justify-center">
           <TitleAnim delay={0.2}>
             <Title
@@ -128,6 +130,7 @@ export function RoadmapPage() {
             ))}
           </>
         </div>
+      </div>
       </div>
     </div>
   );
