@@ -26,51 +26,29 @@ export function BuyPage() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col gap-8 relative pb-75 ">
-      {/* Hero Section with Background */}
-      <div className="w-full h-screen relative overflow-hidden">
-        <FadeIn>
-          <Image
-            src="/webp/3d_hyperspace_background_with_warp_tunnel_effect_2_1x.webp"
-            alt="Background effect"
-            fill
-            className="object-cover"
-            priority
-          />
-        </FadeIn>
-        {/* <FadeIn delay={0.4}> */}
-        <Image
-          src="/webp/3d_rendering_planet_earth_1_1x.webp"
-          alt="Earth"
-          width={800}
-          height={800}
-          objectFit="contain"
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 z-20l"
-        />
-        {/* </FadeIn> */}
-        <FadeIn delay={0.6}>
-          <Vector className="absolute inset-0 z-30" />
-        </FadeIn>
+    <div className="w-full flex flex-col gap-8 relative pb-75 max-lg:pb-[80px]  ">
 
-        {/* Hero Content */}
+      <div className="w-full h-screen relative overflow-hidden how_buy_BG pt-[100px]"> 
+      <div className="container">
+
         <div className="flex flex-col items-center max-lg:px-4 z-40 relative pt-16 max-md:pt-28">
           <TitleAnim delay={0}>
-            <h1 className="font-anybody uppercase text-white font-extrabold text-[50px] max-lg:text-4xl max-w-[80%] max-lg:max-w-full text-center leading-[140%]">
+            <h1 className="font-anybody uppercase text-white font-extrabold text-[80px] max-lg:text-[60px] max-md:text-[50px]  max-sm:text-[40px] text-center  !leading-[1]">
               Buy UNIL with
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody uppercase font-extrabold text-[5rem] max-lg:text-6xl max-md:text-5xl gradText leading-tight">
+            <h1 className="font-anybody uppercase font-extrabold text-[110px] max-lg:text-[text75px] max-md:text-[60px] max-sm:text-[50px] gradText !leading-[1]">
               ETH, BNB, USDT
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.4}>
-            <h1 className="font-anybody uppercase text-white font-extrabold text-[4.375rem] max-lg:text-4xl max-md:text-3xl text-center leading-tight mt-2">
+            <h1 className="font-anybody uppercase text-white font-extrabold text-[110px] max-lg:text-[text75px] max-md:text-[60px] max-sm:text-[50px] text-center  !leading-[1]">
               and MANY MORE
             </h1>
           </TitleAnim>
 
-          <FadeIn delay={0.6} className="max-w-[280px] w-full">
+          <FadeIn delay={0.6} className="max-w-[405px] w-full">
             <button
               onClick={() => {
                 window.open(
@@ -79,7 +57,7 @@ export function BuyPage() {
                   "noopener,noreferrer"
                 );
               }}
-              className="mt-8 bg-tertiary border-[#1CE0C7] uppercase border py-4 w-full rounded-[11px] font-anybody font-semibold hover:bg-opacity-80 transition-all"
+              className="mt-8 tracking-[0.5em]  bg-tertiary border-[#2EC5ED] uppercase border py-4 h-[70px] max-md:h-[60px] w-full rounded-[11px] font-anybody font-semibold hover:bg-opacity-80 transition-all"
             >
               Buy UNIL
             </button>
@@ -87,12 +65,16 @@ export function BuyPage() {
         </div>
       </div>
 
+      </div>
+
       {/* Steps Section */}
-      <div className="w-full flex flex-col items-center px-4 -mt-14 z-50 relative max-md:-mt-52 " ref={howToBuyRef}>
+      <div className="container">
+
+      <div className="w-full flex flex-col items-center px-4 -mt-16 max-lg:mt-10 max-md:mt-4z-50 relative max-md:-mt-52 " ref={howToBuyRef}>
         <Blur2 className="absolute  top-0 w-[2000px]" />
 
         {/* Step 1 */}
-        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 relative z-10">
+        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 max-lg:mt-10 max-md:mt-4 relative z-10">
           <div className="absolute">
             <Blur1 className="absolute -z-10 -top-40 left-1/2" />
           </div>
@@ -102,11 +84,11 @@ export function BuyPage() {
             </span>
           </FadeInOnScroll>
 
-          <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
+          <div className="py-11.5 max-lg:py-5 max-lg:px-6 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="gradText text-3xl max-md:text-2xl font-anybody font-semibold">
+              <h3 className="gradText text-[36px] max-md:text-[24px] max-sm:text-[20px] font-anybody font-semibold leading-[1]">
                 Wallet Setup
-              </p>
+              </h3>
             </SlideInOnScroll>
             <FadeInOnScroll>
               <p className="text-lg mt-5 text-sec-text">
@@ -116,7 +98,7 @@ export function BuyPage() {
               </p>
             </FadeInOnScroll>
             <FadeInOnScroll delay={0.4}>
-              <p className="text-lg mt-9 text-sec-text">
+              <p className="text-lg mt-9 max-lg:mt-2 text-sec-text">
                 Desktop users, MetaMask is ideal for a smooth purchase process.
                 Mobile users, Trust Wallet or MetaMask connected through Wallet
                 Connect is your go-to.
@@ -146,7 +128,7 @@ export function BuyPage() {
         </div>
 
         {/* Step 2 */}
-        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 relative z-10">
+        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 max-lg:mt-10 max-md:mt-4 relative z-10">
           <div className="absolute">
             <Blur1 className="absolute -z-10 -top-40 left-1/2" />
           </div>
@@ -156,11 +138,11 @@ export function BuyPage() {
             </span>
           </FadeInOnScroll>
 
-          <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
+          <div className="py-11.5 max-lg:py-5 max-lg:px-6  w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="gradText text-3xl max-md:text-2xl font-anybody font-semibold">
+              <h3 className="gradText text-[36px] max-md:text-[24px] max-sm:text-[20px] font-anybody font-semibold leading-[1]">
                 Purchase Process
-              </p>
+              </h3>
             </SlideInOnScroll>
             <FadeInOnScroll>
               <p className="text-lg mt-5 text-sec-text">
@@ -168,7 +150,7 @@ export function BuyPage() {
               </p>
             </FadeInOnScroll>
             <FadeInOnScroll delay={0.4}>
-              <p className="text-lg mt-9 text-sec-text">
+              <p className="text-lg mt-9 max-lg:mt-2 text-sec-text">
               Note: Purchasing with USDT/USDC may involve two approvals—one to okay the contract and another for the actual payment.
               </p>
             </FadeInOnScroll>
@@ -176,7 +158,7 @@ export function BuyPage() {
         </div>
 
         {/* Step 3 */}
-        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 relative z-10">
+        <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 max-lg:mt-10 max-md:mt-4 relative z-10">
           <div className="absolute">
             <Blur1 className="absolute -z-10 -top-40 left-1/2" />
           </div>
@@ -186,11 +168,11 @@ export function BuyPage() {
             </span>
           </FadeInOnScroll>
 
-          <div className="py-11.5 w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
+          <div className="py-11.5 max-lg:py-5 max-lg:px-6  w-full px-20 backdrop-blur-[10px] bg-secondary z-40 rounded-[40px] border border-[#54708F] max-w-[1070px] text-center relative">
             <SlideInOnScroll>
-              <p className="gradText text-3xl max-md:text-2xl font-anybody font-semibold">
+              <h3 className="gradText text-[36px] max-md:text-[24px] max-sm:text-[20px] font-anybody font-semibold leading-[1]">
                 Token Reception
-              </p>
+              </h3>
             </SlideInOnScroll>
             <FadeInOnScroll>
               <p className="text-lg mt-5 text-sec-text">
@@ -210,6 +192,7 @@ export function BuyPage() {
         <FadeIn delay={0.8}>
           <div className={`absolute -top-15  w-[2px] activeBtn`}     style={{ height: `${height}px` }} />
         </FadeIn>
+      </div>
       </div>
     </div>
   );

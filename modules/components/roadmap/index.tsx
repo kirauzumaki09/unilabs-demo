@@ -12,6 +12,7 @@ import { useInView } from "react-intersection-observer";
 import RoadmapBlur1 from "@/assets/roadmap-blur.svg";
 import RoadmapBlur2 from "@/assets/roadmap-blur2.svg";
 import RoadmapBlur3 from "@/assets/roadmap-blur3.svg";
+import assets from "@/assets";
 
 export function RoadmapPage() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -57,7 +58,7 @@ export function RoadmapPage() {
       <div className="w-full h-screen absolute overflow-hidden">
         <FadeIn delay={0}>
           <Image
-            src="/webp/3d_abstract_space_background_with_wireframe_landscape_1_1x.webp"
+            src={assets.roadMapMainBG}
             alt="Background effect"
             fill
             className="absolute inset-0"
@@ -65,18 +66,35 @@ export function RoadmapPage() {
           />
         </FadeIn>
       </div>
-
+      <div className="absolute left-[25%] w-[50%] -top-0 roadmapFilterOne ">
+        {/* <RoadmapBlur2 /> */}
+      </div>
+      <div className="absolute left-0 -bottom-[-10%] w-[40%] roadmapFilterTwo ">
+        {/* <RoadmapBlur1 /> */}
+      </div>
+      <div className="absolute -right-0 -bottom-[-10%] w-[40%] roadmapFilterThree">
+        {/* <RoadmapBlur3 /> */}
+      </div>
+      <FadeIn delay={0.6} className="w-full">
+        <Vector className="absolute inset-0 -z-30" />
+      </FadeIn>
       {/* Hero Content */}
       <div className="flex flex-col items-center max-lg:px-4 z-40 relative pt-32 max-md:pt-28 max-w-[1529px] mx-auto overflow-hidden">
-        <FadeIn delay={0.6} className="w-full">
-          <Vector className="absolute inset-0 -z-30" />
-        </FadeIn>
-        <div className="flex items-center gap-4 mb-[40px]">
+        <div className="flex items-center gap-4 mb-[40px] max-md:flex-wrap max-md:gap-1 max-md:mb-[20px] justify-center">
           <TitleAnim delay={0.2}>
-            <Title text="Unilabs" sub tinted className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
+            <Title
+              text="Unilabs"
+              sub
+              tinted
+              className="lg:text-[110px] max-lg:text-[75px] max-md:text-[60px] max-sm:text-[50px] !uppercase !leading-[1]"
+            />
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <Title text="Roadmap" sub className="lg:text-[110px] md:text-[75px] md:text-[75px]" />
+            <Title
+              text="Roadmap"
+              sub
+              className="lg:text-[110px] max-lg:text-[75px] max-md:text-[60px] max-sm:text-[50px] !uppercase !leading-[1]"
+            />
           </TitleAnim>
         </div>
 
@@ -84,18 +102,9 @@ export function RoadmapPage() {
           ref={containerRef}
           className="relative w-full flex items-center justify-center flex-col "
         >
-          <div className="absolute left-[25%] w-[50%] -top-0 roadmapFilterOne ">
-            {/* <RoadmapBlur2 /> */}
-          </div>
-          <div className="absolute left-0 -bottom-[-10%] w-[40%] roadmapFilterTwo ">
-            {/* <RoadmapBlur1 /> */}
-          </div>
-          <div className="absolute -right-0 -bottom-[-10%] w-[40%] roadmapFilterThree">
-            {/* <RoadmapBlur3 /> */}
-          </div>
           <div
             style={{ top: itemRefs.current[0]?.current?.offsetTop ?? 0 }}
-            className="absolute left-[45%] top-0 max-md:hidden"
+            className="absolute left-[50%] -translate-x-1/2 top-0 max-md:hidden"
           >
             {svgHeight > 0 && (
               <RoadmapSVG
@@ -156,7 +165,7 @@ const RoadmapItem = React.forwardRef<
       <div
         key={roadmap.label}
         className={cn(
-          "flex w-full justify-between gap-[150px] max-md:flex-col max-md:gap-12",
+          "flex w-full justify-between gap-[150px] max-md:gap-[20px] max-md:flex-col ",
           {
             "flex-row-reverse": index % 2,
           }
@@ -167,21 +176,21 @@ const RoadmapItem = React.forwardRef<
             "flex justify-start": index % 2,
           })}
         >
-          <div className={cn("font-anybody max-w-[260px] ", {})}>
-            <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-[23px] text-primary rounded-xl font-anybody font-semibold">
-              {roadmap.label}
-            </span>
+          <div className={cn("font-anybody max-w-[310px] ", {})}>
+            <div className="h-[54px] items-center justify-center inline-flex px-7  bg-gradient-to-r from-accent-foreground to-primary-foreground  text-primary rounded-xl font-anybody font-semibold">
+              <p className="text-[23px] leading-[0.8]"> {roadmap.label}</p>
+            </div>
             <div className="mt-5">
               <span className="flex items-end gap-2.5">
-                <p className="text-3xl leading-[28px]">{roadmap.title}</p>
-                <p className="text-xs">({roadmap.date})</p>
+                <p className="text-[36px] leading-[1] text-white">{roadmap.title}</p>
+                <p className="text-[15px] font-medium text-white">({roadmap.date})</p>
               </span>
-              <p className="text-lg gradText font-semibold">{roadmap.sub}</p>
+              <p className="text-[23px] mt-[8px] leading-[1.2] gradText font-semibold">{roadmap.sub}</p>
             </div>
           </div>
         </div>
 
-        <div className="bg-white/5 rounded-[40px] backdrop-blur-[50px] border-sec-border p-8 max-w-[450px] max-lg:max-w-full w-full flex flex-col gap-4">
+        <div className="bg-white/5  rounded-[40px] max-md:rounded-[16px] backdrop-blur-[50px] border-sec-border p-8 max-md:p-4 max-w-[545px] max-lg:max-w-full w-full flex flex-col gap-4">
           {roadmap.description.map((desc) => (
             <div key={desc.pre} className="text-sm flex items-start gap-1.5">
               <div className="min-w-4 mt-1">
@@ -216,7 +225,7 @@ function RoadmapSVG({
   itemRefs: React.RefObject<React.RefObject<HTMLDivElement>[]>;
 }) {
   const [circlePositions, setCirclePositions] = useState<number[]>([]);
-  const CIRCLE_SIZE = 30; // Adjust this based on your needs
+  const CIRCLE_SIZE = 63; 
 
   useEffect(() => {
     // Calculate positions for all milestone circles
@@ -293,32 +302,28 @@ function RoadmapSVG({
         >
           {/* Use the provided SVG circle design */}
           <g filter="url(#filter0_f_milestone_${index})">
-            <circle
-              cx={CIRCLE_SIZE / 2}
-              cy={CIRCLE_SIZE / 2}
-              r={CIRCLE_SIZE / 2}
-              fill={index <= activeIndex ? "#2EC6ED" : "#1B1D20"}
-            />
+     
           </g>
           <circle
             cx={CIRCLE_SIZE / 2}
             cy={CIRCLE_SIZE / 2}
-            r={CIRCLE_SIZE * 0.4}
-            fill={index <= activeIndex ? "#2EC6ED" : "#1B1D20"}
+            r={CIRCLE_SIZE /2}
+            fill={index <= activeIndex ? "#2EC6ED" : "none"}
+            className={index <= activeIndex ? "blur-[10px]" : ""}
           />
           <g filter="url(#filter1_f_milestone_${index})">
             <circle
               cx={CIRCLE_SIZE / 2}
               cy={CIRCLE_SIZE / 2}
               r={CIRCLE_SIZE * 0.35}
-              fill={index <= activeIndex ? "#00FFE2" : "#1B1D20"}
+              fill={index <= activeIndex ? "#00FFE2" : "#FFFFFF1A"}
             />
           </g>
           <circle
             cx={CIRCLE_SIZE / 2}
             cy={CIRCLE_SIZE / 2}
             r={CIRCLE_SIZE * 0.25}
-            fill={index <= activeIndex ? "white" : "#1B1D20"}
+            fill={index <= activeIndex ? "white" : "#FFFFFF1A"}
           />
         </g>
       ))}

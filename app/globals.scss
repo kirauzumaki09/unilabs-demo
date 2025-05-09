@@ -356,6 +356,10 @@ body {
   background: url("../assets/footerBG.png") no-repeat;
   background-size: cover;
 }
+.how_buy_BG {
+  background: url("../assets/how_buy_BG.png") no-repeat , #00070F ;
+  background-size: cover;
+}
 
 .aiFundBg{
   background: url("../assets/fund-1-banner-image.png") no-repeat center center;
@@ -497,6 +501,7 @@ body {
 .circleGlow{
   filter:drop-shadow( 0px 0px 10px  #4CAF50);
 }
+
 
 .whyfund-card{ 
   background-color: 

@@ -182,8 +182,8 @@ export function Nav() {
 const navLinks = [
   {
     name: "How to Buy",
-    path: "#",
-    // path: "/how-to-buy",
+
+    path: "/how-to-buy",
   },
   {
     name: "Core Features",
@@ -197,7 +197,7 @@ const navLinks = [
   },
   {
     name: "Unilabs Roadmap",
-    // path: "/roadmap",
-    path: "#",
+    path: "/roadmap",
+
   },
 ];
