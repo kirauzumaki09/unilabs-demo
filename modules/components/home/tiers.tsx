@@ -175,11 +175,11 @@ export function Tiers() {
                   {tiersData.map((tier) => (
                     <div key={tier.tier} className="px-3">
                       <div className="w-[360px] bg-secondary min-h-[340px] max-lg:h-[250px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
-                        <div className="relative w-full min-w-[250px] h-[74px] max-lg:justify-center max-lg:h-[50px] flex items-center justify-center">
-                          <span className="gradText text-2xl font-bold flex items-center justify-center w-full h-full rounded-full bg-[#202832] z-30 absolute top-0">
+                        <div className="relative shadow-[inset_0px_2px_14px_#0FEDBE]  backdrop-blur-[60px] rounded-[60px] w-full min-w-[250px] h-[74px] max-lg:justify-center max-lg:h-[50px] flex items-center justify-center">
+                          <span className="gradText relative z-[99] text-[24px] font-bold flex items-center justify-center w-full h-full rounded-full  z-30 absolute top-0">
                             {tier.tier}
                           </span>
-                          <Rectangle className="absolute inset-0 z-0 max-lg:h-[50px] max-lg:left-1/2 max-lg:-translate-x-1/2 " />
+                          {/* <Rectangle className="absolute inset-0 w-full z-0 max-lg:h-auto max-lg:left-1/2 max-lg:-translate-x-1/2 " /> */}
                         </div>
 
                         <p className="text-[14px] font-inter font-extralight text-[#ffffff] uppercase text-center">
