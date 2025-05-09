@@ -33,9 +33,9 @@ export default function CoinIcon() {
         />
       </g>
       <defs>
-        <clip-path id="clip0_191_115099">
+        <clipPath id="clip0_191_115099">
           <rect width="22" height="22" fill="white" />
-        </clip-path>
+        </clipPath>
       </defs>
     </svg>
   );
