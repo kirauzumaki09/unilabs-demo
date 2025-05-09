@@ -2,26 +2,24 @@ import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 import React from "react";
 import Checkmark from "@/assets/checkmark.svg";
 import Cube from "@/assets/otherpages/cube.svg";
-import Blur from '@/assets/otherpages/why-blur.svg'
+import Blur from "@/assets/otherpages/why-blur.svg";
 
 export function WhyInvestSec() {
   return (
     <section className="pb-[170px]">
       <div className="container mx-auto flex flex-col gap-8 relative px-[15px] max-lg:px-5">
         <FadeInOnScroll>
-          <h3 className="font-bold font-anybody text-[180px] uppercase whitespace-nowrap max-w-[867px] text-white leading-[163px]">
-            Why Invest <br className="max-lg:hidden" /> in the AI
-            <br className="max-lg:hidden" /> Fund?
-          </h3>
+          <h2 className="font-bold font-anybody !leading-[1] text-[180px] max-xl:text-[120px] max-lg:text-[80px] max-md:text-[60px] max-sm:text-[50px] uppercase whitespace-nowrap max-w-[867px] text-white leading-[163px]">
+            Why Invest <br /> in the AI
+            <br /> Fund?
+          </h2>
         </FadeInOnScroll>
         <div className="flex items-center gap-[30px] relative max-lg:flex-col">
           <FadeInOnScroll className="lg:max-w-[489px] w-full">
             <div className="whyfund-card">
               <div className="whyfund-head-wrap">
                 <Checkmark className="checkmark" />
-                <p>
-                  Automated Smart Contract Execution
-                </p>
+                <p>Automated Smart Contract Execution</p>
               </div>
               <p>
                 Capital is deployed through secure, self-executing smart
@@ -36,9 +34,7 @@ export function WhyInvestSec() {
                 <div className="whyfund-card">
                   <div className="whyfund-head-wrap">
                     <Checkmark className="checkmark" />
-                    <p>
-                      AI-Optimized Portfolio Management
-                    </p>
+                    <p>AI-Optimized Portfolio Management</p>
                   </div>
                   <p>
                     Your investments are automatically rebalanced using
@@ -51,9 +47,7 @@ export function WhyInvestSec() {
                 <div className="whyfund-card">
                   <div className="whyfund-head-wrap">
                     <Checkmark className="checkmark" />
-                    <p>
-                      Dynamic Risk Management
-                    </p>
+                    <p>Dynamic Risk Management</p>
                   </div>
                   <p>
                     AI-driven market pulse tracking and real-time asset
@@ -68,9 +62,7 @@ export function WhyInvestSec() {
                 <div className="whyfund-card">
                   <div className="whyfund-head-wrap">
                     <Checkmark className="checkmark" />
-                    <p>
-                      Early Access to AI-Powered Crypto Projects
-                    </p>
+                    <p>Early Access to AI-Powered Crypto Projects</p>
                   </div>
                   <p>
                     Get exposure to high-growth AI-driven DeFi, machine
@@ -82,9 +74,7 @@ export function WhyInvestSec() {
                 <div className="whyfund-card">
                   <div className="whyfund-head-wrap">
                     <Checkmark className="checkmark" />
-                    <p>
-                      Data-Driven Investment Decisions
-                    </p>
+                    <p>Data-Driven Investment Decisions</p>
                   </div>
                   <p>
                     Our proprietary AI algorithms scan thousands of blockchain

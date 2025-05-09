@@ -15,6 +15,7 @@ export function RWAFundPage() {
   return (
     <>
       <Hero
+      bg="rwaFundBG"
         heading2="Assets"
         heading1="Tokenized Access to Real-World"
         subTitle="BTC Fund Unilabs"
@@ -49,7 +50,7 @@ export function RWAFundPage() {
         title="How to Invest in the RWA Fund"
         investdataList={RWAinvestData}
       />
-      <FAQ data={RWAfaqData} />
+      <FAQ data={RWAfaqData} notabs />
       <Banner
         title="Invest in the Future of Tokenized Real-World Assets"
         paragraph="The Unilabs RWA Fund offers a secure, diversified, and yield-enhanced investment strategy for real-world assets brought on-chain. As tokenization reshapes financial markets, this fund provides a structured way to access real estate, commodities, and institutional-grade investments."

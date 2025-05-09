@@ -82,27 +82,23 @@ export function Tiers() {
 
   const settings: Settings = {
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     dots: false,
     infinite: true,
     speed: 500,
-    arrows: false,
-    autoplay: false,
-    draggable: true,
+    // arrows: true,
+    autoplay: true,
+
     variableWidth: true,
-    autoplaySpeed: 2000,
-    swipeToSlide: true,
-    prevArrow: <SamplePrevArrow />,
-    nextArrow: <SampleNextArrow />,
-    afterChange: (index) => setCurrentSlide(index),
+    autoplaySpeed: 5000,
+
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+       
         },
       },
       {
@@ -123,8 +119,6 @@ export function Tiers() {
   };
 
   return (
-  
-
     <div suppressHydrationWarning className="tiersBG section">
       <div className="container mx-auto flex flex-col w-full px-14 max-lg:px-5 tiersSliderWrap">
         <div className="flex justify-between w-full items-start max-lg:flex-col">
@@ -135,15 +129,12 @@ export function Tiers() {
                 <span className="gradText">Ecosystem</span>
               </SlideInOnScroll>
             </h2>
-            </SlideInOnScroll>
-          
-            <h2 className=" hidden max-lg:block uppercase font-extrabold font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-lg:mb-4">
-              $UNIL - The  Core of the  Unilabs 
-            
-                <span className="gradText"> Ecosystem</span>
-          
-            </h2>
-        
+          </SlideInOnScroll>
+
+          <h2 className=" hidden max-lg:block uppercase font-extrabold font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-lg:mb-4">
+            $UNIL - The Core of the Unilabs
+            <span className="gradText"> Ecosystem</span>
+          </h2>
 
           <div className="w-1/2 max-lg:w-full">
             <FadeInOnScroll>
@@ -183,7 +174,7 @@ export function Tiers() {
                 <Slider {...settings} className="w-full relative">
                   {tiersData.map((tier) => (
                     <div key={tier.tier} className="px-3">
-                      <div className="w-[360px] bg-secondary h-[300px] max-lg:h-[250px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
+                      <div className="w-[360px] bg-secondary min-h-[340px] max-lg:h-[250px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
                         <div className="relative w-full min-w-[250px] h-[74px] max-lg:justify-center max-lg:h-[50px] flex items-center justify-center">
                           <span className="gradText text-2xl font-bold flex items-center justify-center w-full h-full rounded-full bg-[#202832] z-30 absolute top-0">
                             {tier.tier}
@@ -191,9 +182,16 @@ export function Tiers() {
                           <Rectangle className="absolute inset-0 z-0 max-lg:h-[50px] max-lg:left-1/2 max-lg:-translate-x-1/2 " />
                         </div>
 
-                        <p className="text-[14px] font-inter font-extralight text-[#ffffff] uppercase text-center">{tier.label}</p>
-                       
-                        <p className="text-[18px] font-inter font-normal text-[#DBDBDB] text-center">{tier.why}</p>
+                        <p className="text-[14px] font-inter font-extralight text-[#ffffff] uppercase text-center">
+                          {tier.label}
+                        </p>
+                        <p className="text-[14px] font-inter font-extralight text-[#ffffff] uppercase text-center">
+                          {tier.label2}
+                        </p>
+
+                        <p className="text-[18px] font-inter font-normal text-[#DBDBDB] text-center">
+                          {tier.why}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -204,36 +202,81 @@ export function Tiers() {
         </div>
       </div>
     </div>
-    
   );
 }
 
 const tiersData = [
   {
-    tier: "TIER - 1",
-    label: "BASE ALLOCATION",
+    tier: "TIER - 1 : The Sparrow",
+    label: "Entry: 50,000 $UNIL tokens ",
+    label2: "Reward Share: 0.1% of the total fee pool. ",
     why: "Foundational reward for early supporters at the entry level.",
   },
   {
-    tier: "TIER - 2",
-    label: "Elevated Returns",
+    tier: "TIER - 2 : The Kestrel",
+    label: "Entry: 1,00,000 $UNIL tokens ",
+    label2: "Reward Share: 0.15% of the total fee pool. ",
     why: "Bigger fee share for moderate presale commitments.",
   },
   {
-    tier: "TIER - 3",
-    label: "Mid-Level Boost ",
+    tier: "TIER - 3 : The Hawk",
+    label: "Entry: 2,00,000 $UNIL tokens ",
+    label2: "Reward Share: 0.2% of the total fee pool. ",
     why: "Balanced approach that matches a higher investment with a larger return.",
   },
   {
-    tier: "TIER - 4",
+    tier: "TIER - 4 : The Falcon",
     label: "Entry: 3,500,000 $UNIL tokens ",
+    label2: "Reward Share: 0.3% of the total fee pool. ",
     why: "Why It Matters: A steady share for swift divers securing liquidity.",
   },
   {
-    tier: "TIER - 5",
+    tier: "TIER - 5 : The Harrier",
     label: "Entry: 5,000,000 $UNIL tokens",
+    label2: "Reward Share: 0.5% of the total fee pool. ",
     why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
   },
- 
-];
+  {
+    tier: "TIER - 6 : The Osprey",
+    label: "Entry: 7,500,000 $UNIL tokens",
+    label2: "Reward Share: 0.75% of the total fee pool. ",
+    why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
+  },
+  {
+    tier: "TIER - 7 : The Kite",
+    label: "Entry: 10,000,000 $UNIL tokens",
+    label2: "Reward Share: 1% of the total fee pool. ",
+    why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
+  },
+  {
+    tier: "TIER - 8 : The Vulture",
+    label: "Entry: 15,000,000 $UNIL tokens",
+    label2: "Reward Share: 1.5% of the total fee pool. ",
+    why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
+  },
 
+  {
+    tier: "TIER - 9 : The Owl",
+    label: "Entry: 20,000,000 $UNIL tokens",
+    label2: "Reward Share: 3% of the total fee pool. ",
+    why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
+  },
+  {
+    tier: "TIER - 10 : The Eagle",
+    label: "Entry: 30,000,000 $UNIL tokens",
+    label2: "Reward Share: 5% of the total fee pool. ",
+    why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
+  },
+  {
+    tier: "TIER - 11 : The Condor",
+    label: "Entry: 40,000,000 $UNIL tokens",
+    label2: "Reward Share: 7.5% of the total fee pool. ",
+    why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
+  },
+  {
+    tier: "TIER - 12 : The Pheonix",
+    label: "Entry: 50,000,000 $UNIL tokens",
+    label2: "Reward Share: 10% of the total fee pool. ",
+    why: "Why It Matters: Rewards for agile predators dominating DeFi trades.",
+  },
+];

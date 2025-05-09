@@ -33,17 +33,17 @@ export function BuyPage() {
 
         <div className="flex flex-col items-center max-lg:px-4 z-40 relative pt-16 max-md:pt-28">
           <TitleAnim delay={0}>
-            <h1 className="font-anybody uppercase text-white font-extrabold text-[80px] max-lg:text-[60px] max-md:text-[50px]  max-sm:text-[40px] text-center  !leading-[1]">
+            <h1 className="font-anybody uppercase text-white font-extrabold text-[50px] max-lg:text-[40px] max-md:text-[30px]  max-sm:text-[24px] text-center  !leading-[1]">
               Buy UNIL with
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody uppercase font-extrabold text-[110px] max-lg:text-[text75px] max-md:text-[60px] max-sm:text-[50px] gradText !leading-[1]">
+            <h1 className="font-anybody uppercase font-extrabold !text-[80px] max-lg:!text-[60px] max-md:!text-[50px]  max-sm:!text-[40px] gradText !leading-[1]">
               ETH, BNB, USDT
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.4}>
-            <h1 className="font-anybody uppercase text-white font-extrabold text-[110px] max-lg:text-[text75px] max-md:text-[60px] max-sm:text-[50px] text-center  !leading-[1]">
+            <h1 className="font-anybody uppercase text-white font-extrabold !text-[80px] max-lg:!text-[50px] max-md:!text-[50px]  max-sm:!text-[40px] text-center  !leading-[1]">
               and MANY MORE
             </h1>
           </TitleAnim>

@@ -9,22 +9,20 @@ export function Why() {
     <section>
       <div className="max-w-[1529px] mx-auto flex flex-col gap-8 relative px-14 max-lg:px-5">
         <FadeInOnScroll>
-          <h3 className="font-bold font-anybody text-[6.375rem] max-lg:text-5xl max-sm:text-3xl uppercase max-w-[867px] text-white lg:leading-[90px]">
-            Why Invest <br className="max-lg:hidden" /> in the{" "}
-            <br className="max-lg:hidden" /> rwa
-            <br className="max-lg:hidden" /> Fund?
-          </h3>
+          <h2 className="font-bold font-anybody !leading-[1] text-[180px] max-xl:text-[120px] max-lg:text-[80px] max-md:text-[60px] max-sm:text-[50px] uppercase whitespace-nowrap max-w-[867px] text-white leading-[163px]">
+            Why Invest <br /> in the
+            <br /> Mining
+            <br /> Fund?
+          </h2>
         </FadeInOnScroll>
         <div className="flex items-center gap-[30px] relative max-lg:flex-col">
           <FadeInOnScroll className="lg:max-w-[400px] w-full">
-            <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8  border-b border-b-black/5 min-h-[220px]">
-              <div className="flex items-center gap-4">
-                <Checkmark className="size-4 text-[#0FEDBE]" />
-                <p className="gradText text-lg font-semibold font-anybody">
-                  Transparent and Efficient Investment Model
-                </p>
+            <div className="whyfund-card">
+              <div className="whyfund-head-wrap">
+                <Checkmark className="checkmark" />
+                <p>Transparent and Efficient Investment Model</p>
               </div>
-              <p className="text-sm color-sec-text mt-5">
+              <p>
                 The RWA Fund leverages blockchain-based ownership tracking,
                 automated payouts, and smart contract execution.
               </p>
@@ -33,14 +31,12 @@ export function Why() {
           <div className="flex gap-[30px] relative w-full max-lg:flex-col">
             <div className="flex flex-col gap-7">
               <FadeInOnScroll className="lg:max-w-[400px] w-full">
-                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 min-h-[220px]">
-                  <div className="flex items-center gap-4">
-                    <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="gradText text-lg font-semibold font-anybody">
-                      Diversification Beyond Traditional Crypto
-                    </p>
+                <div className="whyfund-card">
+                  <div className="whyfund-head-wrap">
+                    <Checkmark className="checkmark" />
+                    <p>Diversification Beyond Traditional Crypto</p>
                   </div>
-                  <p className="text-sm color-sec-text mt-5">
+                  <p>
                     By investing in yield-generating RWAs, the fund reduces
                     exposure to crypto volatility while maintaining on-chain
                     benefits.
@@ -48,14 +44,12 @@ export function Why() {
                 </div>
               </FadeInOnScroll>
               <FadeInOnScroll className="lg:max-w-[400px] w-full">
-                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 lg:max-w-[400px] border-b border-b-black/5 relative min-h-[220px]">
-                  <div className="flex items-center gap-4">
-                    <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="gradText text-lg font-semibold font-anybody">
-                      Liquidity in Traditionally Illiquid Markets
-                    </p>
+                <div className="whyfund-card">
+                  <div className="whyfund-head-wrap">
+                    <Checkmark className="checkmark" />
+                    <p>Liquidity in Traditionally Illiquid Markets</p>
                   </div>
-                  <p className="text-sm color-sec-text mt-5">
+                  <p>
                     Through tokenization, assets such as real estate and
                     commodities become tradeable with improved liquidity
                     compared to traditional markets.
@@ -65,14 +59,12 @@ export function Why() {
             </div>
             <div className="flex flex-col gap-7 lg:absolute left-[44%] -top-[54%]">
               <FadeInOnScroll className="lg:max-w-[400px] w-full">
-                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 min-h-[220px]">
-                  <div className="flex items-center gap-4">
-                    <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="gradText text-lg font-semibold font-anybody">
-                      Tokenized Exposure to Real-World Assets
-                    </p>
+                <div className="whyfund-card">
+                  <div className="whyfund-head-wrap">
+                    <Checkmark className="checkmark" />
+                    <p>Tokenized Exposure to Real-World Assets</p>
                   </div>
-                  <p className="text-sm color-sec-text mt-5">
+                  <p>
                     The RWA Fund brings institutional-grade investments
                     on-chain, providing access to real estate, commodities, and
                     fixed-income markets.
@@ -80,14 +72,12 @@ export function Why() {
                 </div>
               </FadeInOnScroll>
               <FadeInOnScroll className="lg:max-w-[400px] w-full">
-                <div className="bg-white/5 rounded-xxl border-t border-t-sec-border px-7 py-8 border-b border-b-black/5 relative min-h-[220px]">
-                  <div className="flex items-center gap-4">
-                    <Checkmark className="size-4 text-[#0FEDBE]" />
-                    <p className="gradText text-lg font-semibold font-anybody">
-                      Institutional-Grade Yield Products
-                    </p>
+                <div className="whyfund-card">
+                  <div className="whyfund-head-wrap">
+                    <Checkmark className="checkmark" />
+                    <p>Institutional-Grade Yield Products</p>
                   </div>
-                  <p className="text-sm color-sec-text mt-5">
+                  <p>
                     Gain access to debt markets, tokenized bonds, and structured
                     financial instruments that offer stable returns.
                   </p>

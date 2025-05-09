@@ -24,7 +24,7 @@ export function HomePage() {
       <Tokenomics />
       <Roadmap />
       <FundUpdates/>
-      <FAQ data={faqData} />
+      <FAQ notabs data={faqData} />
     </>
   );
 }

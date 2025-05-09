@@ -2,23 +2,44 @@ import { FAQ } from "@/modules/app/faq/faq";
 import { Hero } from "../ai-fund/hero";
 import { BTChowData, HowMiningSec } from "../ai-fund/HowMiningSec";
 
-
-import { Overview } from "./overview";
 import { Why } from "./why";
 import { BTCinvestData, HowToInvest } from "../ai-fund/how-to-invest";
 import { Allocation, BTCallocationData } from "../ai-fund/allocation";
 import { Banner } from "../ai-fund/banner";
+import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
+import { Overview } from "../ai-fund/overview";
 
 export function BTCFundPage() {
   return (
     <>
       <Hero
+        bg="BTCFundBG"
         heading2="Pow Assets"
         heading1="Powering the Future of"
         subTitle="Mining Fund Unilabs"
         description="The Mining Fund by Unilabs offers strategic exposure to a diversified basket of proof-of-work blockchain assets, ensuring long-term value capture from decentralized mining ecosystems."
       />
-      <Overview />
+      <Overview title="BTC Fund Overview" image="/btc-overview.svg">
+        <FadeInOnScroll>
+          <p className=" text-[18px] leading-[1.8] max-w-[564px] max-lg:max-w-full text-[#f0f0f0]">
+            The Unilabs Mining Fund is a first-of-its-kind investment vehicle
+            designed to provide structured exposure to proof-of-work (PoW)
+            blockchain assets. As PoW remains a fundamental pillar of blockchain
+            security and decentralization, this fund focuses on capturing value
+            from Bitcoin, mining infrastructure tokens, and high-growth PoW
+            networks.
+          </p>
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <p className=" text-[18px] leading-[1.8] my-[30px] max-w-[564px] max-lg:max-w-full text-[#f0f0f0]">
+            By holding a dynamically rebalanced portfolio of leading PoW assets,
+            the Mining Fund allows investors to participate in the long-term
+            economic and security benefits of decentralized mining without the
+            need to manage physical mining operations.
+          </p>
+        </FadeInOnScroll>
+      </Overview>
+
       <Why />
       <HowMiningSec title="How the BTC Fund Works" howdata={BTChowData} />
       <Allocation allocationDataList={BTCallocationData} />
@@ -26,7 +47,7 @@ export function BTCFundPage() {
         title="How to Invest in the BTC Fund"
         investdataList={BTCinvestData}
       />
-      <FAQ data={BTCfaqData} />
+      <FAQ data={BTCfaqData} notabs />
       <Banner
         title="Invest in the Next Evolution of Bitcoin Investing"
         paragraph="The Unilabs BTC Fund offers diversified Bitcoin exposure, enhanced yield strategies, and smart portfolio management. It is designed for investors who want to hold Bitcoin while optimizing returns through structured investment strategies."

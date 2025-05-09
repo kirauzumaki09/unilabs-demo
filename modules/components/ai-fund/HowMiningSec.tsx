@@ -25,7 +25,9 @@ interface HowSectionProps {
   title: string;
 }
 
-export function HowMiningSec( {howdata,title}: HowSectionProps) {
+export function HowMiningSec({ howdata, title }: HowSectionProps) {
+
+  
   return (
     <section className="relative section pb-[170px]">
       <div className="absolute -top-[18.5%] left-[5.4%] w-full z-3 pointer-events-none">
@@ -41,7 +43,7 @@ export function HowMiningSec( {howdata,title}: HowSectionProps) {
       <div className="container mx-auto flex flex-col relative px-14 max-lg:px-5">
         <SlideInOnScroll>
           <h2 className="uppercase font-extrabold font-anybody text-[80px] max-w-[737px] mx-auto mb-[60px] max-lg:text-5xl max-sm:text-3xl lg:text-center leading-[1.1] text-white">
-        {title}
+            {title}
           </h2>
         </SlideInOnScroll>
         <div className="flex gap-[30px] justify-center w-full items-center relative">
@@ -50,8 +52,14 @@ export function HowMiningSec( {howdata,title}: HowSectionProps) {
           </div>
 
           <div className="grid grid-cols-2 max-md:grid-cols-1 gap-[30px]">
-            {howdata.map((data, index) => (
-              <div key={data.title} className="how-card">
+            {howdata.map((data, index) => {
+                const isLast = index === howdata.length - 1;
+                const isEven = howdata.length % 2 === 0;
+              return(
+                <div
+                key={data.title}
+                className={`how-card ${!isEven && isLast ? "!col-span-full" : ""}`}
+              >
                 <p className="how-card-head"> {data.title}</p>
                 {data.sub && <p className="how-card-sub-head">{data.sub}</p>}
                 <div className="list-wrap">
@@ -75,7 +83,9 @@ export function HowMiningSec( {howdata,title}: HowSectionProps) {
                   {(index + 1).toString().padStart(2, "0")}
                 </p>
               </div>
-            ))}
+            )}
+            
+            )}
           </div>
         </div>
       </div>
@@ -276,4 +286,3 @@ export const RWAhowData = [
     ],
   },
 ];
-
