@@ -11,7 +11,7 @@ export default function Section({ children, className, sectionClasName }: Sectio
     <section className={cn("flex w-full relative", sectionClasName)}>
       <div
         className={cn(
-          "max-w-[1529px] mx-auto flex-col flex w-full px-14 max-md:px-5",
+          "container mx-auto flex-col flex w-full px-14 max-md:px-5",
           className
         )}
       >

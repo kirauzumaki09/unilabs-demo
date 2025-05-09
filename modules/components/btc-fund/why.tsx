@@ -7,7 +7,7 @@ import Blur from "@/assets/otherpages/why-blur.svg";
 export function Why() {
   return (
     <section>
-      <div className="max-w-[1529px] mx-auto flex flex-col gap-8 relative px-14 max-lg:px-5">
+      <div className="container mx-auto flex flex-col gap-8 relative px-14 max-lg:px-5">
         <FadeInOnScroll>
         <h2 className="font-bold font-anybody !leading-[1] text-[180px] max-xl:text-[120px] max-lg:text-[80px] max-md:text-[60px] max-sm:text-[50px] uppercase whitespace-nowrap max-w-[867px] text-white leading-[163px]">
             Why Invest <br  /> in the 

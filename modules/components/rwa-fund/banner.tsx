@@ -15,7 +15,7 @@ type BannerProps = {
 export function Banner({ title, paragraph, sub }: BannerProps) {
   return (
     <section className="!pt-0 relative">
-      <div className="max-w-[1529px] mx-auto flex flex-col items-center justify-center gap-8 relative px-14 max-lg:px-5">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-8 relative px-14 max-lg:px-5">
         <div className="min-2xl:max-w-[75%] max-md:flex-col bg-white/10 backdrop-blur-[50px] rounded-xxl border-t border-t-sec-border border-b border-b-black/5 md:p-20 p-12 flex gap-16">
           <div className="size-24 min-w-24 relative">
             <FadeInOnScroll className="size-24 min-w-24">

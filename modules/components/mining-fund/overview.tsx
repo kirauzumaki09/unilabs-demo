@@ -12,7 +12,7 @@ import { cn } from "@/modules/utils";
 export function Overview() {
   return (
     <div className="max-sm:-mt-80 z-50">
-      <div className="max-w-[1529px] mx-auto flex flex-col items-center justify-center gap-8 relative px-14 max-lg:px-5">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-8 relative px-14 max-lg:px-5">
         <Title text="Mining Fund Overview" sub className="max-sm:text-4xl" />
 
         <div className="absolute w-[75%] left-[5%] top-[35%] -z-10">
