@@ -54,7 +54,7 @@ export function HowToInvest({title,investdataList}: InvestProps) {
                   )}
                 >
                   <div className="absolute -top-4 right-5 z-50">
-                    <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary text-[14px] rounded-[5px] font-anybody font-semibold">
+                    <span className="py-3 px-7 font-bold bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary text-[14px] rounded-[5px] font-anybody ">
                       {data.label}
                     </span>
                   </div>
