@@ -17,7 +17,7 @@ type IOverviewData={
 
 export function Overview({title,children,image,overviewdata}: {title:string,children: React.ReactNode ,image:string,overviewdata:IOverviewData[]}) {
   return (
-    <div className="max-sm:-mt-80 z-50 pb-[170px] pt-[31px]">
+    <div className="max-sm:-mt-80 z-50 pb-[170px] pt-[31px] max-xl:pb-[100px] max-lg:pb-[80px] max-md:pb-[60px]">
       <div className="container mx-auto flex flex-col items-center justify-center relative px-14 max-lg:px-5">
         <Title text={title} sub className="text-[80px] !leading-[1] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] " />
 
@@ -45,12 +45,12 @@ export function Overview({title,children,image,overviewdata}: {title:string,chil
         {children}
           </div>
         </div>
-        <div className="bg-white/7 backdrop-blur-[20px] rounded-[40px] max-w-[1070px]  w-full relative z-50 border-t border-t-sec-border">
+        <div className="bg-white/7 backdrop-blur-[20px] rounded-[40px] max-w-[1070px] max-md:rounded-[16px]  w-full relative z-50 border-t border-t-sec-border">
           {overviewdata.map((data, index) => (
             <FadeInOnScroll key={`label-${index}`} delay={index * 0.1}>
               <div
                 className={cn(
-                  "flex justify-between items-center border-b border-[#FFFFFF21] py-4 px-29 max-lg:px-5",
+                  "flex justify-between items-center border-b border-[#FFFFFF21] py-5 px-[115px] max-lg:px-5",
                   { "border-b-0": index === overviewdata.length - 1 }
                 )}
               >

@@ -34,7 +34,7 @@ const AccordionItem = React.forwardRef<
     <AccordionPrimitive.Item
       ref={ref}
       className={cn(
-        "rounded-[30px] max-md:rounded-[10px] !bg-[#FFFFFF1A] data-[state=open]:border-border  duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90",
+        "rounded-[30px] relative z-[999] max-md:rounded-[10px] !bg-[#FFFFFF1A] data-[state=open]:border-border  duration-300 ease-out hover:data-[state=closed]:opacity-70 hover:data-[state=open]:opacity-90",
         className
       )}
       {...itemProps}

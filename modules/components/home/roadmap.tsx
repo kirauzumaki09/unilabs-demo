@@ -47,7 +47,7 @@ const RoadmapItem = React.forwardRef<
       <div className="ml-6 flex flex-col justify-center">
         <ul>
           {roadmap.description.map((item) => (
-            <li key={item} className="mb-[20px] max-md:mb-2 text-xl flex items-center gap-4">
+            <li key={item} className="mb-[20px] max-md:mb-2 text-[24px] flex items-center gap-4">
               <Checkmark
                 className={cn("size-5", { "text-[#0FEDBE]": inView })}
               />{" "}

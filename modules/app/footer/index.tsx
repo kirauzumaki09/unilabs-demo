@@ -11,6 +11,7 @@ import Telegram from "@/assets/telegram.svg";
 import X from "@/assets/x.svg";
 import { FadeInOnScroll } from "../fadein-scroll";
 import { SlideInOnScroll } from "../slide-in-on-scroll";
+import { navLinks } from "../nav";
 
 export function Footer() {
   const socialLinks = [
@@ -67,7 +68,10 @@ export function Footer() {
         <FadeInOnScroll className="flex items-center max-xl:flex-col justify-between w-full pb-[30px] border-b !border-b-[rgba(255,255,255,0.1)]">
           <div className="flex gap-[32px] items-center">
             <div className="flex flex-col gap-4 max-md:hidden">
-              <p className="max-w-[745px]">
+              <p className="text-[18px] text-[#DBDBDB] mb-[17px]">
+                Disclaimer:
+              </p>
+              <p className="max-w-[955px] text-[18px] text-[#DBDBDB] ">
                 Digital currencies may be unregulated in your jurisdiction. The
                 value of digital currencies may go down as well as up. Profits
                 may be subject to capital gains or other taxes applicable in
@@ -87,9 +91,9 @@ export function Footer() {
                 </p>
               </div>
             </div>
-            <div className="flex  gap-4 justify-end items-center max-xl:justify-center ">
+            <div className="flex  flex-col gap-4 justify-center items-end max-xl:justify-center ">
               <p className=" whitespace-nowrap text-[18px] text-white">
-                Follow us on:
+                Follow us on
               </p>
               <div className="flex items-center gap-4">
                 {socialLinks.map((link, index) => (
@@ -98,7 +102,7 @@ export function Footer() {
                     key={index}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-4 hover:text-accent  hover:scale-105 duration-300 ease-in-out transition"
+                    className=" hover:text-accent  hover:scale-105 duration-300 ease-in-out transition"
                   >
                     <div className="size-6">{link.icon}</div>
                   </Link>
@@ -107,10 +111,25 @@ export function Footer() {
             </div>
           </div>
         </FadeInOnScroll>
-
-        <p className=" pt-[32px] z-50 text-left text-[18px] text-[#DBDBDB]">
-          UNILABS © 2025, All rights reserved
-        </p>
+        <div className="flex items-center pt-[32px] w-full justify-between">
+          <ul className="flex items-center  justify-between gap-11">
+            {navLinks.map((nav) => {
+              return (
+                <li key={nav.name} className="flex items-center justify-center">
+                  <Link
+                    href={nav.path}
+        
+                  >
+                    {nav.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <p className="  z-50 text-left text-[18px] text-[#DBDBDB]">
+            UNILABS © 2025, All rights reserved
+          </p>
+        </div>
       </div>
 
       {/* Background Vector */}
@@ -128,4 +147,3 @@ export function Footer() {
     </Section>
   );
 }
-

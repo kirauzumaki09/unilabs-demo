@@ -367,7 +367,7 @@ body {
 }
 
 .aiFundBgNew {
-  background: url("../assets/aiFungBG.png") no-repeat top center;
+  background: url("../assets/aiFungBG.png") no-repeat bottom center;
   background-size: cover;
   position: relative;
 }
@@ -517,6 +517,12 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.lineclamp4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .activeBtn {
   background: linear-gradient(90.42deg, #2dc5ec -1.08%, #1be1c5 82.64%);
   color: #00070f;
@@ -533,7 +539,7 @@ body {
   border-top: 1px solid #54708f80;
   border-bottom: 1px solid #54708f80;
   position: relative;
-  z-index: 10;
+  z-index: 9990;
   @media (max-width: 768px) {
     border-radius: 16px;
     padding: 20px;

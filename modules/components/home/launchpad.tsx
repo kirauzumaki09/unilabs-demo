@@ -44,7 +44,7 @@ export function Launchpad() {
 
             <div className="border-l-[5px] border-accent mt-[35px] max-w-[488px] py-1.5  text-[#DBDBDB]">
               <FadeInOnScroll>
-                <cite className=" pl-10 block  text-[#DBDBDB]">
+                <cite className=" pl-10 block  text-[#DBDBDB] text-[18px]">
                   “Before Unilabs, I felt overwhelmed by crypto volatility. Now,
                   their AI insights empower me to act fast on groundbreaking
                   projects.”

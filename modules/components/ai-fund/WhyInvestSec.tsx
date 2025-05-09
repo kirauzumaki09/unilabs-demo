@@ -6,7 +6,7 @@ import Blur from "@/assets/otherpages/why-blur.svg";
 
 export function WhyInvestSec() {
   return (
-    <section className="pb-[170px]">
+    <section className="pb-[170px] max-xl:pb-[100px] max-lg:pb-[80px] max-md:pb-[60px]">
       <div className="container mx-auto flex flex-col gap-8 relative px-[15px] max-lg:px-5">
         <FadeInOnScroll>
           <h2 className="font-bold font-anybody !leading-[1] relative z-[99] text-[180px] max-xl:text-[120px] max-lg:text-[80px] max-md:text-[60px] max-sm:text-[50px] uppercase whitespace-nowrap max-w-[867px] text-white leading-[163px]">

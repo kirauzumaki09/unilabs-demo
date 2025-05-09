@@ -32,10 +32,10 @@ interface AllocationProps {
 
 export function Allocation({allocationDataList}: AllocationProps) {
   return (
-    <section className="relative pb-[170px]">
+    <section className="relative pb-[170px] max-xl:pb-[100px] max-lg:pb-[80px] max-md:pb-[60px] ">
       <div className="container mx-auto flex flex-col relative max-lg:px-5">
         <SlideInOnScroll>
-          <h4 className="uppercase max-w-[766px] mx-auto font-extrabold font-anybody mb-[20px] text-[80px] leading-[1.1] lg:text-center text-white">
+          <h4 className="uppercase max-w-[766px] mx-auto font-extrabold font-anybody mb-[20px] text-[80px]  max-lg:text-[60px] max-md:text-[40px] max-sm:text-[30px] leading-[1.1] lg:text-center text-white">
             Fund allocation Strategy
           </h4>
         </SlideInOnScroll>

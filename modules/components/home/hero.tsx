@@ -184,7 +184,7 @@ export function Hero() {
               </h1>
             </TitleAnim>
             <TitleAnim delay={0.2}>
-              <h1 className="font-anybody  uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-[1.7] -my-2.5">
+              <h1 className="font-anybody  uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-[1.2] -my-2.5">
                 AI-Backed
               </h1>
             </TitleAnim>
@@ -199,14 +199,14 @@ export function Hero() {
           </div>
           <div className="flex justify-between gap-10 mt-16 max-lg:mt-8 max-lg:flex-col lg:px-3">
             <FadeIn delay={0}>
-              <p className="max-w-[310px] max-lg:max-w-full ">
+              <p className="max-w-[310px] max-lg:max-w-full  text-[18px]">
                 Unlock cutting-edge crypto opportunities with Unilabs—where
                 Enterprise AI meets DeFi innovation. Our system tracks thousands
                 of emerging projects, helping you invest early and confidently.
               </p>
             </FadeIn>
             <FadeIn delay={0.4}>
-              <p className="max-w-[318px] max-lg:max-w-full lg:hidden ">
+              <p className="max-w-[318px] max-lg:max-w-full   text-[18px] lg:hidden ">
                 Experience next-level transparency, significant returns, and
                 unparalleled access to ventures once reserved for institutional
                 players.
@@ -353,6 +353,10 @@ export function Hero() {
 
 function MarqueeComponent() {
   const partnerLogos = [
+    { id: "github", component: <Github /> },
+    { id: "analytics", component: <Analytics /> },
+    { id: "binance", component: <Binance /> },
+    { id: "tether", component: <Tether /> },
     { id: "github", component: <Github /> },
     { id: "analytics", component: <Analytics /> },
     { id: "binance", component: <Binance /> },

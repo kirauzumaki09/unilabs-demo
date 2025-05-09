@@ -29,7 +29,7 @@ export function HowMiningSec({ howdata, title }: HowSectionProps) {
 
   
   return (
-    <section className="relative section pb-[170px]">
+    <section className="relative section pb-[170px] max-xl:pb-[100px] max-lg:pb-[80px] max-md:pb-[60px]">
       <div className="absolute -top-[18.5%] left-[5.4%] w-full z-3 pointer-events-none">
         <HowLineVector className="w-full" />
       </div>

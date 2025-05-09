@@ -49,9 +49,15 @@ const FundUpdates = () => {
                     </Link>
                   </h3>
 
-                  <p className="text-[#DBDBDB]-400 text-[18px] mt-2 leading-8">
+                  <p className="text-[#DBDBDB]-400 text-[18px] mt-2 leading-8  lineclamp4">
                     {u.description}
                   </p>
+                  <Link
+                    href={u.link}
+                    className="text-[#2DC4EC] hover:text-white mt-1"
+                  >
+                    Read More
+                  </Link>
                 </div>
               </div>
             ))}

@@ -8,6 +8,7 @@ import Piggy from "@/assets/otherpages/piggy.svg";
 import Plant from "@/assets/otherpages/plant.svg";
 import React from "react";
 import { cn } from "@/modules/utils";
+import HowLineVector from "@/assets/otherpages/how-line-vector.svg";
 
 
 type investList={
@@ -22,14 +23,17 @@ title: string;
 
 export function HowToInvest({title,investdataList}: InvestProps) {
   return (
-    <section className="section relative pb-[170px]">
+    <section className="section relative !pb-[170px] max-xl:!pb-[100px] max-lg:!pb-[80px] max-md:!pb-[60px]">
       <div className="container mx-auto flex flex-col relative z-50">
         <SlideInOnScroll>
-          <h2 className="!leading-[1] uppercase font-extrabold mx-auto font-anybody text-[80px] max-w-[774px] mb-[68px] leading-[1.2] lg:text-center text-white">
+          <h2 className="!leading-[1] uppercase font-extrabold mx-auto font-anybody text-[80px] max-md:text-center max-lg:text-[60px] max-md:text-[40px] max-md:mb-3 max-sm:text-[30px] max-w-[774px] mb-[68px] leading-[1.2] lg:text-center text-white">
             {title}
           </h2>
         </SlideInOnScroll>
-        <div className="w-[75%] relative mt-[116px] mb-[102px] max-lg:flex-col gap-8 max-lg:flex max-lg:justify-cente max-lg:w-full max-lg:items-center">
+        <div className="absolute top-[20.5%]  opacity-40 left-[5.4%] w-full z-3 pointer-events-none ">
+        <HowLineVector className="w-full " />
+      </div>
+        <div className="w-[75%] relative mt-[116px] mb-0 max-md:mb-[50px] max-lg:mt-[60px] max-md:mt-5  max-lg:flex-col gap-8 max-lg:flex max-lg:justify-cente max-lg:w-full max-lg:items-center">
           {investdataList.map((data, index) => (
             <div
               key={data.label}

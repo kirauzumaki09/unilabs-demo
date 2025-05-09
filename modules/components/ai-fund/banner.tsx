@@ -19,7 +19,7 @@ export function Banner({ title, paragraph, sub }: BannerProps) {
   return (
     <section className=" relative section">
       <div className="container mx-auto flex flex-col items-center justify-center gap-8 relative px-14 max-lg:px-5">
-        <div className="w-full relative  z-[10] max-md:flex-col bg-white/10 backdrop-blur-[50px] rounded-xxl border-t border-t-sec-border border-b border-b-black/5  px-[90px] py-[60px] max-lg:p-6 flex gap-[160px] max-xl:gap-10 max-md:gap-4 items-center">
+        <div className="w-full relative  z-[10] max-md:flex-col bg-white/10 backdrop-blur-[50px] rounded-xxl border-t border-t-sec-border border-b border-b-black/5  px-[90px] py-[60px] max-lg:p-6 flex gap-[95px] max-xl:gap-10 max-md:gap-4 items-center">
           <div className="w-[224px] h-[250px]  flex-shrink-0 relative inline-flex items-center  ">
             <Image
               src={assets.coinImage}

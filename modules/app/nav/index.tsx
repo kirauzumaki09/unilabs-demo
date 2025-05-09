@@ -179,7 +179,7 @@ export function Nav() {
   );
 }
 
-const navLinks = [
+export const navLinks = [
   {
     name: "How to Buy",
 

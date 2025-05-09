@@ -44,37 +44,35 @@ export function FAQ({ data, notabs }: FAQSectionProps) {
           {notabs ? (
             <div className="w-full max-w-[1236px] flex flex-col gap-2">
               {data.map((faq, index) => (
-                <FadeInOnScroll key={faq.title} delay={index * 0.4}>
-                  <Accordion type="single" collapsible>
-                    <AccordionItem
-                      value={`item-${index}`}
-                      className="w-full z-50"
-                    >
-                      <AccordionTrigger>{faq.title}</AccordionTrigger>
-                      <AccordionContent>
-                        <div className="pt-[35px] pb-[40px] px-[45px] max-md:!p-3 text-[#DBDBDB] font-inter">
-                          <p className="!font-normal text-[18px] max-md:text-[16px]">
-                            {faq.desc}
-                          </p>
-                          {faq.list && (
-                            <ul className="mt-3">
-                              {faq.list.map((item, i) => (
-                                <li key={i}>
-                                  <p className="font-semibold text-[#1CE0C8] pb-3">
-                                    {item.pre}{" "}
-                                    <span className="!text-[#DBDBDB] font-normal">
-                                      {item.text}
-                                    </span>
-                                  </p>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </FadeInOnScroll>
+                <Accordion type="single" collapsible>
+                  <AccordionItem
+                    value={`item-${index}`}
+                    className="w-full z-50"
+                  >
+                    <AccordionTrigger>{faq.title}</AccordionTrigger>
+                    <AccordionContent>
+                      <div className="pt-[35px] pb-[40px] px-[45px] max-md:!p-3 text-[#DBDBDB] font-inter">
+                        <p className="!font-normal text-[18px] max-md:text-[16px]">
+                          {faq.desc}
+                        </p>
+                        {faq.list && (
+                          <ul className="mt-3">
+                            {faq.list.map((item, i) => (
+                              <li key={i}>
+                                <p className="font-semibold text-[#1CE0C8] pb-3">
+                                  {item.pre}{" "}
+                                  <span className="!text-[#DBDBDB] font-normal">
+                                    {item.text}
+                                  </span>
+                                </p>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               ))}
             </div>
           ) : (

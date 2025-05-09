@@ -126,14 +126,14 @@ export function Tiers() {
             <h2 className="uppercase font-extrabold max-md:hidden font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-lg:mb-4">
               $UNIL - The <br /> Core of the <br /> Unilabs <br />
               <SlideInOnScroll>
-                <span className="gradText">Ecosystem</span>
+                <span className="gradText !uppercase">Ecosystem</span>
               </SlideInOnScroll>
             </h2>
           </SlideInOnScroll>
 
-          <h2 className=" hidden max-lg:block uppercase font-extrabold font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-lg:mb-4">
+          <h2 className=" hidden max-lg:block !uppercase font-extrabold font-anybody text-[50px] max-lg:text-[40px] max-sm:text-4xl leading-[1] text-left text-white max-lg:mb-4">
             $UNIL - The Core of the Unilabs
-            <span className="gradText"> Ecosystem</span>
+            <span className="gradText !uppercase"> Ecosystem</span>
           </h2>
 
           <div className="w-1/2 max-lg:w-full">

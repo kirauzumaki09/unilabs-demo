@@ -18,7 +18,7 @@ export function Hero({heading1,heading2,subTitle,description,bg}: FundHeroProps)
     "font-anybody uppercase text-white font-extrabold text-[30px] max-lg:text-3xl max-w-[80%] max-lg:max-w-full text-center leading-[140%] leading-0 ";
 
   return (
-    <div className={`relative min-h-[1400px] max-lg:min-h-screen  w-full ${bg}`}>
+    <div className={`relative min-h-[1150px] max-lg:min-h-screen  w-full ${bg}`}>
     
       <div className="flex flex-col items-center z-[100] relative pt-[170px]">
         <div className="flex flex-col items-center max-lg:px-4 pt-[37px ]   max-md:max-w-full">

@@ -26,10 +26,10 @@ export function HowItWorks() {
                   <p className="text-[30px] text-white  max-lg:text-lg">
                     {step.label}
                   </p>
-                  <h3 className="gradText text-4xl max-lg:text-3xl font-bold font-anybody">
+                  <h3 className="gradText text-4xl max-lg:text-3xl font-bold font-anybody mb-2">
                     {step.title}
                   </h3>
-                  <p className="max-lg:text-[16px]">{step.description}</p>
+                  <p className="text-[18px] max-lg:text-[16px]">{step.description}</p>
                 </div>
               </FadeInOnScroll>
             ))}
