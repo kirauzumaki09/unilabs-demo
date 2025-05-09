@@ -20,7 +20,7 @@ export function Hero({heading1,heading2,subTitle,description,bg}: FundHeroProps)
   return (
     <div className={`relative h-screen w-full ${bg}`}>
     
-      <div className="flex flex-col items-center z-[100] relative pt-[150px]">
+      <div className="flex flex-col items-center z-[100] relative pt-[170px]">
         <div className="flex flex-col items-center max-lg:px-4 pt-[37px ]   max-md:max-w-full">
           <TitleAnim delay={0}>
             <span className={`${titleStyles} inline-flex !leading-[1]`}>{subTitle}</span>
