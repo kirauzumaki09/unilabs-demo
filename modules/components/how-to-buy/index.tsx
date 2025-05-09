@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Vector from "@/assets/buy-vector.svg";
 import Line from "@/assets/Line.svg";
 import { TitleAnim } from "@/modules/app/title-animation";
@@ -14,8 +14,19 @@ import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 import { SlideInOnScroll } from "@/modules/app/slide-in-on-scroll";
 
 export function BuyPage() {
+
+  const howToBuyRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (howToBuyRef.current) {
+      const height = howToBuyRef.current.offsetHeight + 150 ;
+      setHeight(height );
+    }
+  }, []);
+
   return (
-    <div className="w-full flex flex-col gap-8 relative pb-75">
+    <div className="w-full flex flex-col gap-8 relative pb-75 ">
       {/* Hero Section with Background */}
       <div className="w-full h-screen relative overflow-hidden">
         <FadeIn>
@@ -77,7 +88,7 @@ export function BuyPage() {
       </div>
 
       {/* Steps Section */}
-      <div className="w-full flex flex-col items-center px-4 -mt-14 z-50 relative max-md:-mt-52">
+      <div className="w-full flex flex-col items-center px-4 -mt-14 z-50 relative max-md:-mt-52 " ref={howToBuyRef}>
         <Blur2 className="absolute  top-0 w-[2000px]" />
 
         {/* Step 1 */}
@@ -188,16 +199,16 @@ export function BuyPage() {
             </FadeInOnScroll>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center ">
           <FadeIn delay={0.6} className="flex items-center justify-center">
-            <Circle className="absolute -top-28" />
+            <Circle className="absolute -top-28 z-[3]" />
           </FadeIn>
           <FadeInOnScroll className="flex items-center justify-center">
-            <Circle className="absolute -bottom-39 z-50" />
+            <Circle className="absolute -bottom-39 z-50 z-[3]" />
           </FadeInOnScroll>
         </div>
         <FadeIn delay={0.8}>
-          <Line className="absolute -top-25" />
+          <div className={`absolute -top-15  w-[2px] activeBtn`}     style={{ height: `${height}px` }} />
         </FadeIn>
       </div>
     </div>
