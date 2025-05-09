@@ -11,7 +11,7 @@ export function Why() {
         <FadeInOnScroll>
           <h2 className="font-bold font-anybody !leading-[1] text-[180px] max-xl:text-[120px] max-lg:text-[80px] max-md:text-[60px] max-sm:text-[50px] uppercase whitespace-nowrap max-w-[867px] text-white leading-[163px]">
             Why Invest <br /> in the
-            <br /> Mining
+            <br /> RWA
             <br /> Fund?
           </h2>
         </FadeInOnScroll>
