@@ -12,7 +12,7 @@ export function AIFundPage() {
   return (
     <>
       <Hero
-        bg="aiFundBg"
+        bg="aiFundBgNew"
         heading2=" AI & Crypto"
         heading1="Investing in the Future of"
         subTitle="AI Fund Unilabs"
