@@ -46,7 +46,7 @@ export function HowMiningSec({ howdata, title }: HowSectionProps) {
             {title}
           </h2>
         </SlideInOnScroll>
-        <div className="flex gap-[30px] justify-center w-full items-center relative">
+        <div className="flex gap-[30px] justify-center w-full max-w-[1270px] mx-auto items-center relative">
           <div className="absolute w-[75%] max-sm:w-full">
             <Blur2 />
           </div>

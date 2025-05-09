@@ -24,7 +24,7 @@ type FAQSectionProps = {
 };
 export function FAQ({ data, notabs }: FAQSectionProps) {
   return (
-    <div className="section faqBG overflow-visible">
+    <div className="section faqBG overflow-visible relative z-10">
       <div className="container">
         <SlideInOnScroll>
           <Title

@@ -4,7 +4,7 @@ import { Banner } from "./banner";
 import { Hero } from "./hero";
 import { HowToInvest, investData } from "./how-to-invest";
 import { howDataList, HowMiningSec } from "./HowMiningSec";
-import { Overview } from "./overview";
+import { AIoverviewdata, Overview } from "./overview";
 import { WhyInvestSec } from "./WhyInvestSec";
 import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 
@@ -20,7 +20,7 @@ export function AIFundPage() {
                     high-growth AI-powered blockchain projects. Invest in the future
                     of AI-integrated decentralized finance."
       />
-      <Overview title="AI Fund Overview" image="/overview image.svg">
+      <Overview title="AI Fund Overview" image="/overview image.svg" overviewdata={AIoverviewdata}>
         <FadeInOnScroll>
           <p className=" text-[18px] leading-[1.8] max-w-[564px] max-lg:max-w-full text-[#f0f0f0]">
             Unilabs AI Fund is one of the first investment vehicles designed to

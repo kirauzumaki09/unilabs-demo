@@ -4,7 +4,7 @@ import { Hero } from "../ai-fund/hero";
 
 
 import { Why } from "./why";
-import { Overview } from "../ai-fund/overview";
+import { Overview, RWAoverviewdata } from "../ai-fund/overview";
 import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 import { HowMiningSec, RWAhowData } from "../ai-fund/HowMiningSec";
 import { HowToInvest, RWAinvestData } from "../ai-fund/how-to-invest";
@@ -21,7 +21,7 @@ export function RWAFundPage() {
         subTitle="BTC Fund Unilabs"
         description="The RWA Fund by Unilabs provides institutional-grade exposure to tokenized real estate, commodities, and debt markets, bridging traditional finance and DeFi for diversified investing."
       />
-      <Overview title="RWA Fund Overview" image={"/rwa.svg"}>
+      <Overview title="RWA Fund Overview" image={"/rwa.svg"} overviewdata={RWAoverviewdata}>
         <FadeInOnScroll>
           <p className="text-[#f0f0f0] leading-[1.8] text-[18px]e max-lg:text-xl max-w-[564px] max-lg:max-w-full">
             The Unilabs RWA Fund provides a structured gateway to tokenized

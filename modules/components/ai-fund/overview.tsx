@@ -10,7 +10,12 @@ import React from "react";
 import { cn } from "@/modules/utils";
 /* Rectangle 34624615 */
 
-export function Overview({title,children,image}: {title:string,children: React.ReactNode ,image:string}) {
+type IOverviewData={
+  title:string;
+  label:string;
+}
+
+export function Overview({title,children,image,overviewdata}: {title:string,children: React.ReactNode ,image:string,overviewdata:IOverviewData[]}) {
   return (
     <div className="max-sm:-mt-80 z-50 pb-[170px] pt-[31px]">
       <div className="container mx-auto flex flex-col items-center justify-center relative px-14 max-lg:px-5">
@@ -40,7 +45,7 @@ export function Overview({title,children,image}: {title:string,children: React.R
         {children}
           </div>
         </div>
-        <div className="bg-white/5 backdrop-blur-2-[50px] rounded-xxl w-[75%] max-lg:w-full relative z-50 border-t border-t-sec-border">
+        <div className="bg-white/7 backdrop-blur-[20px] rounded-[40px] max-w-[1070px]  w-full relative z-50 border-t border-t-sec-border">
           {overviewdata.map((data, index) => (
             <FadeInOnScroll key={`label-${index}`} delay={index * 0.1}>
               <div
@@ -56,7 +61,7 @@ export function Overview({title,children,image}: {title:string,children: React.R
                   </p>
                 </div>
 
-                <p className="max-sm:text-sm text-[18px]">{data.label}</p>
+                <p className="max-sm:text-sm text-normal font-inter text-[18px]">{data.label}</p>
               </div>
             </FadeInOnScroll>
           ))}
@@ -71,7 +76,7 @@ export function Overview({title,children,image}: {title:string,children: React.R
   );
 }
 
-const overviewdata = [
+export const AIoverviewdata = [
   {
     title: "Fund Name",
     label: "AI Fund",
@@ -91,6 +96,99 @@ const overviewdata = [
   {
     title: "Allocation Strategy",
     label: "Algorithmic-based selection",
+  },
+  {
+    title: "Liquidity",
+    label: "Smart contract-managed",
+  },
+  {
+    title: "Minimum Investment",
+    label: "$50 or crypto equivalent",
+  },
+];
+
+export const BTCoverviewdata = [
+  {
+    title: "Fund Name",
+    label: "BTC Fund",
+  },
+  {
+    title: "Investment Focus",
+    label: "Bitcoin and BTC-based assets",
+  },
+  {
+    title: "Fund Type",
+    label: "Digital asset investment fund",
+  },
+  {
+    title: "Risk Level",
+    label: "Moderate",
+  },
+  {
+    title: "Allocation Strategy",
+    label: "Diversified BTC exposure",
+  },
+  {
+    title: "Liquidity",
+    label: "Smart contract-managed",
+  },
+  {
+    title: "Minimum Investment",
+    label: "$50 or crypto equivalent",
+  },
+];
+
+export const RWAoverviewdata = [
+  {
+    title: "Fund Name",
+    label: "RWA Fund",
+  },
+  {
+    title: "Investment Focus",
+    label: "Tokenized real-world assets (RWAs)",
+  },
+  {
+    title: "Fund Type",
+    label: "Digital asset investment fund",
+  },
+  {
+    title: "Risk Level",
+    label: "Moderate to High",
+  },
+  {
+    title: "Allocation Strategy",
+    label: "Diversified RWA exposure",
+  },
+  {
+    title: "Liquidity",
+    label: "Smart contract-managed",
+  },
+  {
+    title: "Minimum Investment",
+    label: "$50 or crypto equivalent",
+  },
+];
+
+export const Minningoverviewdata = [
+  {
+    title: "Fund Name",
+    label: "Mining Fund",
+  },
+  {
+    title: "Investment Focus",
+    label: "Proof-of-work blockchain assets",
+  },
+  {
+    title: "Fund Type",
+    label: "Digital asset investment fund",
+  },
+  {
+    title: "Risk Level",
+    label: "Moderate to High",
+  },
+  {
+    title: "Allocation Strategy",
+    label: "Diversified PoW asset basket",
   },
   {
     title: "Liquidity",

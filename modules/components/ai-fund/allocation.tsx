@@ -51,7 +51,7 @@ export function Allocation({allocationDataList}: AllocationProps) {
           <div className="grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-[30px]">
             {allocationDataList.map((data, index) => (
               <FadeInOnScroll key={data.label} delay={index * 0.2}>
-                <div className="allocation-card">
+                <div className="allocation-card relative z-[10]">
                   <p className="allocation-head">
                     {data.label}
                   </p>

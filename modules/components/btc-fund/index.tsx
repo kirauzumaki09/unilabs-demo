@@ -7,7 +7,7 @@ import { BTCinvestData, HowToInvest } from "../ai-fund/how-to-invest";
 import { Allocation, BTCallocationData } from "../ai-fund/allocation";
 import { Banner } from "../ai-fund/banner";
 import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
-import { Overview } from "../ai-fund/overview";
+import { BTCoverviewdata, Overview } from "../ai-fund/overview";
 
 export function BTCFundPage() {
   return (
@@ -19,7 +19,7 @@ export function BTCFundPage() {
         subTitle="Mining Fund Unilabs"
         description="The Mining Fund by Unilabs offers strategic exposure to a diversified basket of proof-of-work blockchain assets, ensuring long-term value capture from decentralized mining ecosystems."
       />
-      <Overview title="BTC Fund Overview" image="/btc-overview.svg">
+      <Overview title="BTC Fund Overview" image="/btc-overview.svg" overviewdata={BTCoverviewdata}>
         <FadeInOnScroll>
           <p className=" text-[18px] leading-[1.8] max-w-[564px] max-lg:max-w-full text-[#f0f0f0]">
             The Unilabs Mining Fund is a first-of-its-kind investment vehicle

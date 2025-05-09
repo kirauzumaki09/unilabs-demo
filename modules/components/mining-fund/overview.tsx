@@ -87,33 +87,3 @@ export function Overview() {
   );
 }
 
-const overviewdata = [
-  {
-    title: "Fund Name",
-    label: "Mining Fund",
-  },
-  {
-    title: "Investment Focus",
-    label: "Proof-of-work blockchain assets",
-  },
-  {
-    title: "Fund Type",
-    label: "Digital asset investment fund",
-  },
-  {
-    title: "Risk Level",
-    label: "Moderate to High",
-  },
-  {
-    title: "Allocation Strategy",
-    label: "Diversified PoW asset basket",
-  },
-  {
-    title: "Liquidity",
-    label: "Smart contract-managed",
-  },
-  {
-    title: "Minimum Investment",
-    label: "$50 or crypto equivalent",
-  },
-];

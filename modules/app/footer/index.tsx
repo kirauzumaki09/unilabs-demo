@@ -28,27 +28,43 @@ export function Footer() {
     <Section sectionClasName="relative pb-[220px] pt-[130px] max-lg:pt-[0px] max-md:pt-[60px]  overflow-hidden footerBG">
       {/* Content Wrapper */}
       <div className="relative z-10 flex items-center justify-between w-full flex-col">
+        <div className="flex w-full justify-between items-center pb-[35px] border-b !border-b-[rgba(255,255,255,0.1)] mb-[40px]">
+          <div className="relative flex items-center ">
+            <motion.div
+              animate={{
+                rotate: 360,
+                opacity: [1, 0.7, 1],
+              }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+            >
+              <Image
+                src={"/webp/earth.webp"}
+                alt="globe"
+                width={134}
+                height={140}
+              />
+            </motion.div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Logo className="w-[96px]" />
+            </div>
+          </div>
+          <FadeInOnScroll className="flex items-center justify-end max-md:hidden">
+            <Link
+              href="#"
+              className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out border-r border-r-white pr-[16px] hover:text-[#2DC5EC]"
+            >
+              Terms and Conditions
+            </Link>
+            <Link
+              href="#"
+              className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out pl-[16px] hover:text-[#2DC5EC]"
+            >
+              Privacy Policy
+            </Link>
+          </FadeInOnScroll>
+        </div>
         <FadeInOnScroll className="flex items-center max-xl:flex-col justify-between w-full pb-[30px] border-b !border-b-[rgba(255,255,255,0.1)]">
           <div className="flex gap-[32px] items-center">
-            <div className="relative flex items-center ">
-              <motion.div
-                animate={{
-                  rotate: 360,
-                  opacity: [1, 0.7, 1],
-                }}
-                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-              >
-                <Image
-                  src={"/webp/earth.webp"}
-                  alt="globe"
-                  width={134}
-                  height={140}
-                />
-              </motion.div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Logo className="w-[96px]" />
-              </div>
-            </div>
             <div className="flex flex-col gap-4 max-md:hidden">
               <p className="max-w-[745px]">
                 Digital currencies may be unregulated in your jurisdiction. The
@@ -60,20 +76,6 @@ export function Footer() {
           </div>
           <div className="flex flex-col justify-end max-xl:justify-center">
             <div className="flex items-center max-md:items-start justify-between w-full  pb-8 max-md:flex-col max-md:gap-4">
-              <FadeInOnScroll className="flex items-center justify-end max-md:hidden">
-                <Link
-                  href="#"
-                  className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out border-r border-r-white pr-[16px]"
-                >
-                  Terms and Conditions
-                </Link>
-                <Link
-                  href="#"
-                  className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out pl-[16px]"
-                >
-                  Privacy Policy
-                </Link>
-              </FadeInOnScroll>
               <div className="flex flex-col gap-4 md:hidden">
                 <p className="text-muted text-sm">Disclaimer:</p>
                 <p className="max-w-[745px]">
@@ -126,29 +128,3 @@ export function Footer() {
   );
 }
 
-const footerLinks = [
-  {
-    label: "About Us",
-    path: "#",
-  },
-  {
-    label: "Roadmap",
-    path: "#",
-  },
-  {
-    label: "Refer & Earn",
-    path: "#",
-  },
-  {
-    label: "Tokenomics",
-    path: "#",
-  },
-  {
-    label: "Marketplace",
-    path: "#",
-  },
-  {
-    label: "FAQ's",
-    path: "#",
-  },
-];

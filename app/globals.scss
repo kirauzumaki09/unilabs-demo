@@ -532,6 +532,8 @@ body {
   border-radius: 40px;
   border-top: 1px solid #54708f80;
   border-bottom: 1px solid #54708f80;
+  position: relative;
+  z-index: 10;
   @media (max-width: 768px) {
     border-radius: 16px;
     padding: 20px;

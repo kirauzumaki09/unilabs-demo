@@ -8,7 +8,7 @@ import { Allocation, miningallocationData } from "../ai-fund/allocation";
 import { Banner } from "../ai-fund/banner";
 import { Hero } from "../ai-fund/hero";
 import { HowToInvest, mininginvestData } from "../ai-fund/how-to-invest";
-import { Overview } from "../ai-fund/overview";
+import { Minningoverviewdata, Overview } from "../ai-fund/overview";
 
 export function MiningFundPage() {
   return (
@@ -20,7 +20,7 @@ export function MiningFundPage() {
         subTitle="Mining Fund Unilabs"
         description="The Mining Fund by Unilabs offers strategic exposure to a diversified basket of proof-of-work blockchain assets, ensuring long-term value capture from decentralized mining ecosystems."
       />
-      <Overview title="Mining Fund Overview" image="/mining-overview.svg">
+      <Overview title="Mining Fund Overview" image="/mining-overview.svg" overviewdata={Minningoverviewdata}>
         <FadeInOnScroll>
           <p className=" text-[18px] leading-[1.8] max-w-[564px] max-lg:max-w-full text-[#f0f0f0]">
             The Unilabs Mining Fund is a first-of-its-kind investment vehicle

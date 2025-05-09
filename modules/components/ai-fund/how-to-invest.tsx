@@ -44,7 +44,7 @@ export function HowToInvest({title,investdataList}: InvestProps) {
               <SlideInOnScroll delay={index * 0.1} className="overflow-visible">
                 <div
                   className={cn(
-                    "bg-white/10 px-12 py-10 border-b border-b-black/5 border-t rounded- rounded-xxl border-t-sec-border max-w-[380px] w-full relative",
+                    "bg-white/10 px-12 min-w-[384px] py-10 border-b border-b-black/5 border-t rounded- rounded-xxl border-t-sec-border max-w-[380px] w-full relative",
                     {
                       "lg:rounded-br-none": index === 0,
                       "lg:rounded-tr-none": index === investData.length - 1,
@@ -54,17 +54,17 @@ export function HowToInvest({title,investdataList}: InvestProps) {
                   )}
                 >
                   <div className="absolute -top-4 right-5 z-50">
-                    <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody font-semibold">
+                    <span className="py-3 px-7 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary text-[14px] rounded-[5px] font-anybody font-semibold">
                       {data.label}
                     </span>
                   </div>
                   <div className="size-16 mb-5">{data.icon}</div>
-                  <p>{data.desc}</p>
+                  <p className="text-[18px]  text-[#f0f0f0] max-w-[225px]">{data.desc}</p>
                 </div>
               </SlideInOnScroll>
             </div>
           ))}
-          <div className="absolute -top-37 h-[123%] left-[62.8%] max-lg:hidden pointer-events-none">
+          <div className="absolute -top-37 h-[123%] left-[61.8%] max-lg:hidden pointer-events-none">
             <Vector1 />
           </div>
           <div className="absolute w-full right-0 top-[30%] max-lg:w-[45%] pointer-events-none">

@@ -10,5 +10,6 @@ import fundUpdate3 from './fundUpdateMain3.png';
 import fundUpdate4 from './fundUpdateMain4.png';
 import fundUpdate5 from './fundUpdateMain5.png';
 import roadMapMainBG from './roadMapMainBG.png';
+import coinImage from './coinImage.png';
 
-export default { earlyBg, FundUpdate1, FundUpdate2, FundUpdate3, FundUpdate4,fundUpdate1,fund_Update2,fundUpdate3,fundUpdate4,fundUpdate5,roadMapMainBG};
+export default { earlyBg, FundUpdate1, FundUpdate2, FundUpdate3, FundUpdate4,fundUpdate1,fund_Update2,fundUpdate3,fundUpdate4,fundUpdate5,roadMapMainBG,coinImage};

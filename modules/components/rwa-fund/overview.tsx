@@ -85,33 +85,3 @@ export function Overview() {
   );
 }
 
-const overviewdata = [
-  {
-    title: "Fund Name",
-    label: "RWA Fund",
-  },
-  {
-    title: "Investment Focus",
-    label: "Tokenized real-world assets (RWAs)",
-  },
-  {
-    title: "Fund Type",
-    label: "Digital asset investment fund",
-  },
-  {
-    title: "Risk Level",
-    label: "Moderate to High",
-  },
-  {
-    title: "Allocation Strategy",
-    label: "Diversified RWA exposure",
-  },
-  {
-    title: "Liquidity",
-    label: "Smart contract-managed",
-  },
-  {
-    title: "Minimum Investment",
-    label: "$50 or crypto equivalent",
-  },
-];

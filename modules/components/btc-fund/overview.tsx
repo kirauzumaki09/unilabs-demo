@@ -86,34 +86,3 @@ export function Overview() {
     </div>
   );
 }
-
-const overviewdata = [
-  {
-    title: "Fund Name",
-    label: "BTC Fund",
-  },
-  {
-    title: "Investment Focus",
-    label: "Bitcoin and BTC-based assets",
-  },
-  {
-    title: "Fund Type",
-    label: "Digital asset investment fund",
-  },
-  {
-    title: "Risk Level",
-    label: "Moderate",
-  },
-  {
-    title: "Allocation Strategy",
-    label: "Diversified BTC exposure",
-  },
-  {
-    title: "Liquidity",
-    label: "Smart contract-managed",
-  },
-  {
-    title: "Minimum Investment",
-    label: "$50 or crypto equivalent",
-  },
-];
