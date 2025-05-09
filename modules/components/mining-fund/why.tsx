@@ -58,8 +58,8 @@ export function Why() {
                 </div>
               </FadeInOnScroll>
             </div>
-            <div className="flex flex-col gap-7 lg:absolute left-[44%] -top-[54%]">
-            <FadeInOnScroll className="lg:max-w-[489px] w-full">
+           <div className="flex flex-col gap-7 lg:absolute left-[51.5%] -top-[57%]">
+                <FadeInOnScroll className="lg:max-w-[489px] w-full">
                 <div className="whyfund-card">
                   <div className="whyfund-head-wrap">
                     <Checkmark className="checkmark" />
