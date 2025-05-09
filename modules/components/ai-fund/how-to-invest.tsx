@@ -59,7 +59,7 @@ export function HowToInvest({title,investdataList}: InvestProps) {
                     </span>
                   </div>
                   <div className="size-16 mb-5">{data.icon}</div>
-                  <p className="text-[18px]  text-[#f0f0f0] max-w-[225px]">{data.desc}</p>
+                  <p className="text-[18px]  text-[#f0f0f0] max-w-[250px]">{data.desc}</p>
                 </div>
               </SlideInOnScroll>
             </div>
