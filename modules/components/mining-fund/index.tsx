@@ -1,4 +1,3 @@
-import { How } from "./how";
 import { Why } from "./why";
 
 import { FAQ } from "@/modules/app/faq/faq";
