@@ -14,7 +14,7 @@ export function Overview({title,children,image}: {title:string,children: React.R
   return (
     <div className="max-sm:-mt-80 z-50 pb-[170px] pt-[31px]">
       <div className="container mx-auto flex flex-col items-center justify-center relative px-14 max-lg:px-5">
-        <Title text={title} sub className="text-[80px]" />
+        <Title text={title} sub className="text-[80px] !leading-[1] max-lg:" />
 
         <div className="absolute w-[100%] left-[-15%] top-[34%] -z-10">
           <OverviewVector className='w-full' />
