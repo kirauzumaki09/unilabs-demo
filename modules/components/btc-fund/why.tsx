@@ -16,7 +16,7 @@ export function Why() {
           </h2>
         </FadeInOnScroll>
         <div className="flex items-center gap-[30px] relative max-lg:flex-col">
-          <FadeInOnScroll className="lg:max-w-[400px] w-full">
+        <FadeInOnScroll className="lg:max-w-[489px] w-full">
              <div className="whyfund-card">
               <div className="whyfund-head-wrap">
                 <Checkmark className="checkmark" />
@@ -32,7 +32,7 @@ export function Why() {
           </FadeInOnScroll>
           <div className="flex gap-[30px] relative w-full max-lg:flex-col">
             <div className="flex flex-col gap-7">
-              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+            <FadeInOnScroll className="lg:max-w-[489px] w-full">
                  <div className="whyfund-card">
               <div className="whyfund-head-wrap">
                 <Checkmark className="checkmark" />
@@ -47,7 +47,7 @@ export function Why() {
                   </p>
                 </div>
               </FadeInOnScroll>
-              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+            <FadeInOnScroll className="lg:max-w-[489px] w-full">
                  <div className="whyfund-card">
               <div className="whyfund-head-wrap">
                 <Checkmark className="checkmark" />
@@ -63,7 +63,7 @@ export function Why() {
               </FadeInOnScroll>
             </div>
             <div className="flex flex-col gap-7 lg:absolute left-[44%] -top-[54%]">
-              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+            <FadeInOnScroll className="lg:max-w-[489px] w-full">
                  <div className="whyfund-card">
               <div className="whyfund-head-wrap">
                 <Checkmark className="checkmark" />
@@ -78,7 +78,7 @@ export function Why() {
                   </p>
                 </div>
               </FadeInOnScroll>
-              <FadeInOnScroll className="lg:max-w-[400px] w-full">
+            <FadeInOnScroll className="lg:max-w-[489px] w-full">
               <div className="whyfund-card">
               <div className="whyfund-head-wrap">
                 <Checkmark className="checkmark" />
