@@ -9,7 +9,7 @@ import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 
 export function Tokenomics() {
   return (
-    <div className="relative section tokenomicsBg">
+    <div className="relative pt-[120px] max-lg:pt-[80px] max-md:pt-[60px]  tokenomicsBg">
       <div className="container mx-auto flex-col flex w-full items-center justify-center relative">
         <SlideInOnScroll>
           <Title

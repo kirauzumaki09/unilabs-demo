@@ -20,13 +20,13 @@ export function HowItWorks() {
               <FadeInOnScroll
                 key={step.title}
                 delay={index * 0.3}
-                className="utility-card"
+                className={`utility-card  ${index < steps.length - 1  ? "-mt-20 max-md:mt-0" : ""}`}
               >
                 <div key={step.title} className={cn("max-w-[420px] max-lg:max-w-full")}>
                   <p className="text-[30px] text-white  max-lg:text-lg">
                     {step.label}
                   </p>
-                  <h3 className="gradText text-4xl max-lg:text-3xl font-bold font-anybody mb-2">
+                  <h3 className="gradText text-[36px] max-lg:text-3xl font-bold font-anybody mb-2">
                     {step.title}
                   </h3>
                   <p className="text-[18px] max-lg:text-[16px]">{step.description}</p>

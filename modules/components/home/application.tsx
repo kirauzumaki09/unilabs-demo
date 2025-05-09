@@ -30,7 +30,7 @@ export function Application() {
         </div>
         <div className="flex items-center justify-around max-lg:flex-col max-lg:mt-12 max-lg:gap-4 gap-8  relative z-20">
           <FadeInOnScroll>
-            <p className="text-5xl font-anybody text-right max-w-[422px] max-lg:max-w-full max-lg:text-3xl text-white max-lg:text-center mb-4 max:lg:!mb-0">
+            <p className="text-[56px] !leading-[1.2] font-anybody text-right max-w-[422px] max-lg:max-w-full max-lg:text-3xl text-white max-lg:text-center mb-4 max:lg:!mb-0">
               AI-Powered Portfolio Management
             </p>
           </FadeInOnScroll>
