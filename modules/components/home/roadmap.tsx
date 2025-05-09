@@ -160,7 +160,7 @@ export function RoadmapSVG({
 
   const progressHeight = useMotionValue(0);
   const adjustedProgressHeight = useTransform(progressHeight, (val) => val - 70);
-  const circleY = useTransform(progressHeight, (val) =>  val); 
+  const circleY = useTransform(progressHeight, (val) =>  val - 50); 
  
   useEffect(() => {
     const newHeight =
@@ -178,7 +178,7 @@ export function RoadmapSVG({
       itemRefs.current.forEach((itemRef) => {
         if (itemRef?.current) {
           const itemRect = itemRef.current.getBoundingClientRect();
-          const itemCenter = itemRect.top + itemRect.height / 2;
+          const itemCenter = itemRect.top + itemRect.height / 2 - 20;
           positions.push(itemCenter);
         }
       });
