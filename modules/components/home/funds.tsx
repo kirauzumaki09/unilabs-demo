@@ -62,31 +62,31 @@ const fundsData = [
   {
     label: "AI FUND",
     icon: <AIFund />,
-    // path: "/ai-fund",
-    path: "/",
+    path: "/ai-fund",
+
     description:
       "Dive into the rapidly evolving world of Artificial Intelligence. This fund targets projects revolutionizing everything from machine learning platforms to AI-driven dApps, ensuring you’re aligned with innovations shaping tomorrow.",
   },
   {
     label: "BTC FUND",
-    // path: "/commodity-fund",
-    path: "/",
+    path: "/btc-fund",
+
     icon: <Commodity />,
     description:
       "Explore the bridge between traditional commodities and blockchain. By tokenizing valuable resources and investing in real-world assets, this fund offers a balanced approach—hedging against crypto volatility while benefiting from the speed and liquidity of digital markets.",
   },
   {
     label: "RWA FUND",
-    // path: "/tech-fund",
-    path: "/",
+    path: "/rwa-fund",
+
     icon: <TechFund />,
     description:
       "Seize the most transformative web3, DeFi, and blockchain technologies. From layer-1 protocols to decentralized finance solutions, the Tech Fund positions you to capture the upward potential of groundbreaking tech as it reshapes global finance.",
   },
   {
     label: "MINING FUND",
-    // path: "/mining-fund",
-    path: "/",
+    path: "/mining-fund",
+
     icon: <Mining />,
     description:
       "HGround your portfolio in a time-tested revenue source: cryptocurrency mining. Utilizing robust facilities and efficient mining hardware, this fund ensures reliable yields that help stabilize returns across market cycles.",
