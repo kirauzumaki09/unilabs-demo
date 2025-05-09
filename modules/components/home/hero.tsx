@@ -332,7 +332,7 @@ export function Hero() {
               </div>
             </FadeIn>
             <FadeIn delay={0.4}>
-              <p className="max-w-[278px] max-lg:max-w-full max-lg:hidden text-left">
+              <p className="max-w-[278px] max-lg:max-w-full max-lg:hidden text-left text-[18px]">
                 Experience next-level transparency, significant returns, and
                 unparalleled access to ventures once reserved for institutional
                 players.
