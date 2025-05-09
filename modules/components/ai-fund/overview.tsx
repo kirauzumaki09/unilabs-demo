@@ -10,11 +10,11 @@ import React from "react";
 import { cn } from "@/modules/utils";
 /* Rectangle 34624615 */
 
-export function Overview() {
+export function Overview({title,children,image}: {title:string,children: React.ReactNode ,image:string}) {
   return (
     <div className="max-sm:-mt-80 z-50 pb-[170px] pt-[31px]">
       <div className="container mx-auto flex flex-col items-center justify-center relative px-14 max-lg:px-5">
-        <Title text="AI Fund Overview" sub className="text-[80px]" />
+        <Title text={title} sub className="text-[80px]" />
 
         <div className="absolute w-[100%] left-[-15%] top-[34%] -z-10">
           <OverviewVector className='w-full' />
@@ -25,33 +25,19 @@ export function Overview() {
         <div className="absolute w-[85%] top-[45%] left-1/2 transform -translate-x-1/2 -z-10">
           <OverviewBlur2 />
         </div>
-        <div className="flex items-center w-full mt-16 gap-1 max-lg:flex-col pb-[80px]" >
+        <div className="flex  w-full mt-16 gap-1 max-lg:flex-col pb-[80px]" >
           <div className="w-1/2 h-full max-lg:w-full flex items-center justify-center">
             <FadeInOnScroll>
               <Image
-                src={"/overview image.svg"}
+                src={image}
                 alt="phone"
                 width={600}
                 height={600}
               />
             </FadeInOnScroll>
           </div>
-          <div className="w-1/2 pl-11 max-lg:w-full max-lg:pl-0">
-            <FadeInOnScroll>
-              <p className="text-base text-[18px] max-w-[564px] max-lg:max-w-full color-[#fff]">
-                  Unilabs AI Fund is one of the first investment vehicles designed to strategically invest in and derive value from AI-integrated blockchain projects. Focused on the intersection of artificial intelligence and decentralized finance (DeFi), the AI Fund provides institutional-grade exposure to high-growth AI-powered crypto assets.
-              </p>
-            </FadeInOnScroll>
-            <FadeInOnScroll>
-              <p className="text-base text-[18px] my-[30px] max-w-[564px] max-lg:max-w-full color-[#fff]">
-                Unlike traditional investments, the Unilabs AI Fund eliminates the complexities of direct digital asset management, offering a fully AI-driven, algorithmically optimized portfolio through a secure and transparent investment structure. Fund shares are designed to reflect the value of AI-focused blockchain assets selected using a proprietary investment methodology, dynamically rebalanced to maximize exposure to the most promising projects in AI-driven DeFi, machine learning protocols, and autonomous smart contract platforms.
-              </p>
-            </FadeInOnScroll>
-            <FadeInOnScroll>
-              <p className="text-base text-[18px] max-w-[564px] max-lg:max-w-full color-[#fff]">
-                By backing early-stage AI projects and actively holding AI-integrated cryptocurrencies, the Unilabs AI Fund provides unparalleled access to the next wave of decentralized intelligence.
-              </p>
-            </FadeInOnScroll>
+          <div className="w-1/2 pl-11 max-lg:w-full max-lg:pl-0 text-[18px]">
+        {children}
           </div>
         </div>
         <div className="bg-white/5 backdrop-blur-2-[50px] rounded-xxl w-[75%] max-lg:w-full relative z-50 border-t border-t-sec-border">

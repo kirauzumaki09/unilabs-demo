@@ -4,7 +4,7 @@ import Checkmark from "@/assets/checkmark.svg";
 import Cube from "@/assets/otherpages/cube.svg";
 import Blur from '@/assets/otherpages/why-blur.svg'
 
-export function Why() {
+export function WhyInvestSec() {
   return (
     <section className="pb-[170px]">
       <div className="container mx-auto flex flex-col gap-8 relative px-[15px] max-lg:px-5">

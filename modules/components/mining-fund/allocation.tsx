@@ -1,11 +1,8 @@
 import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 import { SlideInOnScroll } from "@/modules/app/slide-in-on-scroll";
-import Ecosystem from "@/assets/otherpages/ecosystem.svg";
-import Digger from "@/assets/otherpages/mining-digger.svg";
-import MachineLearning from "@/assets/otherpages/machilne-learning.svg";
+
 import Blur2 from "@/assets/otherpages/allocation-blur2.svg";
 import Blur from "@/assets/otherpages/allocation-blur.svg";
-import Fee from "@/assets/otherpages/fee.svg";
 import React from "react";
 import Button from "@/modules/app/button";
 
@@ -62,25 +59,3 @@ export function Allocation() {
   );
 }
 
-const allocationData = [
-  {
-    label: "Core PoW Networks",
-    desc: "Direct investment in Bitcoin (BTC), Litecoin (LTC), and other leading mining-backed assets.",
-    icon: <MachineLearning />,
-  },
-  {
-    label: "Emerging PoW Ecosystems",
-    desc: "Select allocation in newer, high-growth PoW chains like Kaspa (KAS), Ergo (ERG), and Nervos (CKB).",
-    icon: <Ecosystem />,
-  },
-  {
-    label: "Mining Infrastructure Tokens",
-    desc: "Exposure to assets that power the mining economy, such as decentralized computing resources and energy-efficient mining networks.",
-    icon: <Digger />,
-  },
-  {
-    label: "Hash Rate & Fee-Based Assets",
-    desc: "Investments in projects that benefit from increased network transaction fees and security incentives.",
-    icon: <Fee />,
-  },
-];

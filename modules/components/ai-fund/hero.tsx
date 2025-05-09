@@ -5,35 +5,41 @@ import { TitleAnim } from "@/modules/app/title-animation";
 import bannerImage from "@/assets/fund-1-banner-image.png";
 
 
-export function Hero() {
+interface FundHeroProps{
+  subTitle:string;
+  heading1:string;
+  heading2:string;
+  description?:string;
+  bg?:string;
+}
+
+export function Hero({heading1,heading2,subTitle,description,bg}: FundHeroProps) {
   const titleStyles =
     "font-anybody uppercase text-white font-extrabold text-[30px] max-lg:text-3xl max-w-[80%] max-lg:max-w-full text-center leading-[140%] leading-0 ";
 
   return (
-    <div className="relative h-screen w-full aiFundBg">
-      {/* Text Content (Ensuring it's above everything) */}
-      <div className="absolute inset-0 flex flex-col items-center z-[1000] mt-20">
-        <div className="flex flex-col items-center max-lg:px-4 pt-[37px]">
+    <div className={`relative h-screen w-full ${bg}`}>
+    
+      <div className="flex flex-col items-center z-[1000] pt-[150px]">
+        <div className="flex flex-col items-center max-lg:px-4 pt-[37px ]   max-md:max-w-full">
           <TitleAnim delay={0}>
-            <h1 className={`${titleStyles} leading-[1]`}>AI Fund Unilabs</h1>
+            <span className={`${titleStyles} inline-flex !leading-[1]`}>{subTitle}</span>
           </TitleAnim>
           <TitleAnim delay={0}>
-            <h1 className={`${titleStyles} text-[80px] max-w-full leading-[1]`}>
-              Investing in the Future of
+            <h1 className={`${titleStyles} text-[80px] max-lg:text-[60px] !max-w-[940px] max-md:!max-w-full max-md:text-[50px] max-sm:text-[40px] max-w-full !leading-[1]`}>
+              {heading1}
             </h1>
           </TitleAnim>
           <TitleAnim delay={0.2}>
-            <h1 className="font-anybody !uppercase font-extrabold text-[160px] gradText leading-[1] ">
-              AI & Crypto
+            <h1 className="font-anybody !leading-[1] !uppercase font-extrabold text-[160px]  max-lg:text-[100px] max-md:text-[80px] max-sm:text-[60px] gradText !leading-[1] ">
+             {heading2}
             </h1>
           </TitleAnim>
-          <br />
+  
           <TitleAnim delay={0.4}>
-            <h1 className={`text-base text-[18px] max-w-[65%]`}>
-              The AI Fund by Unilabs offers algorithm-driven exposure to
-              high-growth AI-powered blockchain projects. Invest in the future
-              of AI-integrated decentralized finance.
-            </h1>
+            <p className={`text-white text-[18px] `}>
+            {description}
+            </p>
           </TitleAnim>
         </div>
       </div>

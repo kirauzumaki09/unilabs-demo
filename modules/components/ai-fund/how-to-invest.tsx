@@ -9,17 +9,28 @@ import Plant from "@/assets/otherpages/plant.svg";
 import React from "react";
 import { cn } from "@/modules/utils";
 
-export function HowToInvest() {
+
+type investList={
+  label: string;
+  desc: string;
+  icon: React.ReactNode;
+}
+interface InvestProps {
+investdataList: investList[];
+title: string;
+}
+
+export function HowToInvest({title,investdataList}: InvestProps) {
   return (
-    <section className="relative pb-[170px]">
+    <section className="section relative pb-[170px]">
       <div className="container mx-auto flex flex-col relative z-50">
         <SlideInOnScroll>
-          <h4 className="uppercase font-extrabold mx-auto font-anybody text-[80px] max-w-[774px] mb-[68px] leading-[1.2] lg:text-center text-white">
-            How to Invest in the AI Fund
-          </h4>
+          <h2 className="!leading-[1] uppercase font-extrabold mx-auto font-anybody text-[80px] max-w-[774px] mb-[68px] leading-[1.2] lg:text-center text-white">
+            {title}
+          </h2>
         </SlideInOnScroll>
         <div className="w-[75%] relative mt-[116px] mb-[102px] max-lg:flex-col gap-8 max-lg:flex max-lg:justify-cente max-lg:w-full max-lg:items-center">
-          {investData.map((data, index) => (
+          {investdataList.map((data, index) => (
             <div
               key={data.label}
               className={cn(
@@ -68,7 +79,91 @@ export function HowToInvest() {
   );
 }
 
-const investData = [
+export const RWAinvestData = [
+  {
+    label: "Step 1",
+    desc: "Sign up on Unilabs and access the AI Fund investment portal.",
+    icon: <Signup />,
+  },
+  {
+    label: "Step 2",
+    desc: "Choose your investment amount (minimum $50 or crypto equivalent).",
+    icon: <Bag />,
+  },
+  {
+    label: "Step 3",
+    desc: "Deposit funds via crypto or fiat payment options.",
+    icon: <Piggy />,
+  },
+  {
+    label: "Step 4",
+    desc: "Your investment is automatically allocated and managed by smart contracts.",
+    icon: <Plant />,
+  },
+  {
+    label: "Step 5",
+    desc: "Track your portfolio through the Unilabs dashboard.",
+    icon: <Portfolio />,
+  },
+];
+
+export const BTCinvestData = [
+  {
+    label: "Step 1",
+    desc: "Sign up on Unilabs and access the AI Fund investment portal.",
+    icon: <Signup />,
+  },
+  {
+    label: "Step 2",
+    desc: "Choose your investment amount (minimum $50 or crypto equivalent).",
+    icon: <Bag />,
+  },
+  {
+    label: "Step 3",
+    desc: "Deposit funds via crypto or fiat payment options.",
+    icon: <Piggy />,
+  },
+  {
+    label: "Step 4",
+    desc: "Your investment is automatically allocated and managed by smart contracts.",
+    icon: <Plant />,
+  },
+  {
+    label: "Step 5",
+    desc: "Track your portfolio through the Unilabs dashboard.",
+    icon: <Portfolio />,
+  },
+];
+
+export const mininginvestData = [
+  {
+    label: "Step 1",
+    desc: "Sign up on Unilabs and access the AI Fund investment portal.",
+    icon: <Signup />,
+  },
+  {
+    label: "Step 2",
+    desc: "Choose your investment amount (minimum $50 or crypto equivalent).",
+    icon: <Bag />,
+  },
+  {
+    label: "Step 3",
+    desc: "Deposit funds via crypto or fiat payment options.",
+    icon: <Piggy />,
+  },
+  {
+    label: "Step 4",
+    desc: "Your investment is automatically allocated and managed by smart contracts.",
+    icon: <Plant />,
+  },
+  {
+    label: "Step 5",
+    desc: "Track your portfolio through the Unilabs dashboard.",
+    icon: <Portfolio />,
+  },
+];
+
+export const investData = [
   {
     label: "Step 1",
     desc: "Sign up on Unilabs and access the AI Fund investment portal.",

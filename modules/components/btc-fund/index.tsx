@@ -1,22 +1,31 @@
-import React from "react";
-import { Hero } from "./hero";
+import { FAQ } from "@/modules/app/faq/faq";
+import { Hero } from "../ai-fund/hero";
+import { BTChowData, HowMiningSec } from "../ai-fund/HowMiningSec";
+
+
 import { Overview } from "./overview";
 import { Why } from "./why";
-import { How } from "./how";
-import { Allocation } from "./allocation";
-import { HowToInvest } from "./how-to-invest";
-import { FAQ } from "@/modules/app/faq/faq";
-import { Banner } from "./banner";
+import { BTCinvestData, HowToInvest } from "../ai-fund/how-to-invest";
+import { Allocation, BTCallocationData } from "../ai-fund/allocation";
+import { Banner } from "../ai-fund/banner";
 
 export function BTCFundPage() {
   return (
     <>
-      <Hero />
+      <Hero
+        heading2="Pow Assets"
+        heading1="Powering the Future of"
+        subTitle="Mining Fund Unilabs"
+        description="The Mining Fund by Unilabs offers strategic exposure to a diversified basket of proof-of-work blockchain assets, ensuring long-term value capture from decentralized mining ecosystems."
+      />
       <Overview />
       <Why />
-      <How />
-      <Allocation />
-      <HowToInvest />
+      <HowMiningSec title="How the BTC Fund Works" howdata={BTChowData} />
+      <Allocation allocationDataList={BTCallocationData} />
+      <HowToInvest
+        title="How to Invest in the BTC Fund"
+        investdataList={BTCinvestData}
+      />
       <FAQ data={BTCfaqData} />
       <Banner
         title="Invest in the Next Evolution of Bitcoin Investing"

@@ -73,33 +73,7 @@ export function HowToInvest() {
   );
 }
 
-const investData = [
-  {
-    label: "Step 1",
-    desc: "Sign up on Unilabs and access the AI Fund investment portal.",
-    icon: <Signup />,
-  },
-  {
-    label: "Step 2",
-    desc: "Choose your investment amount (minimum $50 or crypto equivalent).",
-    icon: <Bag />,
-  },
-  {
-    label: "Step 3",
-    desc: "Deposit funds via crypto or fiat payment options.",
-    icon: <Piggy />,
-  },
-  {
-    label: "Step 4",
-    desc: "Your investment is automatically allocated and managed by smart contracts.",
-    icon: <Plant />,
-  },
-  {
-    label: "Step 5",
-    desc: "Track your portfolio through the Unilabs dashboard.",
-    icon: <Portfolio />,
-  },
-];
+
 
 function Vector1() {
   return (

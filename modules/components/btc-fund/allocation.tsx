@@ -1,11 +1,8 @@
 import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 import { SlideInOnScroll } from "@/modules/app/slide-in-on-scroll";
-import NativeBTC from "@/assets/otherpages/native-btc.svg";
-import WBTC from "@/assets/otherpages/wbtc.svg";
-import Derivatives from "@/assets/otherpages/derivatives.svg";
+
 import Blur2 from "@/assets/otherpages/allocation-blur2.svg";
 import Blur from "@/assets/otherpages/allocation-blur.svg";
-import Staking from "@/assets/otherpages/staking.svg";
 import React from "react";
 import Button from "@/modules/app/button";
 
@@ -60,25 +57,4 @@ export function Allocation() {
   );
 }
 
-const allocationData = [
-  {
-    label: "Native Bitcoin (BTC)",
-    desc: "Direct holdings of Bitcoin, ensuring long-term security and value appreciation.",
-    icon: <NativeBTC />,
-  },
-  {
-    label: "Wrapped Bitcoin (WBTC, TBTC, RenBTC)",
-    desc: "BTC-backed assets designed for liquidity and DeFi integrations.",
-    icon: <WBTC />,
-  },
-  {
-    label: "Yield-Bearing BTC Derivatives",
-    desc: "Bitcoin-focused staking solutions and synthetic assets designed to generate returns on BTC holdings.",
-    icon: <Derivatives />,
-  },
-  {
-    label: "Liquid Staking Solutions",
-    desc: "Allocations to liquid staking providers that offer BTC-based yield without locking up funds.",
-    icon: <Staking />,
-  },
-];
+

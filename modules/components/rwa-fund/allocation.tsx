@@ -1,11 +1,8 @@
 import { FadeInOnScroll } from "@/modules/app/fadein-scroll";
 import { SlideInOnScroll } from "@/modules/app/slide-in-on-scroll";
-import Estae from "@/assets/otherpages/estate.svg";
-import Yield from "@/assets/otherpages/yield.svg";
-import Market from "@/assets/otherpages/market.svg";
+
 import Blur2 from "@/assets/otherpages/allocation-blur2.svg";
 import Blur from "@/assets/otherpages/allocation-blur.svg";
-import Metals from "@/assets/otherpages/metals.svg";
 import React from "react";
 import Button from "@/modules/app/button";
 
@@ -62,25 +59,4 @@ export function Allocation() {
   );
 }
 
-const allocationData = [
-  {
-    label: "Tokenized Real Estate",
-    desc: " Exposure to on-chain real estate funds, rental-backed securities, and tokenized property investments.",
-    icon: <Estae />,
-  },
-  {
-    label: "Commodities & Precious Metals",
-    desc: "Investments in gold, silver, and other tokenized commodity markets for inflation-resistant returns.",
-    icon: <Metals />,
-  },
-  {
-    label: "Yield-Bearing Fixed Income",
-    desc: "Allocations to tokenized debt markets, bonds, and structured yield products providing stable returns.",
-    icon: <Yield />,
-  },
-  {
-    label: "Regulated RWA Marketplaces",
-    desc: "Exposure to emerging platforms facilitating institutional RWA adoption.",
-    icon: <Market />,
-  },
-];
+
