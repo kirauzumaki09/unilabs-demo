@@ -101,6 +101,8 @@ export function Roadmap() {
       <SlideInOnScroll>
         <Title text="Roadmap" className="!text-[80px] max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px] !uppercase" />
       </SlideInOnScroll>
+      <div className="container">
+
       <div className="mt-20 flex items-center justify-center">
         <div className="relative flex" ref={containerRef}>
           {/* SVG Line */}
@@ -135,6 +137,7 @@ export function Roadmap() {
             })}
           </div>
         </div>
+      </div>
       </div>
     
     </div>

@@ -111,11 +111,11 @@ export function Footer() {
             </div>
           </div>
         </FadeInOnScroll>
-        <div className="flex items-center pt-[32px] w-full justify-between">
-          <ul className="flex items-center  justify-between gap-11">
+        <div className="flex items-center pt-[32px] w-full justify-between flex-wrap gap-4">
+          <ul className="flex items-center  justify-between gap-11 flex-wrap max-md:gap-y-2">
             {navLinks.map((nav) => {
               return (
-                <li key={nav.name} className="flex items-center justify-center">
+                <li key={nav.name} className="flex items-center justify-center max-md:w-[42%] max-md:justify-start">
                   <Link
                     href={nav.path}
         
@@ -126,7 +126,7 @@ export function Footer() {
               );
             })}
           </ul>
-          <p className="  z-50 text-left text-[18px] text-[#DBDBDB]">
+          <p className="  z-50 text-left text-[18px] text-[#DBDBDB] max-md:w-full max-md:text-center">
             UNILABS © 2025, All rights reserved
           </p>
         </div>
