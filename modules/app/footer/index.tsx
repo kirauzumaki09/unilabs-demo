@@ -28,7 +28,7 @@ export function Footer() {
     <Section sectionClasName="relative pb-[220px] pt-[130px] max-lg:pt-[0px] max-md:pt-[60px]  overflow-hidden footerBG">
       {/* Content Wrapper */}
       <div className="relative z-10 flex items-center justify-between w-full flex-col">
-        <div className="flex w-full justify-between items-center pb-[35px] border-b !border-b-[rgba(255,255,255,0.1)] mb-[40px]">
+        <div className="flex w-full justify-between items-center pb-[35px] border-b !border-b-[rgba(255,255,255,0.1)] mb-[40px]  flex-wrap gap-4 max-sm:flex-col ">
           <div className="relative flex items-center ">
             <motion.div
               animate={{
@@ -42,13 +42,14 @@ export function Footer() {
                 alt="globe"
                 width={134}
                 height={140}
+                className="max-sm:w-[80px]"
               />
             </motion.div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <Logo className="w-[96px]" />
+              <Logo className="w-[96px] max-sm:w-[50px]" />
             </div>
           </div>
-          <FadeInOnScroll className="flex items-center justify-end max-md:hidden">
+          <FadeInOnScroll className="flex items-center justify-end ">
             <Link
               href="#"
               className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out border-r border-r-white pr-[16px] hover:text-[#2DC5EC]"
