@@ -40,14 +40,14 @@ const RoadmapItem = React.forwardRef<
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
     >
-      <div className="text-right font-anybody text-[40px] max-lg:text-[30px] mr-6 w-90 max-lg:w-full max-lg:text-left">
+      <div className="text-right font-anybody text-[40px] max-lg:text-[30px] max-md:text-[24px] mr-6 w-90 max-lg:w-full max-lg:text-left">
         <p className="text-white">{roadmap.label}</p>
         <p>{roadmap.title}</p>
       </div>
       <div className="ml-6 flex flex-col justify-center">
         <ul>
           {roadmap.description.map((item) => (
-            <li key={item} className="mb-[20px] max-md:mb-2 text-[24px] flex items-center gap-4">
+            <li key={item} className="mb-[20px] max-md:mb-2 text-[24px] max-md:text-[18px] flex items-center gap-4">
               <Checkmark
                 className={cn("size-5", { "text-[#0FEDBE]": inView })}
               />{" "}
