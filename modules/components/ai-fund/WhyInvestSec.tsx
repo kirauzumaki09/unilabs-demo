@@ -97,7 +97,7 @@ export function WhyInvestSec() {
             <Cube />
           </FadeInOnScroll>
         </div>
-        <div className="size-13 absolute top-[30%] left-[15%] -z-0">
+        <div className="size-13 absolute top-[30%] left-[15%] -z-0 max-md:hidden">
           <FadeInOnScroll>
             <Cube />
           </FadeInOnScroll>

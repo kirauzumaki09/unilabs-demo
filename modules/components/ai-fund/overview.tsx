@@ -50,7 +50,7 @@ export function Overview({title,children,image,overviewdata}: {title:string,chil
             <FadeInOnScroll key={`label-${index}`} delay={index * 0.1}>
               <div
                 className={cn(
-                  "flex justify-between items-center border-b border-[#FFFFFF21] py-5 px-[115px] max-lg:px-5",
+                  "flex justify-between items-center border-b border-[#FFFFFF21] py-5 px-[115px] max-lg:px-5 max-md:px-2",
                   { "border-b-0": index === overviewdata.length - 1 }
                 )}
               >

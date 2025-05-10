@@ -91,7 +91,7 @@ export function Footer() {
                 </p>
               </div>
             </div>
-                 <div className="flex  flex-col gap-4 justify-center items-end max-xl:justify-center max-md:items-center ">
+            <div className="flex  flex-col gap-4 justify-center items-end max-xl:justify-center max-md:items-center ">
               <p className=" whitespace-nowrap text-[18px] text-white">
                 Follow us on
               </p>

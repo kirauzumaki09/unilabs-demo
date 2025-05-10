@@ -373,12 +373,36 @@ body {
 .rwaFundBG {
   background: url("../assets/rwaFundBG.png") no-repeat, #00070f;
   background-size: cover;
+    @media (max-width:767px){
+     &::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 7, 15, 0.5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  }
 }
 
 .aiFundBgNew {
   background: url("../assets/aiFungBG.png") no-repeat bottom center;
   background-size: cover;
   position: relative;
+  @media (max-width:767px){
+     &::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 7, 15, 0.5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  }
 }
 .BTCFundBG {
   background: url("../assets/BTCFundBG.png") no-repeat center center;
@@ -399,6 +423,18 @@ body {
   background: url("../assets/miningfungBG.png") no-repeat center center;
   background-size: cover;
   position: relative;
+    @media (max-width:767px){
+     &::before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 7, 15, 0.5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  }
 }
 
 .fundUpdatesBG {
@@ -558,6 +594,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 23px;
+    @media (max-width:767px){
+      margin-bottom: 16px;
+    }
 
     .checkmark {
       width: 30px;
@@ -581,6 +620,9 @@ body {
       text-fill-color: transparent;
       max-width: calc(100% - 30px);
       padding-left: 17px;
+      @media (max-width:767px){
+        font-size: 20px;
+      }
     }
   }
 
