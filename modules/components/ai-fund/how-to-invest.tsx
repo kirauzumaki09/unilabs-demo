@@ -38,17 +38,17 @@ export function HowToInvest({title,investdataList}: InvestProps) {
             <div
               key={data.label}
               className={cn(
-                "flex items-center max-lg:justify-center max-lg:gap-8 flex-col",
+                "flex items-center max-lg:justify-center max-lg:gap-8 flex-col max-sm:w-full",
                 {
                   "lg:flex-row-reverse": index % 2 === 1,
                   "lg:-ml-10": index % 2 === 1,
                 }
               )}
             >
-              <SlideInOnScroll delay={index * 0.1} className="overflow-visible">
+              <SlideInOnScroll delay={index * 0.1} className="overflow-visible max-sm:w-full">
                 <div
                   className={cn(
-                    "bg-white/10 px-12 min-w-[384px] py-10 border-b border-b-black/5 border-t rounded- rounded-xxl border-t-sec-border max-w-[380px] w-full relative",
+                    "bg-white/10 px-12 min-w-[384px] py-10 border-b border-b-black/5 border-t rounded- rounded-xxl border-t-sec-border max-w-[380px] max-sm:min-w-0 max-sm:rounded-[16px] max-sm:p-5 max-sm:w-full w-full relative max-sm:max-w-full",
                     {
                       "lg:rounded-br-none": index === 0,
                       "lg:rounded-tr-none": index === investData.length - 1,

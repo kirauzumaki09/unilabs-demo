@@ -23,11 +23,11 @@ const FundUpdates = () => {
             .map((u, index) => (
               <div
                 key={index}
-                className="flex flex-row align-center gap-4 funCard "
+                className="flex flex-row align-center gap-4 funCard max-md:flex-col"
               >
                 <Link
                   href={u.link}
-                  className="w-[300px] linkImage flex-shrink-0 max-xl:w-[200px] h-[328px] rounded-[30px] overflow-hidden fundUpdteFiugure "
+                  className="w-[300px] linkImage flex-shrink-0 max-xl:w-[200px] h-[328px]  max-md:!w-full rounded-[30px] overflow-hidden fundUpdteFiugure"
                 >
                   <Image
                     src={u.image}

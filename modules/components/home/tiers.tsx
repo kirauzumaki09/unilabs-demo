@@ -87,7 +87,7 @@ export function Tiers() {
     infinite: true,
     speed: 500,
     // arrows: true,
-    autoplay: true,
+    // autoplay: true,
 
     variableWidth: true,
     autoplaySpeed: 5000,
@@ -158,7 +158,7 @@ export function Tiers() {
 
         {/* Slider Section */}
         <div className="lg:mt-[122px] mt-8 flex flex-row gap-8 max-lg:flex-col">
-          <div className="min-w-[457px] mb-6 md:mb-0">
+          <div className="min-w-[457px] mb-6 md:mb-0 max-md:w-full max-md:min-w-0">
             <p className="gradText capitalize !text-[28px] max-w-[400px] md:text-4xl sm:text-3xl font-semibold font-anybody">
               30% Fee Redistribution & Tiered Rewards
             </p>
@@ -172,10 +172,10 @@ export function Tiers() {
           <div className="flex-1 relative">
             <div className="w-full relative">
               {isMounted && (
-                <Slider {...settings} className="w-full relative">
+                <Slider {...settings} className="w-full relative customSlidertier">
                   {tiersData.map((tier) => (
-                    <div key={tier.tier} className="px-3">
-                      <div className="max-w-[360px] w-full bg-secondary min-h-[340px] max-lg:h-[250px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
+                    <div key={tier.tier} className="">
+                      <div className="max-w-[360px] max-sm:max-w-[320px] w-full bg-secondary min-h-[340px] max-lg:h-[250px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[30px] py-[25px] px-[20px] rounded-[30px] flex flex-col gap-[20px]">
                         <div className="relative shadow-[inset_0px_2px_14px_#0FEDBE]  backdrop-blur-[60px] rounded-[60px] w-full min-w-[250px] max-md:min-w-0 h-[74px] max-lg:justify-center max-lg:h-[50px] flex items-center justify-center">
                           <span className="gradText relative z-[99] text-[24px] font-bold flex items-center justify-center w-full h-full rounded-full  z-30 absolute top-0">
                             {tier.tier}

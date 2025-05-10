@@ -162,6 +162,14 @@ body {
 .slick-arrow.slick-prev:before {
   content: "";
 }
+.customSlidertier{
+  .slick-list{
+    margin: 0 -12px;
+  }
+  .slick-slide {
+    padding: 0 12px;
+  }
+}
 
 // @media screen and (min-width: 1024px) {
 //   .utility-cards-wrapper {

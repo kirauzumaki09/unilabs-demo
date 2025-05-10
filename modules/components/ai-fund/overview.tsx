@@ -17,7 +17,7 @@ type IOverviewData={
 
 export function Overview({title,children,image,overviewdata}: {title:string,children: React.ReactNode ,image:string,overviewdata:IOverviewData[]}) {
   return (
-    <div className="max-sm:-mt-80 z-50 pb-[170px] pt-[31px] max-xl:pb-[100px] max-lg:pb-[80px] max-md:pb-[60px]">
+    <div className=" z-50 pb-[170px] pt-[31px] max-xl:pb-[100px] max-lg:pb-[80px] max-md:pb-[60px]">
       <div className="container mx-auto flex flex-col items-center justify-center relative px-14 max-lg:px-5">
         <Title text={title} sub className="text-[80px] !leading-[1] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] " />
 

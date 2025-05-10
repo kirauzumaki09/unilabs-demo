@@ -30,9 +30,9 @@ export function Banner({ title, paragraph, sub }: BannerProps) {
             />
           </div>
           <div>
-            <p className="gradText text-[36px] font-semibold font-anybody">
+            <h2 className="gradText text-[36px] font-semibold font-anybody leading-[1]">
               {title}
-            </p>
+            </h2>
             <p className="text-[18px] font-inter pt-4 pb-3 text-white">
               {paragraph}
             </p>

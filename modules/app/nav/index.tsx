@@ -16,8 +16,6 @@ import { FadeIn } from "../fade-in";
 import Button from "../button";
 import SignInIcon from "@/ui/icons/SignInIcon";
 
-
-
 export function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -33,6 +31,10 @@ export function Nav() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [handleScroll]);
+
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  };
 
   return (
     <div
@@ -78,7 +80,9 @@ export function Nav() {
                   <li className="p-2 flex items-center justify-center">
                     <Link
                       href={nav.path}
-                      className={cn("text-white font-medium text-[16px]",{ "text-[#0FEDBE] text-[16px]": isActive })}
+                      className={cn("text-white font-medium text-[16px]", {
+                        "text-[#0FEDBE] text-[16px]": isActive,
+                      })}
                     >
                       {nav.name}
                     </Link>
@@ -91,7 +95,6 @@ export function Nav() {
 
         <div className="flex justify-end ml-5">
           <div className="flex items-center justify-between gap-5 max-lg:hidden">
-       
             <FadeIn>
               <Button
                 onClick={() => {
@@ -116,9 +119,9 @@ export function Nav() {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -100, opacity: 0 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="w-full absolute top-[80%] bg-background backdrop-blur-[90px] left-0 right-0 p-8 border-b border-b-accent z-[1000000]"
+                className="w-full absolute top-[100%] bg-background backdrop-blur-[90px] left-0 right-0 p-8 border-b border-b-accent z-[1000000]"
               >
-                <ul className="flex items-center flex-col justify-between gap-10">
+                <ul className="flex items-center flex-col justify-between gap-4">
                   {navLinks.map((nav) => {
                     return (
                       <li
@@ -162,15 +165,16 @@ export function Nav() {
             <Bag />
             Buy Unil
           </Button>
-          {isMobileNavOpen ? (
+          {isMobileNavOpen && (
             <CloseIcon
-              onClick={() => setIsMobileNavOpen(false)}
+              onClick={toggleMobileNav}
               className="text-muted-foreground size-5 cursor-pointer"
             />
-          ) : (
+          )}
+          {!isMobileNavOpen && (
             <MenuIcon
               className="text-muted-foreground size-5 cursor-pointer"
-              onClick={() => setIsMobileNavOpen(true)}
+              onClick={toggleMobileNav}
             />
           )}
         </div>
@@ -188,7 +192,6 @@ export const navLinks = [
   {
     name: "Core Features",
     path: "/core-features",
-
   },
   {
     name: "Fund Updates",
@@ -198,6 +201,5 @@ export const navLinks = [
   {
     name: "Unilabs Roadmap",
     path: "/roadmap",
-
   },
 ];
