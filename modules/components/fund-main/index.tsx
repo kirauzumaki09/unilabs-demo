@@ -28,7 +28,7 @@ export default function FundMain() {
   return (
     <div>
       <div className="section !pt-[200px] max-md:!pt-[120px] min-h-[925px]  fundUpdatesBG ">
-        <h1 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] uppercase text-anybody text-white font-extrabold text-center mb-[100px] max-md:mb-[50px]">
+        <h1 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[32px] uppercase text-anybody text-white font-extrabold text-center mb-[100px] max-md:mb-[50px]">
           <span className="gradText !uppercase">Fund </span>
           updates
         </h1>

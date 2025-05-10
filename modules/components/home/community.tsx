@@ -95,7 +95,7 @@ const CommunityReviews: React.FC = () => {
   return (
     <div className="section reviewBg">
   
-        <h2 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] text-center font-extrabold uppercase  text-white mb-[50px] font-anybody ">
+        <h2 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[32px] text-center font-extrabold uppercase  text-white mb-[50px] font-anybody ">
           Community Reviews
         </h2>
 

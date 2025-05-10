@@ -9,7 +9,7 @@ export default function TermsAndConditions() {
       <main className="flex flex-col gap-[32px] w-full">
         <div>
         <div className="section !pt-[200px] max-md:!pt-[120px] max-sm:!pb-[60px]   ">
-        <h1 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] uppercase text-anybody text-white font-extrabold text-center ">
+        <h1 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[32px] uppercase text-anybody text-white font-extrabold text-center ">
               <span className="gradText !uppercase">Terms </span> and
               <span className="gradText !uppercase"> Conditions </span>
             </h1>

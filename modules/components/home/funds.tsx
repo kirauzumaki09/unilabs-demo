@@ -11,14 +11,14 @@ import Link from "next/link";
 export default function Funds() {
   return (
     <div className="section">
-      <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 -mt-5">
+      <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5 ">
         <SlideInOnScroll>
-          <h2 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white">
+          <h2 className="uppercase font-extrabold font-anybody leading-[1] !text-[80px] max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px] text-center text-white">
             Introducing Our
           </h2>
         </SlideInOnScroll>
         <SlideInOnScroll delay={0.2}>
-          <h2 className="uppercase font-extrabold font-anybody text-7xl max-lg:text-5xl max-sm:text-3xl lg:text-center text-white mb-4">
+          <h2 className="uppercase font-extrabold font-anybody !text-[80px]  leading-[1] max-lg:!text-[60px] max-md:!text-[50px] max-sm:!text-[40px] text-center text-white mb-4">
             Specialized Funds
           </h2>
         </SlideInOnScroll>

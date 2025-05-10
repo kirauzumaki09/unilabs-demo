@@ -13,7 +13,7 @@ export function Application() {
       <div className="container mx-auto flex-col flex w-full px-14 max-lg:px-5">
         <div className="mb-[60px] max-lg:mb-3">
           <SlideInOnScroll>
-            <h2 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-lg:mr-0 max-lg:text-center max-sm:text-[40px] !uppercase text-center mr-50  font-extrabold font-anybody uppercase gradText leading-[1]">
+            <h2 className="text-[80px] max-lg:text-[60px] max-md:text-[50px] max-lg:mr-0 max-lg:text-center max-sm:text-[32px] !uppercase text-center mr-50  font-extrabold font-anybody uppercase gradText leading-[1]">
               The UNILABS
             </h2>
           </SlideInOnScroll>

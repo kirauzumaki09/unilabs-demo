@@ -62,7 +62,7 @@ const FooterTwo = () => {
             </div>
           </div>
           <div className="newletter-sec text-center -mt-10 max-md:-mt-2">
-            <p className="newsletter-head font-anybody uppercase font-extrabold text-[100px] max-xl:text-[75px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[40px] leading-[1] text-white mb-[49px] max-md:mb-5">
+            <p className="newsletter-head font-anybody uppercase font-extrabold text-[100px] max-xl:text-[75px] max-lg:text-[60px] max-md:text-[50px] max-sm:text-[32px] leading-[1] text-white mb-[49px] max-md:mb-5">
               Subscribe to <br /> our newsletter
             </p>
 

@@ -26,7 +26,7 @@ export function Hero({heading1,heading2,subTitle,description,bg}: FundHeroProps)
             <span className={`${titleStyles} inline-flex !leading-[1]`}>{subTitle}</span>
           </TitleAnim>
           <TitleAnim delay={0}>
-            <h1 className={`${titleStyles} text-[80px] max-lg:text-[60px] !max-w-[1220px] max-md:!max-w-full max-md:text-[50px] max-sm:text-[40px] max-w-full !leading-[1]`}>
+            <h1 className={`${titleStyles} text-[80px] max-lg:text-[60px] !max-w-[1220px] max-md:!max-w-full max-md:text-[50px] max-sm:text-[32px] max-w-full !leading-[1]`}>
               {heading1}
             </h1>
           </TitleAnim>
