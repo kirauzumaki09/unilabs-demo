@@ -42,4 +42,25 @@ export const fundList = [
     image: assets.fundUpdate5,
     link: "/fund-update-5",
   },
+  {
+    title: "Fund Update 6",
+    date: "May 8,2025",
+    description: `Today, our team made significant progress on the path to fully
+            autonomous treasury operations. We focused on connecting Unilabs’
+            treasury simulation system with live DeFi environments in a
+            controlled, secure setting.`,
+    image: assets.fundUpdate6,
+    link: "/fund-update-6",
+  },
+  {
+    title: "Fund Update 7",
+    date: "May 9,2025",
+    description: `       One week into our structured development roadmap, our team at
+            Unilabs is making steady progress toward launching a fully
+            autonomous AI-powered DeFi platform. Today’s focus was on getting
+            our systems operationally ready for the next stages. Here are the
+            details.`,
+    image: assets.fundUpdate7,
+    link: "/fund-update-7",
+  },
 ];
