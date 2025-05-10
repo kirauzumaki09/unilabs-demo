@@ -127,7 +127,7 @@ export function Nav() {
         </div>
           </div>
 
-          <AnimatePresence>
+     
             {isMobileNavOpen && (
               <motion.div
                 initial={{ y: -100, opacity: 0 }}
@@ -163,7 +163,7 @@ export function Nav() {
                 </div> */}
               </motion.div>
             )}
-          </AnimatePresence>
+ 
         </div>
 
    
