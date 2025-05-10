@@ -39,7 +39,7 @@ export function Nav() {
   return (
     <div
       className={cn(
-        "flex items-center justify-between border-b transition-all duration-400 ease-in-out border-b-transparent w-full 0 fixed top-0 z-[1000] h-[116px] ",
+        "flex items-center justify-between border-b transition-all duration-400 ease-in-out border-b-transparent w-full 0 fixed top-0 z-[1000] h-[116px] max-sm:h-auto py-[8px] ",
         {
           "border-b-[#2DC5EC] backdrop-blur-lg": isScrolled,
         }
@@ -48,7 +48,7 @@ export function Nav() {
       <div className="flex items-center w-full p-5 container mx-auto relative">
         <div className="w-[200px] flex items-center">
           <FadeIn>
-            <Link href={"/"} className="relative w-[75px] h-[75px] block">
+            <Link href={"/"} className="relative w-[75px] h-[75px] block max-sm:size-[50px]">
               <motion.div
                 animate={{
                   rotate: 360,
