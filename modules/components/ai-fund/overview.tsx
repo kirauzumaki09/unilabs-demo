@@ -61,7 +61,7 @@ export function Overview({title,children,image,overviewdata}: {title:string,chil
                   </p>
                 </div>
 
-                <p className="max-sm:text-sm text-normal font-inter text-[18px]">{data.label}</p>
+                <p className="max-sm:text-sm text-normal font-inter text-[18px] max-sm:text-right">{data.label}</p>
               </div>
             </FadeInOnScroll>
           ))}
