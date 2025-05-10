@@ -159,7 +159,7 @@ export function Hero() {
 
   return (
     <>
-      <div className="relative min-h-screen h-full w-full mt-14  flex flex-col gap-10 max-lg:px-4 pb-[100px]">
+      <div className="relative min-h-screen h-full w-full mt-14  flex flex-col gap-10 max-lg:px-4 pb-[100px] max-md:pb-[40px]">
         {/* Background Image */}
         <div className="absolute w-full h-full -z-10 flex items-center justify-center">
           <Image
