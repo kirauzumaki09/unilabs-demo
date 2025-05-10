@@ -53,13 +53,13 @@ export function Footer() {
           <FadeInOnScroll className="flex items-center justify-end ">
             <Link
               href="/terms-and-conditions"
-              className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out border-r border-r-white pr-[16px] hover:text-[#2DC5EC]"
+              className="text-[18px] max-sm:!text-[16px] text-white hover:opacity-100 transition duration-300 ease-in-out border-r border-r-white pr-[16px] hover:text-[#2DC5EC]"
             >
               Terms and Conditions
             </Link>
             <Link
               href="/privacy-policy"
-              className="text-[18px] text-white hover:opacity-100 transition duration-300 ease-in-out pl-[16px] hover:text-[#2DC5EC]"
+              className="text-[18px] max-sm:!text-[16px] text-white hover:opacity-100 transition duration-300 ease-in-out pl-[16px] hover:text-[#2DC5EC]"
             >
               Privacy Policy
             </Link>

@@ -94,7 +94,7 @@ export function Nav() {
         </div>
 
         <div className="flex justify-end ml-5">
-          <div className="flex items-center justify-between gap-5 max-lg:hidden">
+          <div className="flex items-center justify-between gap-5 ">
             <FadeIn>
               <Button
                 onClick={() => {
@@ -110,6 +110,21 @@ export function Nav() {
                 Buy Unil
               </Button>
             </FadeIn>
+                 <div className="min-lg:hidden flex items-center gap-8">
+       
+          {isMobileNavOpen && (
+            <CloseIcon
+              onClick={toggleMobileNav}
+              className="text-muted-foreground size-5 cursor-pointer"
+            />
+          )}
+          {!isMobileNavOpen && (
+            <MenuIcon
+              className="text-muted-foreground size-5 cursor-pointer"
+              onClick={toggleMobileNav}
+            />
+          )}
+        </div>
           </div>
 
           <AnimatePresence>
@@ -151,33 +166,7 @@ export function Nav() {
           </AnimatePresence>
         </div>
 
-        <div className="min-lg:hidden flex items-center gap-8">
-          <Button
-            onClick={() => {
-              window.open(
-                "https://buy.unilabs.finance",
-                "_blank",
-                "noopener,noreferrer"
-              );
-            }}
-            className="z-40 cursor-pointer max-lg:h-10 w-fit"
-          >
-            <Bag />
-            Buy Unil
-          </Button>
-          {isMobileNavOpen && (
-            <CloseIcon
-              onClick={toggleMobileNav}
-              className="text-muted-foreground size-5 cursor-pointer"
-            />
-          )}
-          {!isMobileNavOpen && (
-            <MenuIcon
-              className="text-muted-foreground size-5 cursor-pointer"
-              onClick={toggleMobileNav}
-            />
-          )}
-        </div>
+   
       </div>
     </div>
   );
