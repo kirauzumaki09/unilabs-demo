@@ -47,7 +47,7 @@ const FundDetailsPage = ({
                   .filter((item) => item.title !== title)
                   .map((item, index) => (
                     <div className="flex  gap-[32px] max-sm:flex-col" key={index}>
-                      <div className="w-[162px] flex-shrink-0 h-[162px] overflow-hidden rounded-[14px]">
+                      <div className="w-[162px] max-sm:w-full flex-shrink-0 h-[162px] overflow-hidden rounded-[14px]">
                         <Link href={item.link} className="w-full linkImage h-full inline-block">
                           <Image
                             className="w-full h-full object-cover"

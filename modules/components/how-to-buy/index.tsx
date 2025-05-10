@@ -31,7 +31,7 @@ export function BuyPage() {
       <div className="w-full h-screen relative overflow-hidden how_buy_BG pt-[100px]"> 
       <div className="container">
 
-        <div className="flex flex-col items-center max-lg:px-4 z-40 relative pt-16 max-md:pt-28">
+        <div className="flex flex-col items-center max-lg:px-4 z-40 relative pt-16 ">
           <TitleAnim delay={0}>
             <h1 className="font-anybody uppercase text-white font-extrabold text-[50px] max-lg:text-[40px] max-md:text-[30px]  max-sm:text-[24px] text-center  !leading-[1]">
               Buy UNIL with
@@ -159,9 +159,9 @@ export function BuyPage() {
 
         {/* Step 3 */}
         <div className="flex items-center justify-center flex-col gap-[40px] mb-9 mt-16 max-lg:mt-10 max-md:mt-4 relative z-10">
-          <div className="absolute">
+
             <Blur1 className="absolute -z-10 -top-40 left-1/2" />
-          </div>
+    
           <FadeInOnScroll>
             <span className="py-4 px-8 bg-gradient-to-r from-accent-foreground to-primary-foreground text-primary rounded-xl font-anybody text-[23px] leading-[1.5] font-anybody font-semibold">
               STEP 03

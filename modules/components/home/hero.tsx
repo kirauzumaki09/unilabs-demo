@@ -184,7 +184,7 @@ export function Hero() {
               </h1>
             </TitleAnim>
             <TitleAnim delay={0.2}>
-              <h1 className="font-anybody  uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-[1.2] -my-2.5">
+              <h1 className="font-anybody  uppercase font-extrabold text-[100px] max-lg:text-6xl max-md:text-5xl gradText leading-[1.2] -my-2.5 max-lg:my-0">
                 AI-Backed
               </h1>
             </TitleAnim>

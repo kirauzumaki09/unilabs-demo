@@ -38,7 +38,7 @@ export default function FundMain() {
           <div className="flex flex-col gap-[24px]">
             {currentBlogs.map((item, index) => (
               <div
-                className="flex relative z-[12] max-lg:flex-col gap-[95px] max-xl:gap-6 fundUpdateCard p-[30px] max-md:p-4 rounded-[40px] max-md:rounded-[20px] items-center"
+                className="flex relative z-[12] max-lg:flex-col gap-[95px] max-xl:gap-6 fundUpdateCard  max-lg:flex-col-reverse p-[30px] max-md:p-4 rounded-[40px] max-md:rounded-[20px] items-center"
                 key={index}
               >
                 <div className="flex flex-col py-[65px] pl-[55px] max-xl:pl-4 max-xl:py-0 max-md:pl-0">
@@ -66,7 +66,7 @@ export default function FundMain() {
                 </div>
                 <Link
                   href={item.link}
-                  className="linkImage size-[556px] max-xl:size-[300px] max-md:w-full   max-md:rounded-[20px] flex-shrink-0 rounded-[40px] overflow-hidden relative"
+                  className="linkImage size-[556px] max-xl:size-[300px] max-lg:w-full   max-md:rounded-[20px] flex-shrink-0 rounded-[40px] overflow-hidden relative"
                 >
                   <Image
                     src={item.image}

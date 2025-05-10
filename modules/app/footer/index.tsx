@@ -26,7 +26,7 @@ export function Footer() {
   ];
 
   return (
-    <Section sectionClasName="relative pb-[220px] pt-[130px] max-lg:pt-[0px] max-md:pt-[60px]  overflow-hidden footerBG">
+    <Section sectionClasName="relative pb-[220px] max-md:pb-[40px] pt-[130px] max-lg:pt-[0px] max-md:pt-[60px]  overflow-hidden footerBG">
       {/* Content Wrapper */}
       <div className="relative z-10 flex items-center justify-between w-full flex-col">
         <div className="flex w-full justify-between items-center pb-[35px] border-b !border-b-[rgba(255,255,255,0.1)] mb-[40px]  flex-wrap gap-4 max-sm:flex-col ">
