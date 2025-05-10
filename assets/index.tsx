@@ -13,6 +13,7 @@ import fundUpdate6 from "./fundUpdateMain6.png";
 import fundUpdate7 from "./fundUpdateMain7.png";
 import roadMapMainBG from "./roadMapMainBG.png";
 import coinImage from "./coinImage.png";
+import blog_img from "./blog_img.png";
 
 export default {
   earlyBg,
@@ -21,6 +22,7 @@ export default {
   FundUpdate3,
   FundUpdate4,
   fundUpdate1,
+  blog_img,
   fund_Update2,
   fundUpdate3,
   fundUpdate4,
