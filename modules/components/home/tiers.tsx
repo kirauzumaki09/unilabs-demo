@@ -8,15 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 export function Tiers() {
   const settings: Settings = {
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     dots: false,
     infinite: true,
     speed: 500,
     // arrows: true,
     // autoplay: true,
-    centerMode:true,
-    centerPadding:"60px",
-
+   
     autoplaySpeed: 5000,
 
     responsive: [

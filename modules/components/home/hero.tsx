@@ -68,46 +68,47 @@ export function Hero() {
   useEffect(() => {
     console.log("useEffect called");
     const statsQuery = async () => {
-      // const totalSoldResponse = await axios.get(
-      //   "https://buy.unilabs.finance/api/totalSold"
-      // );
-      // console.log({ totalSoldResponse });
+      const totalSoldResponse = await axios.get(
+        "https://buy.unilabs.finance/api/totalSold"
+      );
+
       // const totalSoldResponse = await fetch(
       //   "https://buy.unilabs.finance/api/totalSold"
       // );
-      // const totalSoldData: TotalSoldResponse = await totalSoldResponse.json();
-      // const usdtRaisedResponse = await fetch(
-      //   "https://buy.unilabs.finance/api/usdtRaised"
-      // );
-      // const usdtRaisedData: UsdtRaisedResponse =
-      //   await usdtRaisedResponse.json();
-      // const currentPriceResponse = await fetch(
-      //   "https://buy.unilabs.finance/api/currentPrice"
-      // );
-      // const currentPriceData: CurrentPriceResponse =
-      //   await currentPriceResponse.json();
-      // const nextPriceResponse = await fetch(
-      //   "https://buy.unilabs.finance/api/nextPrice"
-      // );
-      // const nextPriceData: NextPriceResponse = await nextPriceResponse.json();
-      // console.log({
-      //   totalSoldResponse,
-      //   usdtRaisedResponse,
-      //   currentPriceResponse,
-      //   nextPriceResponse,
-      // });
+      const totalSoldData: TotalSoldResponse = totalSoldResponse.data;
+      console.log(totalSoldData, "totalSoldData");
+      const usdtRaisedResponse = await fetch(
+        "https://buy.unilabs.finance/api/usdtRaised"
+      );
+      const usdtRaisedData: UsdtRaisedResponse =
+        await usdtRaisedResponse.json();
+      const currentPriceResponse = await fetch(
+        "https://buy.unilabs.finance/api/currentPrice"
+      );
+      const currentPriceData: CurrentPriceResponse =
+        await currentPriceResponse.json();
+      const nextPriceResponse = await fetch(
+        "https://buy.unilabs.finance/api/nextPrice"
+      );
+      const nextPriceData: NextPriceResponse = await nextPriceResponse.json();
+      console.log({
+        totalSoldResponse,
+        usdtRaisedResponse,
+        currentPriceResponse,
+        nextPriceResponse,
+      });
       // console.log({
       //   totalSoldData,
       //   usdtRaisedData,
       //   currentPriceData,
       //   nextPriceData,
       // });
-      // setStats({
-      //   totalSold: totalSoldData.totalSold,
-      //   usdtRaised: usdtRaisedData.usdtRaised,
-      //   currentPrice: currentPriceData.currentPrice,
-      //   nextPrice: nextPriceData.nextPrice,
-      // });
+      setStats({
+        totalSold: totalSoldData.totalSold,
+        usdtRaised: usdtRaisedData.usdtRaised,
+        currentPrice: currentPriceData.currentPrice,
+        nextPrice: nextPriceData.nextPrice,
+      });
     };
 
     statsQuery()
@@ -146,13 +147,40 @@ export function Hero() {
       tokenPriceInUsd = BNB_PRICE;
     }
     const usdAmount = inputAmount * tokenPriceInUsd;
-    const unilAmount = usdAmount / UNIL_PRICE;
+    const unilAmount = usdAmount / stats.currentPrice;
     return unilAmount.toFixed(2);
   };
 
   useEffect(() => {
     setAmount("");
   }, [selectedToken]);
+
+  const stages = [
+    { stage: 1, price: 0.004 },
+    { stage: 2, price: 0.0051 },
+    { stage: 3, price: 0.0062 },
+    { stage: 4, price: 0.0074 },
+    { stage: 5, price: 0.0085 },
+    { stage: 6, price: 0.0097 },
+    { stage: 7, price: 0.0108 },
+    { stage: 8, price: 0.012 },
+    { stage: 9, price: 0.0131 },
+    { stage: 10, price: 0.0143 },
+    { stage: 11, price: 0.0154 },
+    { stage: 12, price: 0.0165 },
+    { stage: 13, price: 0.0177 },
+    { stage: 14, price: 0.0188 },
+    { stage: 15, price: 0.02 },
+    { stage: 16, price: 0.0211 },
+    { stage: 17, price: 0.0223 },
+    { stage: 18, price: 0.0234 },
+    { stage: 19, price: 0.0246 },
+    { stage: 20, price: 0.02565 },
+  ];
+
+  const currentStage = stages.find(
+    (stage) => stage.price === stats.currentPrice
+  );
 
   const titleStyles =
     "font-anybody uppercase text-white font-extrabold text-[50px] max-lg:text-3xl max-w-[80%] max-lg:max-w-full text-center leading-[140%] leading-0";
@@ -188,7 +216,7 @@ export function Hero() {
                 AI-Backed
               </h1>
             </TitleAnim>
-   
+
             <TitleAnim delay={0.4}>
               <h1
                 className={`${titleStyles}  text-[2.5rem] max-w-[800px] !leading-[1]`}
@@ -215,11 +243,14 @@ export function Hero() {
             <FadeIn delay={0.2} className="flex items-center justify-center">
               <div className="border-[1px] border-[#FFFFFF1A] rounded-[17px] bg-[#00060F7A] backdrop-blur-[90px] lg:px-8 px-4 py-8 md:max-w-[562px] w-full">
                 <div className="flex flex-col">
-                  <p className="font-bold text-[2rem] max-md:text-2xl text-center text-white font-anybody font-medium text-[32px]">
+                  <p className="font-bold text-[32px] max-md:text-2xl text-center text-white font-anybody font-medium text-[32px]">
                     Buy Now
                   </p>
                   <p className=" text-center gradText text-[22px] font-semibold">
                     Before Price Rises
+                  </p>
+                  <p className="font-bold text-[22px]  text-center text-white font-anybody font-medium ">
+                    Stage {currentStage?.stage || "N/A"}
                   </p>
 
                   <Progress.Root
@@ -238,18 +269,18 @@ export function Hero() {
                   </Progress.Root>
                 </div>
                 <div className="mt-8 text-[18px] text-center font-normal">
-                  <p>USDT RAISED: $0</p>
+                  <p>USDT RAISED: ${stats.usdtRaised}</p>
                   <p className="gradText font-semibold text-[18px] mt-2">
-                    Tokens Sold: 0
+                    Tokens Sold: {stats.totalSold}
                   </p>
                 </div>
                 <div className="flex flex-col mt-6 gap-[14px]">
                   <div className="rounded-[11px] bg-[#FFFFFF1A] py-[20px] text-text flex backdrop-blur-[90px] items-center px-5 border-[2px] border-[#04EEE2] w-full justify-between">
                     <p className=" text-[18px] font-figtree font-semibold max-md:text-xs">
-                      1 $UNI = ${UNIL_PRICE}
+                      1 $UNI = ${stats.currentPrice}
                     </p>
                     <p className="font-bold text-[#00FFC8] text-[18px] font-semibold  font-figtree  max-md:text-xs">
-                      Next Price: $0.0051
+                      Next Price: ${stats.nextPrice}
                     </p>
                   </div>
                   <div className="flex items-center gap-2 w-full justify-center mt-8 max-md:flex-wrap">
