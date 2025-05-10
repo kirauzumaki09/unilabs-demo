@@ -27,7 +27,7 @@ const anybody = Anybody({
 });
 
 export const metadata: Metadata = {
-  title: "UNILABS",
+  title: "UNILABS | $30M DeFi Asset Manager | Hottest Presale of 2025",
   description:
     "The world's first AI-backed DeFi asset manager with over $30M AUM",
 };
