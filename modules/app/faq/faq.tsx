@@ -44,7 +44,7 @@ export function FAQ({ data, notabs }: FAQSectionProps) {
           {notabs ? (
             <div className="w-full max-w-[1236px] flex flex-col gap-2">
               {data.map((faq, index) => (
-                <Accordion type="single" collapsible>
+                <Accordion type="single" collapsible key={index}>
                   <AccordionItem
                     value={`item-${index}`}
                     className="w-full z-50"
